@@ -3,7 +3,7 @@
 
 
 
-<img align="middle" src="gmitlogo.jpg" alt="myimage" />
+<img align="middle" src="gmitlogo.jpg" alt="myimage" width = 450 />
 
 
 # Weekly Tasks 2021
