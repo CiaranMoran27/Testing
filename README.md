@@ -1,5 +1,5 @@
 
-![ScreenShot](C:\\Users\Ciaran\OneDrive\Desktop\Programming\README_Logo\gmitlogo.jpg)
+![ScreenShot](gmitlogo.jpg)
 
 
 
