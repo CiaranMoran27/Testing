@@ -37,3 +37,36 @@ print("BMI is " + str(bmi) + ' kg/m²')
 2.	GeeksforGeeks, 2021, round () function in Python, viewed 31 Jan 2021,<br/>*<https://www.geeksforgeeks.org/round-function-\python>*.
 3.	Real Python, 2021, A guide to the newer Python string format techniques, viewed 31 Jan 2021,<br/>*<https://realpython.com/python-formatted-output>*.
 4.	Sweigart, A, 2015, Automate the boring stuff with Python, No Starch press, San Francisco, pp 15.
+<br/>
+<br/>
+
+## Task 2: (secondstring.py):
+
+*Write a program that takes asks a user to input a string and outputs every second letter in reverse order.*
+<br/>
+<br/>
+
+### Code:
+``` Python
+sentence = input("Please enter a sentence: ")
+reverse_string = sentence[::-2]
+print(reverse_string)
+```
+<br/>
+
+The first and last characters of the string are indexed by default and a negative stride of 2 is used.
+### Code breakdown:
+- User is asked to input a sentence.
+- The full string is sliced by default as no index number is placed in the first two placeholders of [::-2].
+- A negative stride of 2 is used and the the resulting string stored in the reverse_string variable.
+- The reversed string is printed.
+<br/>
+
+
+### References:
+1. Real Python, 2021, String slicing, viewed 31 Jan 2021,<br/>*<https://realpython.com/python-strings/#specifying-a-stride-in-a-string-slice>*.
+
+
+
+
+
