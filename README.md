@@ -5,7 +5,7 @@
 
 
 ## Introduction
-This README file gives a more in-depth explanation of the code used to complete the weekly tasks for the 2021 Programming and Scripting GMIT module as part of the Higher Diploma in Science in Computing.  
+This README file gives a more in-depth explanation of the code used to complete the weekly tasks for the 2021 Programmingand Scripting GMIT module as part of the Higher Diploma in Science in Computing.  
 
 
 
@@ -35,6 +35,6 @@ print("BMI is {} kg/m²".format(bmi))
 
 ### References:
 1.	Active, 2021, What is BMI and How to Calculate It, viewed 31 Jan 2021, *<https://www.active.com/fitness/articles/what-is-bmi-and-how-to-calculate-it>*.
-2.	GeeksforGeeks, 2021, round () function in Python, viewed 31 Jan 2021, *<https://www.geeksforgeeks.org/round-function-\python>*.
+2.	GeeksforGeeks, 2021, round () function in Python, viewed 31 Jan 2021, <br/>*<https://www.geeksforgeeks.org/round-function-\python>*.
 3.	Real Python, 2021, A guide to the newer Python string format techniques, viewed 31 Jan 2021, *<https://realpython.com/python-formatted-output>*.
 4.	Sweigart, A, 2015, Automate the boring stuff with Python, No Starch press, San Francisco, pp 15.
