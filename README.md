@@ -1,11 +1,11 @@
 
 
-# Weekly Tasks 2021
-# Programming and Scripting
-
-
 <H1 align="center"> Weekly Tasks 2021 </H1>
 <H1 align="center"> Programming and Scripting </H1>
+
+
+
+
 
 
 ## Introduction
@@ -13,8 +13,10 @@ This README file gives a more in-depth explanation of the code used to complete 
 
 
 
+
 ## Task 1: (Bmi.py):
 *Write a program that calculates somebody's Body Mass Index (BMI). The inputs are the person's height in centimetres and\weight in kilograms. The output is their weight divided by their height in metres squared.* 
+
 
 
 
@@ -26,6 +28,8 @@ Metres_Sq = (height/100)**2
 bmi = round(weight / Metres_Sq,2)  
 print("BMI is {} kg/m²".format(bmi))  
 ```
+
+
 
 
 ### Code breakdown:
