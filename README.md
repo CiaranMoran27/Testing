@@ -28,7 +28,7 @@ print("BMI is " + str(bmi) + ' kg/m²')
 - User is asked for their height(cm) and weight(Kg).
 - Height is convered from cm to m² and stored in *metres_sq* variable.
 - Weight(Kg) is divided by height(m²), rounded to two decimal places and passed to *bmi* variable.
-- The bmi result is passed into a {} placeholder via string formatting (.format) and printed.
+- The bmi result is passed into a {} placeholder via string formatting and printed.
 <br/>
 
 
