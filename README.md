@@ -1,9 +1,9 @@
 
 ![ScreenShot](gmitlogo.jpg)
 
-<img src="gmitlogo.jpg" alt="drawing" width="200"/>
+<img align="center" src="gmitlogo.jpg" alt="drawing" width="600"/>
 
-<div align="center">text</div>
+
 
 
 # Weekly Tasks 2021
