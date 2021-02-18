@@ -2,23 +2,21 @@
 
 <H1 align="center"> Weekly Tasks 2021 </H1>
 <H1 align="center"> Programming and Scripting </H1>
-
-
-
-
-
+<br/>
+<br/>
+<br/>
 
 ## Introduction
 This README file gives a more in-depth explanation of the code used to complete the weekly tasks for the 2021 Programmingand Scripting GMIT module as part of the Higher Diploma in Science in Computing.  
-
-
-
+<br/>
+<br/>
+<br/>
 
 ## Task 1: (Bmi.py):
 *Write a program that calculates somebody's Body Mass Index (BMI). The inputs are the person's height in centimetres and\weight in kilograms. The output is their weight divided by their height in metres squared.* 
-
-
-
+<br/>
+<br/>
+<br/>
 
 ### Code:
 ``` Python
@@ -28,18 +26,18 @@ Metres_Sq = (height/100)**2
 bmi = round(weight / Metres_Sq,2)  
 print("BMI is {} kg/m²".format(bmi))  
 ```
-
-
-
+<br/>
+<br/>
+<br/>
 
 ### Code breakdown:
 - User is asked for their height(cm) and weight(Kg).
 - Height is convered from cm to m² and stored in *Metres_Sq* variable.
 - Weight(Kg) is divided by height(m²), rounded to two decimal places and passed to *bmi* variable.
 - The bmi result is passed into the {} placeholder via string formatting (.format) and printed.
-
-
-
+<br/>
+<br/>
+<br/>
 
 ### References:
 1.	Active, 2021, What is BMI and How to Calculate It, viewed 31 Jan 2021, *<https://www.active.com/fitness/articles/what-is-bmi-and-how-to-calculate-it>*.
