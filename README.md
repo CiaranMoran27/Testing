@@ -4,7 +4,7 @@
 <br/>
 
 ## Introduction
-This README file gives a more in-depth explanation of the code used to complete the weekly tasks for the 2021 Programmingand Scripting GMIT module as part of the Higher Diploma in Science in Computing.  
+This README file gives a more in-depth explanation of the code used to complete the weekly tasks for the 2021 Programming and Scripting GMIT module as part of the Higher Diploma in Science in Computing.  
 <br/>
 
 
@@ -26,9 +26,9 @@ print("BMI is " + str(bmi) + ' kg/m²')
 
 ### Code breakdown:
 - User is asked for their height(cm) and weight(Kg).
-- Height is convered from cm to m² and stored in *Metres_Sq* variable.
+- Height is convered from cm to m² and stored in *metres_sq* variable.
 - Weight(Kg) is divided by height(m²), rounded to two decimal places and passed to *bmi* variable.
-- The bmi result is passed into the {} placeholder via string formatting (.format) and printed.
+- The bmi result is passed into a {} placeholder via string formatting (.format) and printed.
 <br/>
 
 
