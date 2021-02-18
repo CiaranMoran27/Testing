@@ -5,13 +5,12 @@
 
 
 ## Introduction
-This README file gives a more in-depth explanation of the code used to complete the weekly tasks for the 2021 Programming\ and Scripting GMIT module as part of the Higher Diploma in Science in Computing.  
+This README file gives a more in-depth explanation of the code used to complete the weekly tasks for the 2021 Programming\and Scripting GMIT module as part of the Higher Diploma in Science in Computing.  
 
 
 
 ## Task 1: (Bmi.py):
-*Write a program that calculates somebody's Body Mass Index (BMI). The inputs are the person's height in centimetres and\
-weight in kilograms. The output is their weight divided by their height in metres squared.* 
+*Write a program that calculates somebody's Body Mass Index (BMI). The inputs are the person's height in centimetres and\weight in kilograms. The output is their weight divided by their height in metres squared.* 
 
 
 
