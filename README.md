@@ -3,11 +3,9 @@
 
 
 
-<p align="center">Programming and Scripting</p> 
+<p align="center">Weekly Tasks 2021</p> 
 <p align="center">Programming and Scripting</p> 
    
-
-
 
 
 ## Introduction
@@ -23,13 +21,13 @@ centimetres and weight in kilograms. The output is their weight divided by their
 
 
 ### Code:
-'
+``` Python
 height = float(input("What is your height in centimetres?:"))  
 weight = float(input("What is your weight kilograms?:"))  
 Metres_Sq = (height/100)**2  
 bmi = round(weight / Metres_Sq,2)  
 print("BMI is {} kg/m²".format(bmi))  
-'
+```
 
 
 ### Code breakdown:
