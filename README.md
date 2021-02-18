@@ -4,6 +4,10 @@
 # Programming and Scripting
 
 
+<H1 align="center"> Weekly Tasks 2021 </H1>
+<H1 align="center"> Programming and Scripting </H1>
+
+
 ## Introduction
 This README file gives a more in-depth explanation of the code used to complete the weekly tasks for the 2021 Programmingand Scripting GMIT module as part of the Higher Diploma in Science in Computing.  
 
