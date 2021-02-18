@@ -1,7 +1,7 @@
 
-![ScreenShot](gmitlogo.jpg =100x20)
+![ScreenShot](gmitlogo.jpg)
 
-
+<img src="gmitlogo.jpg" alt="drawing" width="200"/>
 
 <div align="center">text</div>
 
