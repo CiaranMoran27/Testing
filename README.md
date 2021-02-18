@@ -2,10 +2,10 @@
 ![ScreenShot](gmitlogo.jpg)
 
 
-
-
-# Weekly Tasks 2021
-# Programming and Scripting
+<p align="center">
+   Weekly Tasks 2021
+   Programming and Scripting
+</p>
 
 
 
