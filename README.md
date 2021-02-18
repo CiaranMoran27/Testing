@@ -15,11 +15,11 @@ This README file gives a more in-depth explanation of the code used to complete 
 
 ### Code:
 ``` Python
-height = float(input("What is your height in centimetres?:"))  
-weight = float(input("What is your weight kilograms?:"))  
-Metres_Sq = (height/100)**2  
-bmi = round(weight / Metres_Sq,2)  
-print("BMI is {} kg/m²".format(bmi))  
+height = float(input("What is your height in centimetres?:"))
+weight = float(input("What is your weight kilograms?:"))
+metres_sq = (height/100)**2
+bmi = round(weight / metres_sq,2)
+print("BMI is " + str(bmi) + ' kg/m²')
 ```
 <br/>
 
