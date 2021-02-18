@@ -1,4 +1,9 @@
 
+![ScreenShot](C:\\Users\Ciaran\OneDrive\Desktop\Programming\README_Logo\gmitlogo.jpg)
+
+
+
+
 # Weekly Tasks 2021
 # Programming and Scripting
 
