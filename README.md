@@ -1,7 +1,7 @@
 
 ![ScreenShot](gmitlogo.jpg)
 
-<img src="gmitlogo.jpg" alt="centered image" width="600" style="vertical-align:middle;margin:0px 50px/>
+<img src="gmitlogo.jpg" alt="centered image" width="600"/>
 
 
 
