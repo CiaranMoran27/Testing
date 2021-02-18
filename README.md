@@ -54,7 +54,6 @@ print(reverse_string)
 ```
 <br/>
 
-The first and last characters of the string are indexed by default and a negative stride of 2 is used.
 ### Code breakdown:
 - User is asked to input a sentence.
 - The full string is sliced by default as no index number is placed in the first two placeholders of [::-2].
