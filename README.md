@@ -27,6 +27,7 @@ print("BMI is " + str(bmi) + ' kg/m²')
 - Weight(Kg) is divided by height(m²), rounded to two decimal places and passed to *bmi* variable.
 - The bmi result is passed into a {} placeholder via string formatting and printed.
 
+<br/>
 
 ### References:
 1.	Active, 2021, What is BMI and How to Calculate It, viewed 31 Jan 2021,<br/>*<https://www.active.com/fitness/articles/what-is-bmi-and-how-to-calculate-it>*.
