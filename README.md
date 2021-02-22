@@ -113,8 +113,8 @@ print(numberList)
      - Checks if the remainder of the user input divided by 2 != 0 (i.e is it odd), in which case the program re-defines <br/>the *numberInt* variable as (itself divided by 3) + 1 and appends it to *numberList*.
          - The while loop runs re-uses the newly defined *numberInt* variable until the value = 1, then the list is <br/>printed.
 <br/>
-### References:
 
+### References:
 1. Cunningham, P, 2014, Check if input is positive integer, viewed 19 Feb 2021, <br/>*<https://stackoverflow.com/questions/26198131/check-if-input-is-positive-integer>*.
 2. Real Python, 2021, 8.3 Handling exceptions, viewed 19 Feb 2021,*<https://docs.python.org/3/tutorial/errors.html>*.
 3. Programiz, 2021, What is the use of break and continue in Python?, viewed 19 Feb 2021,<br/>*<https://www.programiz.com/python-programming/break-continue>*.  
