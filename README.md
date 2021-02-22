@@ -64,11 +64,11 @@ print(reverse_string)
 
 ## Task 3: (collatz.py):
 
-*Write a program that asks the user to input any positive integer and outputs the successive values of the following:<br/>*
- At each step calculate the next value by taking the current value and:
- - divide by 2 if even.
- - multily by 3 and add 1 if odd.
- - end the progam if current value is 1.
+*Write a program that asks the user to input any positive integer and outputs the successive values of the following:*<br/>
+ *At each step calculate the next value by taking the current value and:*
+    - *Divide by 2 if even.*
+    - *Multily by 3 and add 1 if odd.*
+    - *End the progam if current value is 1.*
 
 <br/>
 
