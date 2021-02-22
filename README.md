@@ -159,9 +159,10 @@ for key, value in weekIndex.items():
     - The *todaysDate* variable uses the *.date.today* methods of  datetime library to obtain todays date.
     - The *dayIndex* variable uses the *.weekday* method of  datetime library to convert todays date to an index number(0 - 6).
 - The key, value pairs of dictionary *weekIndex* are iterated over until the key = *dayIndex* value.
-    - When the above condition is met, the corresponding value of the key is checked in a boolean (to see if it reads<br/>"Weekend" or "Weekday") and one of two print statements are executed.
+    - When the above condition is met, the corresponding value of the key is checked in a boolean (to see if it reads "Weekend" or "Weekday") and one of two print statements are executed.
+    
 <br/>
 
 ### References:
 1. Sweigart, A, 2015, Automate the boring stuff with Python, Dictionaries and structuring data, No Starch press,<br/> San Francisco, pp 120.
-2. Docs.python.org, 2021, Datetime — Basic date and time types — Python 3.9.2 Documentation, viewed 20 Feb 2021,<br/> <br/>*<https://docs.python.org/3/library/datetime.html#datetime.datetime.weekday>*.
+2. Docs.python.org, 2021, Datetime — Basic date and time types — Python 3.9.2 Documentation, viewed 20 Feb 2021,<br/>*<https://docs.python.org/3/library/datetime.html#datetime.datetime.weekday>*.
