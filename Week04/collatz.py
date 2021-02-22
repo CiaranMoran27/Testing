@@ -1,28 +1,39 @@
-
-# This program that asks the user to input any positive integer and 
-# outputs the successive values of the following calculation
+# collatz.py
+# The program asks the user for a positive integer and outputs successive values 
+# based on if the input number is odd or even. The progam ends if 1 is entered.
 # Author: Ciaran Moran
 
-number = int(input("Please enter a positive whole number: "))
+numberList = []
 
-number_list = [number]
+number = input("Enter a number: ")
 
 
-if number < 0:
-    print("This program will only accept positive whole numbers")
-    number = int(input("Please enter a positive whole number: "))
-else:
-    while number != 1:
-        if number % 2 == 0:
-            number = number // 2
+while True:
+    try:
+        numberInt = int(number)  # try convert number variable to int 
+
+        if numberInt < 0:        # checks the number is positive
+            numberInt = int(input("Enter a Enter a positive number: "))
+            continue                 # jump back to start of while loop
         else:
-            number = (number * 3) + 1
-        number_list.append(number)
+            break                    # exit loop 
+
+    except ValueError:                          # if error raised between try and except statement:
+        number = input("Enter an integer: ")    
+        continue                                # jump back to start of while loop
+
+
+while numberInt!=1:               # exits while loop when value is not 1
+    if numberInt % 2 == 0:             # check if number is even
+        numberInt = numberInt // 2         # re-defines numberInt variable as itself divide by 2
+    else:
+        numberInt = (numberInt * 3) + 1    # if odd re-defines numberInt variable  as (itself x 3) +1
+    numberList.append(numberInt)       
+print(numberList)
+
+
         
-            
-print(number_list)
-
-
-
-#At each step calculate the next value by taking the current value and, if it is even, 
-#divide it by two, but if it is odd, multiply it by three and add one.
+# References: 
+# 1. Real Python, 2021, 8.3 Handling exceptions, viewed 19 Feb 2021,<https://docs.python.org/3/tutorial/errors.html>.
+# 2. Cunningham, P, 2014, Check if input is positive integer, viewed 19 Feb 2021, <https://stackoverflow.com/questions/26198131/check-if-input-is-positive-integer>.
+# 3. Programiz, 2021, What is the use of break and continue in Python?, viewed 19 Feb 2021,<https://www.programiz.com/python-programming/break-continue>.  

@@ -66,6 +66,67 @@ print(reverse_string)
 1. Real Python, 2021, String slicing, viewed 31 Jan 2021,<br/>*<https://realpython.com/python-strings/#specifying-a-stride-in-a-string-slice>*.
 
 
+## Task 3: (collatz.py):
+
+*Write a program that asks the user to input any positive integer and outputs the successive values of the following:<br/>*
+ At each step calculate the next value by taking the current value and:
+ - divide by 2 if even
+ - multily by 3 and add 1 if odd
+ - end the progam if current value is 1
+
+<br/>
+<br/>
+
+### Code:
+``` Python
+numberList = []
+
+number = input("Enter a positive integer: ")
+
+while True:
+    try:
+        numberInt = int(number)  # try convert number variable to int 
+
+        if numberInt < 0:        # checks the number is positive
+            numberInt = int(input("Enter a Enter a positive number: "))
+            continue                 # jump back to start of while loop
+        else:
+            break                    # exit loop 
+
+    except ValueError:                          # if error raised between try and except statement:
+        number = input("Enter an integer: ")    
+        continue                                # jump back to start of while loop
+
+while numberInt!=1:               # exits while loop when value is not 1
+    if numberInt % 2 == 0:             # check if number is even
+        numberInt = numberInt // 2         # re-defines numberInt variable as itself divide by 2
+    else:
+        numberInt = (numberInt * 3) + 1    # if odd re-defines numberInt variable  as (itself x 3) +1
+    numberList.append(numberInt)       
+print(numberList)
+```
+<br/>
+
+### Code breakdown:
+- User is asked for a positive integer.
+<br/>
+
+- **First While loop** is designed to validate the user input in the block of code between  *try* and *except* where:
+    - Tries to convert the input string to an integer, if this fails a *ValueError* is raised and the program asks the  user to *"Enter an integer: "* and jumps back to the start of the while loop.
+    - Assuming that point 1 above has executed sucessfully (i.e the user input can be cast as an integer) the program checks if the integer is negative, in which case  the program asks user to *"Enter a Enter a positive number: "* and jumps  back to the start of the while loop.
+<br/>
+
+ - **Second While loop** performs sucessive calculations on user input and resulting values until the resulting value = 1. 
+     - Checks if the remainder of the user input divided by 2 = 0 (i.e is it even), in which case the program re-defines the *numberInt* variable as itself divide by 2 and appends it to *numberList*.
+     - Checks if the remainder of the user input divided by 2 != 0 (i.e is it odd), in which case the program re-defines the *numberInt* variable as (itself divided by 3) + 1 and appends it to *numberList*.
+         - The while loop runs re-uses the newly defined *numberInt* variable until the value = 1, then the list is printed.
+<br/>
+
+### References:
+
+1. Cunningham, P, 2014, Check if input is positive integer, viewed 19 Feb 2021, *<https://stackoverflow.com/questions/26198131/check-if-input-is-positive-integer>*.
+2. Real Python, 2021, 8.3 Handling exceptions, viewed 19 Feb 2021,*<https://docs.python.org/3/tutorial/errors.html>*.
+3. Programiz, 2021, What is the use of break and continue in Python?, viewed 19 Feb 2021,*<https://www.programiz.com/python-programming/break-continue>*.  
 
 
 
