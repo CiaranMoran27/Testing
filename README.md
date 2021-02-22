@@ -66,9 +66,9 @@ print(reverse_string)
 
 *Write a program that asks the user to input any positive integer and outputs the successive values of the following:<br/>*
  At each step calculate the next value by taking the current value and:
- - divide by 2 if even
- - multily by 3 and add 1 if odd
- - end the progam if current value is 1
+ - divide by 2 if even.
+ - multily by 3 and add 1 if odd.
+ - end the progam if current value is 1.
 
 <br/>
 
@@ -80,23 +80,23 @@ number = input("Enter a positive integer: ")
 
 while True:
     try:
-        numberInt = int(number)  # try convert number variable to int 
+        numberInt = int(number)
 
-        if numberInt < 0:        # checks the number is positive
+        if numberInt < 0: 
             numberInt = int(input("Enter a Enter a positive number: "))
-            continue                 # jump back to start of while loop
+            continue            
         else:
-            break                    # exit loop 
+            break                  
 
-    except ValueError:                          # if error raised between try and except statement:
+    except ValueError:                          
         number = input("Enter an integer: ")    
-        continue                                # jump back to start of while loop
+        continue                              
 
-while numberInt!=1:               # run while loop when value is not 1
-    if numberInt % 2 == 0:             # check if number is even
-        numberInt = numberInt // 2         # re-defines numberInt variable as itself divide by 2
+while numberInt!=1:              
+    if numberInt % 2 == 0:             
+        numberInt = numberInt // 2     
     else:
-        numberInt = (numberInt * 3) + 1    # if odd re-defines numberInt variable  as (itself x 3) +1
+        numberInt = (numberInt * 3) + 1  
     numberList.append(numberInt)       
 print(numberList)
 ```
@@ -154,15 +154,15 @@ for key, value in weekIndex.items():
 ### Code breakdown:
 - The datetime module is imported
 - Dictionary named weekIndex is declared:
-    - Keys are set to 0-6 which represent the index of the days of the week (i.e index 0 = Monday, index 6 = Sunday)
+    - Keys are set to 0-6 which represent the index of the days of the week (i.e index 0 = Monday, index 6 = Sunday).
     - Values distunguish between weekdays or weekend.
     - The *todaysDate* variable uses the *.date.today* methods of  datetime library to obtain todays date.
     - The *dayIndex* variable uses the *.weekday* method of  datetime library to convert todays date to an index number(0 - 6).
 - The key, value pairs of dictionary *weekIndex* are iterated over until the key = *dayIndex* value.
     - When the above condition is met, the corresponding value of the key is checked in a boolean (to see if it reads "Weekend" or "Weekday") and one of two print statements are executed.
-    
+
 <br/>
 
 ### References:
 1. Sweigart, A, 2015, Automate the boring stuff with Python, Dictionaries and structuring data, No Starch press,<br/> San Francisco, pp 120.
-2. Docs.python.org, 2021, Datetime — Basic date and time types — Python 3.9.2 Documentation, viewed 20 Feb 2021,<br/>*<https://docs.python.org/3/library/datetime.html#datetime.datetime.weekday>*.
+2. Docs.python.org, 2021, Datetime — Basic date and time types — Python 3.9.2 Documentation, viewed 20 Feb 2021,*<https://docs.python.org/3/library/datetime.html#datetime.datetime.weekday>*.
