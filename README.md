@@ -48,7 +48,6 @@ sentence = input("Please enter a sentence: ")
 reverse_string = sentence[::-2]
 print(reverse_string)
 ```
-<br/>
 
 ### Code breakdown:
 - User is asked to input a sentence.
@@ -60,6 +59,7 @@ print(reverse_string)
 ### References:
 1. Real Python, 2021, String slicing, viewed 31 Jan 2021,<br/>*<https://realpython.com/python-strings/#specifying-a-stride-in-a-string-slice>*.
 
+<br/>
 <br/>
 
 ## Task 3: (collatz.py):
@@ -100,7 +100,6 @@ while numberInt!=1:               # run while loop when value is not 1
     numberList.append(numberInt)       
 print(numberList)
 ```
-<br/>
 
 ### Code breakdown:
 - User is asked for a positive integer.
@@ -111,6 +110,7 @@ print(numberList)
      - Checks if the remainder of the user input divided by 2 = 0 (i.e is it even), in which case the program re-defines <br/>the *numberInt* variable as itself divide by 2 and appends it to *numberList*.
      - Checks if the remainder of the user input divided by 2 != 0 (i.e is it odd), in which case the program re-defines <br/>the *numberInt* variable as (itself divided by 3) + 1 and appends it to *numberList*.
          - The while loop runs re-uses the newly defined *numberInt* variable until the value = 1, then the list is <br/>printed.
+<br/>
 <br/>
 
 ### References:
