@@ -11,7 +11,6 @@ This README file gives a more in-depth explanation of the code used to complete 
 ## Task 1: (Bmi.py):
 *Write a program that calculates somebody's Body Mass Index (BMI). The inputs are the person's height in centimetres<br/>and weight in kilograms. The output is their weight divided by their height in metres squared.* 
 <br/>
-<br/>
 
 ### Code:
 ``` Python
@@ -21,16 +20,11 @@ metres_sq = (height/100)**2
 bmi = round(weight / metres_sq,2)
 print("BMI is " + str(bmi) + ' kg/m²')
 ```
-<br/>
-
-
 ### Code breakdown:
 - User is asked for their height(cm) and weight(Kg).
 - Height is convered from cm to m² and stored in *metres_sq* variable.
 - Weight(Kg) is divided by height(m²), rounded to two decimal places and passed to *bmi* variable.
 - The bmi result is passed into a {} placeholder via string formatting and printed.
-<br/>
-
 
 ### References:
 1.	Active, 2021, What is BMI and How to Calculate It, viewed 31 Jan 2021,<br/>*<https://www.active.com/fitness/articles/what-is-bmi-and-how-to-calculate-it>*.
@@ -119,7 +113,7 @@ print(numberList)
     - Assuming that point 1 above has executed sucessfully (i.e the user input can be cast as an integer) the program <br/>checks if the integer is negative, in which case  the program asks user to *"Enter a Enter a positive number: "* and jumps <br/> back to the start of the while loop.
 <br/>
 
- - **Second While loop** performs sucessive calculations on user input and resulting values until the resulting value = 1. 
+ - **Second While loop** performs sucessive calculations on user input and resulting values until the resulting value=1. 
      - Checks if the remainder of the user input divided by 2 = 0 (i.e is it even), in which case the program re-defines <br/>the *numberInt* variable as itself divide by 2 and appends it to *numberList*.
      - Checks if the remainder of the user input divided by 2 != 0 (i.e is it odd), in which case the program re-defines <br/>the *numberInt* variable as (itself divided by 3) + 1 and appends it to *numberList*.
          - The while loop runs re-uses the newly defined *numberInt* variable until the value = 1, then the list is <br/>printed.
