@@ -39,6 +39,7 @@ print("BMI is " + str(bmi) + ' kg/m²')
 4.	Sweigart, A, 2015, Automate the boring stuff with Python, No Starch press, San Francisco, pp 15.
 <br/>
 <br/>
+<br/>
 
 ## Task 2: (secondstring.py):
 
@@ -65,6 +66,9 @@ print(reverse_string)
 ### References:
 1. Real Python, 2021, String slicing, viewed 31 Jan 2021,<br/>*<https://realpython.com/python-strings/#specifying-a-stride-in-a-string-slice>*.
 
+<br/>
+<br/>
+<br/>
 
 ## Task 3: (collatz.py):
 
@@ -74,7 +78,6 @@ print(reverse_string)
  - multily by 3 and add 1 if odd
  - end the progam if current value is 1
 
-<br/>
 <br/>
 
 ### Code:
@@ -112,21 +115,21 @@ print(numberList)
 <br/>
 
 - **First While loop** is designed to validate the user input in the block of code between  *try* and *except* where:
-    - Tries to convert the input string to an integer, if this fails a *ValueError* is raised and the program asks the  user to *"Enter an integer: "* and jumps back to the start of the while loop.
-    - Assuming that point 1 above has executed sucessfully (i.e the user input can be cast as an integer) the program checks if the integer is negative, in which case  the program asks user to *"Enter a Enter a positive number: "* and jumps  back to the start of the while loop.
+    - Tries to convert the input string to an integer, if this fails a *ValueError* is raised and the program asks the <br/> user to *"Enter an integer: "* and jumps back to the start of the while loop.
+    - Assuming that point 1 above has executed sucessfully (i.e the user input can be cast as an integer) the program <br/>checks if the integer is negative, in which case  the program asks user to *"Enter a Enter a positive number: "* and jumps <br/> back to the start of the while loop.
 <br/>
 
  - **Second While loop** performs sucessive calculations on user input and resulting values until the resulting value = 1. 
-     - Checks if the remainder of the user input divided by 2 = 0 (i.e is it even), in which case the program re-defines the *numberInt* variable as itself divide by 2 and appends it to *numberList*.
-     - Checks if the remainder of the user input divided by 2 != 0 (i.e is it odd), in which case the program re-defines the *numberInt* variable as (itself divided by 3) + 1 and appends it to *numberList*.
-         - The while loop runs re-uses the newly defined *numberInt* variable until the value = 1, then the list is printed.
+     - Checks if the remainder of the user input divided by 2 = 0 (i.e is it even), in which case the program re-defines <br/>the *numberInt* variable as itself divide by 2 and appends it to *numberList*.
+     - Checks if the remainder of the user input divided by 2 != 0 (i.e is it odd), in which case the program re-defines <br/>the *numberInt* variable as (itself divided by 3) + 1 and appends it to *numberList*.
+         - The while loop runs re-uses the newly defined *numberInt* variable until the value = 1, then the list is <br/>printed.
 <br/>
 
 ### References:
 
-1. Cunningham, P, 2014, Check if input is positive integer, viewed 19 Feb 2021, *<https://stackoverflow.com/questions/26198131/check-if-input-is-positive-integer>*.
+1. Cunningham, P, 2014, Check if input is positive integer, viewed 19 Feb 2021, <br/>*<https://stackoverflow.com/questions/26198131/check-if-input-is-positive-integer>*.
 2. Real Python, 2021, 8.3 Handling exceptions, viewed 19 Feb 2021,*<https://docs.python.org/3/tutorial/errors.html>*.
-3. Programiz, 2021, What is the use of break and continue in Python?, viewed 19 Feb 2021,*<https://www.programiz.com/python-programming/break-continue>*.  
+3. Programiz, 2021, What is the use of break and continue in Python?, viewed 19 Feb 2021,<br/>*<https://www.programiz.com/python-programming/break-continue>*.  
 
 
 
