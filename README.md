@@ -159,7 +159,7 @@ for key, value in weekIndex.items():
     - The *todaysDate* variable uses the *.date.today* methods of  datetime library to obtain todays date.
     - The *dayIndex* variable uses the *.weekday* method of  datetime library to convert todays date to an index number(0 - 6).
 - The key, value pairs of dictionary *weekIndex* are iterated over until the key = *dayIndex* value.
-    - When the above condition is met, the corresponding value of the key is checked in a boolean (to see if it reads"Weekend" <br/>or "Weekday") and one of two print statements are executed.
+    - When the above condition is met, the corresponding value of the key is checked in a boolean (to see if it reads<br/>"Weekend" or "Weekday") and one of two print statements are executed.
 <br/>
 
 ### References:
