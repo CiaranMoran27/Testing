@@ -97,7 +97,7 @@ while True:
         number = input("Enter an integer: ")    
         continue                                # jump back to start of while loop
 
-while numberInt!=1:               # exits while loop when value is not 1
+while numberInt!=1:               # run while loop when value is not 1
     if numberInt % 2 == 0:             # check if number is even
         numberInt = numberInt // 2         # re-defines numberInt variable as itself divide by 2
     else:
