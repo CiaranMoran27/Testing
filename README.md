@@ -156,11 +156,17 @@ for key, value in weekIndex.items():
 
 ### Code breakdown:
 - The datetime module is imported
+
+<br/>
+
 - Dictionary named weekIndex is declared:
     - Keys are set to 0-6 which represent the index of the days of the week (i.e index 0 = Monday, index 6 = Sunday).
     - Values distunguish between weekdays or weekend.
     - The *todaysDate* variable uses the *.date.today* methods of  datetime library to obtain todays date.
     - The *dayIndex* variable uses the *.weekday* method of  datetime library to convert todays date to an index <br/>number(0 - 6).
+    
+<br/>
+
 - The key, value pairs of dictionary *weekIndex* are iterated over until the key = *dayIndex* value.
     - When the above condition is met, the corresponding value of the key is checked in a boolean (to see if it reads <br/>"Weekend" or "Weekday") and one of two print statements are executed.
 
