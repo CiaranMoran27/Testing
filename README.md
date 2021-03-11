@@ -165,8 +165,7 @@ for key, value in weekIndex.items():
 
 ### References:
 1. Sweigart, A, 2015, Automate the boring stuff with Python, Dictionaries and structuring data, No Starch press,<br/> San Francisco, pp 120.
-2. Docs.python.org, 2021, Datetime — Basic date and time types — Python 3.9.2 Documentation, viewed 20 Feb 2021,<br/>
-*<https://docs.python.org/3/library/datetime.html#datetime.datetime.weekday>*.
+2. Docs.python.org, 2021, Datetime — Basic date and time types — Python 3.9.2 Documentation, viewed 20 Feb 2021,*<https://docs.python.org/3/library/datetime.html#datetime.datetime.weekday>*.
 
 <br/>
 
