@@ -104,6 +104,7 @@ print(numberList)
 ### Code breakdown:
 - User is asked for a positive integer.
   <br/>
+  <br/>
 - **First While loop** is designed to validate the user input in the block of code between  *try* and *except* where:
     - Tries to convert the input string to an integer, if this fails a *ValueError* is raised and the program asks the <br/> user to *"Enter an integer: "* and jumps back to the start of the while loop.
     - Assuming that point 1 above has executed sucessfully (i.e the user input can be cast as an integer) the program <br/>checks if the integer is negative, in which case  the program asks user to *"Enter a Enter a positive number: "* and jumps <br/> back to the start of the while loop.
