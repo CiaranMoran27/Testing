@@ -112,7 +112,7 @@ print(numberList)
  - **Second While loop** performs sucessive calculations on user input and resulting values until the resulting <br/>value=1. 
      - Checks if the remainder of the user input divided by 2 = 0 (i.e is it even), in which case the program <br/>re-defines the *numberInt* variable as itself divide by 2 and appends it to *numberList*.
      - Checks if the remainder of the user input divided by 2 != 0 (i.e is it odd), in which case the program<br/>re-defines the *numberInt* variable as (itself divided by 3) + 1 and appends it to *numberList*.
-         - The while loop runs re-uses the newly defined *numberInt* variable until the value = 1, then the list is <br/>printed.
+     - Note: The while loop runs re-uses the newly defined *numberInt* variable until the value = 1, then the list is <br/>printed.
 
 <br/>
 
