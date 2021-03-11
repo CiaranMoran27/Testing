@@ -109,9 +109,9 @@ print(numberList)
     - Tries to convert the input string to an integer, if this fails a *ValueError* is raised and the program asks the <br/> user to *"Enter an integer: "* and jumps back to the start of the while loop.
     - Assuming that point 1 above has executed sucessfully (i.e the user input can be cast as an integer) the program checks if the integer is negative, in which case  the program asks user to *"Enter a Enter a positive number: "* and jumps back to the start of the while loop.
   <br/>
- - **Second While loop** performs sucessive calculations on user input and resulting values until the resulting value=1. 
-     - Checks if the remainder of the user input divided by 2 = 0 (i.e is it even), in which case the program re-defines <br/>the *numberInt* variable as itself divide by 2 and appends it to *numberList*.
-     - Checks if the remainder of the user input divided by 2 != 0 (i.e is it odd), in which case the program re-defines <br/>the *numberInt* variable as (itself divided by 3) + 1 and appends it to *numberList*.
+ - **Second While loop** performs sucessive calculations on user input and resulting values until the resulting <br/>value=1. 
+     - Checks if the remainder of the user input divided by 2 = 0 (i.e is it even), in which case the program <br/>re-defines the *numberInt* variable as itself divide by 2 and appends it to *numberList*.
+     - Checks if the remainder of the user input divided by 2 != 0 (i.e is it odd), in which case the program<br/>re-defines the *numberInt* variable as (itself divided by 3) + 1 and appends it to *numberList*.
          - The while loop runs re-uses the newly defined *numberInt* variable until the value = 1, then the list is <br/>printed.
 
 <br/>
