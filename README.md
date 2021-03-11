@@ -221,9 +221,9 @@ userValidation()
 - User is asked for a positive integer.
     <br/>
 
-- **User Validation function** is designed to validate the user input in the block of code between  *try* and *except* where:
+- **User Validation function** is designed to validate the user input in the block of code between  *try* and *except* <br/> where:
     1. Tries to convert the input string to a float, if this fails a *ValueError* is raised and the program asks the <br/> user to enter a positive numberand jumps back to the start of the while loop.
-    2. Assuming that point 1 above has executed sucessfully (i.e the user input can be cast as a float) the program <br/>checks if the float is negative, in which case  the program asks user to enter a positive number and jumps  back to the <br/>start of the while loop.
+    2. Assuming that point 1 above has executed sucessfully (i.e the user input can be cast as a float) the <br/>program checks if the float is negative, in which case  the program asks user to enter a positive number and jumps <br/> back to the start of the while loop.
     3. Condintinal that the user input meets the preceeding criteria, the input is passed into the *sqrt* function.
    <br/>
 
