@@ -288,9 +288,6 @@ eCharacterCount(data)
 
 - **eCharacterCount** uses the .count method on the *data* argument that is passed further down the code. It is passed into the function to output print statement on the number of uppercase / lowercase / total e characters in the file of interest.
 
-- **data** variable is declared as the *readFile* function call with *filename* variable passed into it. The **data** variable is then passed into the **eCharacterCount**  function.
-
-
 
 ### References:
 
