@@ -34,6 +34,6 @@ print(numberList)
 
         
 # References: 
-# 1. Real Python, 2021, 8.3 Handling exceptions, viewed 19 Feb 2021,<https://docs.python.org/3/tutorial/errors.html>.
+# 1. Real Python, 2021, The try and except Block: Handling Exceptions, viewed 19 Feb 2021,*<https://realpython.com/python-exceptions/>*.
 # 2. Cunningham, P, 2014, Check if input is positive integer, viewed 19 Feb 2021, <https://stackoverflow.com/questions/26198131/check-if-input-is-positive-integer>.
 # 3. Programiz, 2021, What is the use of break and continue in Python?, viewed 19 Feb 2021,<https://www.programiz.com/python-programming/break-continue>.  
