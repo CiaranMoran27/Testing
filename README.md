@@ -284,11 +284,11 @@ eCharacterCount(data)
     - Through interacting with the python interpreter the sys module uses the .argv method to enables a list of command line arguements to be passed to the the specified .py file. The filename is passed as the first arguement and the second argument that is passed in this case is stored in the *filename* variable in es.py.
     
 - **readFile Function** reads in the *filename* variable as the alias *f*.
-    - The alias *f* is read and stored in the variable named *data* and this variable is returned for a furure call.
+    - The alias *f* of the filename is read and stored in the variable named *data* and this variable is returned for a future call. The use of **with* before reading the file ensures the file doesnt have to be closed.
 
 - **eCharacterCount** uses the .count method on the *data* argument that is passed further down the code. It is passed into the function to output print statement on the number of uppercase / lowercase / total e characters in the file of interest.
 
-- **data** variable is declared as the *filename* variable  passed into *readFile* function call. The **data** variable is then passed into the **eCharacterCount**  function
+- **data** variable is declared as the *readFile* function call with *filename* variable passed into it. The **data** variable is then passed into the **eCharacterCount**  function.
 
 
 
