@@ -252,63 +252,59 @@ userValidation()
 ``` Python
 
 import os
+import sys
 
-os.chdir(os.path.dirname(__file__))     
+filename = sys.argv[1]                             # accept the 2nd arguement from the command line
 
-def userInput():
-    choice = input("Enter text file name for uppercase/lowercase 'e' character count: ").strip()
-    return choice
+def readFile(filename):
+    with open(filename,'r') as f:                     # open file in read only mode, use of alias means no need to close file
+        data = f.read()                                  # call the read function on the alias
+        return data
+        
 
-
-def readFile(choice):
-    while True:
-        try:
-
-            with open(choice,'r') as f:           
-                data = (f.read())                   
-                return data
-
-        except IOError:                        
-            print("This file does not exist")
-            choice =userInput()                   
-            continue                              
 
 def eCharacterCount(data):
-    e_List = []
-    E_List = [] 
+    eCount = data.count("e")                       # use of .count method to count occurances of a character in a file               
+    ECount = data.count("E")
+    eTotal = eCount + ECount
 
-    for line in data:
-        for character in line:
-            if character == 'e':
-                e_List.append(character)
-            elif character == 'E':
-                E_List.append(character)
+    print("There are {} lowercase 'e' characters in this text file".format(eCount))
+    print("There are {} uppercase 'E' characters in this text file".format(ECount))    
+    print("There are {} total 'e' characters in this text file (case independant)".format(eTotal))
 
-    print("There are {} lowercase 'e' characters in this text file".format(len(e_List)))
-    print("There are {} uppercase 'E' characters in this text file".format(len(E_List)))
-
-
-choice = userInput()                             
-data = readFile(choice)
+    
+data = readFile(filename)
 eCharacterCount(data)
- 
 
 ```
 
 ### Code breakdown:
 # TO BE DONE
 
+- **Filename variable employes the .argv method of the sys module**
+    - Through interacting with the python interpreter the sys module uses the .argv method to enables a list of command line arguements to be passed to the the specified .py file. The first argument passed is the file name and the second argument in this case is passed stored in the *filename* variable in es.py.
+    
+- **readFile Function** reads in the *filename* variable as the alias *f*.
+    - The alias *f* is read and stored in the variable named *data* and the this variable is returned for a furure call.
+
+- **eCharacterCount** uses the .count method on the *data* argument that is passed further down the code. It is passed into the function to output print statement on the number of uppercase / lowercase / total e characters in the file of interest.
+
+- **data** variable is declared as the *filename* variable  passed into *readFile* function call. The **data** variable is then passed into the **eCharacterCount**  function
+
+
+
 ### References:
-1. Docs.python.org, 2021, 7.2. Reading and Writing Files — Python 3.9.2 Documentation, viewed 05 March 2021,<br/> 
-*<https://docs.python.org/3/tutorial/inputoutput.html>*.
-2. GeeksforGeeks, 2019, With statement in Python, viewed 05 March 2021,<br/>
-*<https://www.geeksforgeeks.orgwith-statement-in-python>*.
-3. Gutenberg.org, 2000, Moby Dick, viewed 05 March 2021,*<https://www.gutenberg.org/files/2701/old/moby10b.txt>*
+
+1. Docs.python.org, 2021, 7.2. Reading and Writing Files — Python 3.9.2 Documentation, viewed 05 March 2021, <br/>*<https://docs.python.org/3/tutorial/inputoutput.html>*
+2. . Docs.python.org, 2021, sys — System-specific parameters and functions, viewed 12 Mar 2021,*<https://docs.python.org/3/library/sys.html>*.
+3. GeeksforGeeks, 2019, How to use sys.argv in Python, viewed 12 March 2021, <br/>*<https://www.geeksforgeeks.org/how-to-use-sys-argv-in-python/>*
+4. GeeksforGeeks, 2019, With statement in Python, viewed 05 March 2021, <br/>*<https://www.geeksforgeeks.org/with-statement-in-python>*
+5. Gutenberg.org, 2000, Moby Dick, viewed 05 March 2021, <br/>*<https://www.gutenberg.org/files/2701/old/moby10b.txt>*
+6. Zíka, H, 2018, Counting specific characters in a file (Python), viewed 12 Mar 2021, <br/>*<https://stackoverflow.com/questions/48885930/counting-specific-characters-in-a-file-python>*
 
 
 <br/>
 <br/>
-
 
 
 ## Task 7: (plottask.py):
