@@ -279,7 +279,6 @@ eCharacterCount(data)
 ```
 
 ### Code breakdown:
-# TO BE DONE
 
 - **Filename variable employes the .argv method of the sys module**
     - Through interacting with the python interpreter the sys module uses the .argv method to enables a list of command line arguements to be passed to the the specified .py file. The first argument passed is the file name and the second argument in this case is passed stored in the *filename* variable in es.py.
