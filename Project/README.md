@@ -10,11 +10,7 @@
 <H1 align="center"> Higher Diploma in Data Analytics  </H1>
 <br/>
 
-![alt text](/src/of/image.jpg "title")
 
-<div class="background-image">
-  
-</div>
 
 
 # Table Of Contents 
