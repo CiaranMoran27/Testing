@@ -1,5 +1,5 @@
 
-![GMIT Logo](/img/GMITLOGO.jpg)
+![GMIT Logo](GMIT_logo.jpg)
 
 <H1 align="center"> GMIT Project 2021 </H1>
 <H1 align="center"> Programming and Scripting </H1>
@@ -12,7 +12,7 @@
 ## Investigation
 ## Discussion
 ## Summary
-## References
+## Reference
 
 <br/>
 
