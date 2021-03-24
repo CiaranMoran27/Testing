@@ -7,7 +7,9 @@
 </p>
 
 
-
+<div>
+<img src="MIT_logo.jpg/1280/650/">
+</div>
 
 <H1 align="center"> GMIT Project 2021 </H1>
 <H1 align="center"> Programming and Scripting </H1>
