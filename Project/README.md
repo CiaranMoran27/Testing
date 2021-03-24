@@ -30,17 +30,17 @@
 ### 1. Project Title 
 
 ### 2. Introduction 
-&emsp 2.1 Statement of Work 
-&emsp 2.2 Technology Used 
+&emsp; 2.1 Statement of Work<br>
+&emsp; 2.2 Technology Used<br>
 ### 3. Background 
-&emsp 3.1 The iris Data Set 
-&emsp 3.2 Getting Started  
+&emsp; 3.1 The iris Data Set<br>
+&emsp; 3.2 Getting Started<br>
 ### 4. Investigation
-&emsp 4.1 Exploring the data
-&emsp 4.2 Visualising the data
-### 5. Discussion <br>
-### 6. Summary <br>
-### 7. Reference <br>
+&emsp; 4.1 Exploring the data<br>
+&emsp; 4.2 Visualising the data<br> 
+### 5. Discussion 
+### 6. Summary 
+### 7. Reference 
 
 
 <br>
