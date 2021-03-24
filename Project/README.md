@@ -12,15 +12,23 @@
 
 <br/>
 <br/>
+<br/>
+<br/>
+
+<div style="float: right">
+    ![Replace this with your image](./JPEGs/iris_pic1/85x85 "Title")
+</div>
+
+
 
 ## Table Of Contents 
 ### 1. Project Title 
 ### 2. Introduction 
 &emsp; 2.1 Background <br>
 &emsp; 2.2 Objectives <br>
-&emsp; 2.3 Getting Started <br>
+&emsp; 2.3 Getting Started <br>          
 ### 4. Investigation
-&emsp; 4.1 Exploring the data <br>
+&emsp; 4.1 Exploring the data <br> 
 &emsp; 4.2 Visualising the data <br>
 ### 5. Discussion 
 ### 6. Summary 
