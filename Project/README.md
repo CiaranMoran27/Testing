@@ -7,7 +7,6 @@
 
 <H1 align="center"> GMIT, H.Dip in Data Analytics  </H1>
 <H1 align="center"> Progamming and Scripting Project 2021 </H1>
-<H1 align="center"> Progamming and Scripting Project 2021 </H1>
 <br/>
 
 
