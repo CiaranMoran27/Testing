@@ -1,9 +1,9 @@
 
 
-![GMIT Logo](GMIT_logo.jpg)
+
 
 <p align="center">
-  <img src="GMIT_logo.jpg" />
+  <img src="GMIT_logo.jpg/1280/650" />
 </p>
 
 
