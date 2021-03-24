@@ -4,8 +4,9 @@
   <img src="./JPEGs/GMIT_logo.jpg" width="500" />
 </p>
 
-
-<H1 align="center"> GMIT, H.Dip in Data Analytics  </H1>
+#
+<H1 align="center"> The Fisher’s Iris Data Set  </H1>
+<H1 align="center"> Higher Diploma in Data Analytics  </H1>
 <H1 align="center"> Progamming and Scripting Project 2021 </H1>
 <br/>
 
