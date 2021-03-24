@@ -7,7 +7,6 @@
 #
 <H1 align="center"> The Fisher’s Iris Data Set  </H1>
 <H1 align="center"> Higher Diploma in Data Analytics  </H1>
-<H1 align="center"> Progamming and Scripting Project 2021 </H1>
 <br/>
 
 
