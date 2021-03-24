@@ -15,14 +15,14 @@
 <br/>
 
 
-# Table Of Contents 
-## Project Title
-## Introduction
-## Background 
-## Investigation
-## Discussion
-## Summary
-## Reference
+## Table Of Contents 
+### Project Title
+### Introduction
+### Background 
+### Investigation
+### Discussion
+### Summary
+### Reference
 
 <br/>
 
