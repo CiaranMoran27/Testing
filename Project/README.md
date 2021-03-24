@@ -2,10 +2,13 @@
 <div class='container'>
     <a href='#'>
     <img class='resize_fit_center'
-      src='GMIT_logo.jpg' />
+      src='GMIT_logo.jpg'
+      width='1280
+      height= 650' />
     </a>
 </div>
 
+<img src="url" alt="alt text" width="whatever" height="whatever">
 
 <p align="center">
   <img src="GMIT_logo.jpg/1280/650" />
