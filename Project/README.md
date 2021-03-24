@@ -1,7 +1,7 @@
-
+<br/>
 
 <p align="center">
-  <img src="./JPEGs/GMIT_logo.jpg" width="450" />
+  <img src="./JPEGs/GMIT_logo.jpg" width="500" />
 </p>
 
 
@@ -11,7 +11,7 @@
 
 
 
-# ** Table Of Contents** 
+# Table Of Contents 
 ## Project Title
 ## Introduction
 ## Background 
