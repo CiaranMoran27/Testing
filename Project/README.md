@@ -1,5 +1,10 @@
 
-
+<div class='container'>
+    <a href='#'>
+    <img class='resize_fit_center'
+      src='GMIT_logo.jpg' />
+    </a>
+</div>
 
 
 <p align="center">
