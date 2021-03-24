@@ -1,7 +1,13 @@
 
-</div>
+
 ![GMIT Logo](GMIT_logo.jpg)
-</div>
+
+<p align="center">
+  <img src="GMIT_logo.jpg" />
+</p>
+
+
+
 
 <H1 align="center"> GMIT Project 2021 </H1>
 <H1 align="center"> Programming and Scripting </H1>
