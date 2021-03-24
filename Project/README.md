@@ -1,7 +1,7 @@
 <br/>
 
 <p align="center">
-  <img src="./JPEGs/GMIT_logo.jpg" width="500" />
+  <img src="./JPEGs/GMIT_logo.jpg" width="400" />
 </p>
 
 #
