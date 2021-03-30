@@ -66,7 +66,8 @@ Dataset Attributes:
 | Tables   |
 |----------|
 | col 1 is |
-| col 3 is |
+| <img src="JPEGs/iris_species.jpg"  width="800"/>|
+
 
 alt="centered image"
 alt="centered image"
