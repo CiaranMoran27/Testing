@@ -36,11 +36,7 @@
 &emsp; **1.1.1 Describing the Data Set**
 
 The iris dataset is widely recognised in the field of data analytics as being a relatively small dataset of which non-trivial deductions can be made. The dataset is comprised of 150 observations (rows of data) and 5 attributes (columns of data). The attributes contain data on the iris petal / sepal dimensions across three even species samples (50 rows each)[1]. 
-In summary, each row of data pertains to a single observation across the four listed anatomical dimensional attributes for a given species of iris. (see fig1. for attributes[2]). 
-
-**Dataset Attributes:**
-| 1. Sepal length in cm |2. Sepal width in cm |3. Petal length in cm |4. Petal width in cm|5. Species (see Fig 1.)|
-
+In summary, each row of data pertains to a single observation across the four listed anatomical dimensional attributes for a given species of iris.
 
 **Dataset Attributes:**
  - Sepal length in cm
@@ -48,10 +44,6 @@ In summary, each row of data pertains to a single observation across the four li
  - Petal length in cm
  - Petal width in cm
  - Species (see Fig 1.)
-
-
-
-
 
 <br/>
 
