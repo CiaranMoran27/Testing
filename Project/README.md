@@ -63,6 +63,11 @@ Dataset Attributes:
 | col 2 is |    centered   |   $12 |
 | col 3 is | right-aligned |    $1 |
 
+| Tables   |
+|----------|
+| col 1 is |
+| col 3 is |
+
 alt="centered image"
 alt="centered image"
 
