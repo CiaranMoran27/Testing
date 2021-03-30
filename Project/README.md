@@ -38,23 +38,26 @@
 The iris dataset is widely recognised in the field of data analytics as being a relatively small dataset of which non-trivial deductions can be made. The dataset is comprised of 150 observations (rows of data) and 5 attributes (columns of data). The attributes contain data on the iris petal / sepal dimensions across three even species samples (50 rows each)[1]. 
 In summary, each row of data pertains to a single observation across the four listed anatomical dimensional attributes for a given species of iris. (see fig1. for attributes[2]). 
 
-Dataset Attributes:
-1. sepal length in cm
-2. sepal width in cm
-3. petal length in cm
-4. petal width in cm
-5. Species (see Fig 1.)
+**Dataset Attributes:**
+| 1. Sepal length in cm |2. Sepal width in cm |3. Petal length in cm |4. Petal width in cm|5. Species (see Fig 1.)|
+
+
+**Dataset Attributes:**
+ - Sepal length in cm
+ - Sepal width in cm
+ - Petal length in cm
+ - Petal width in cm
+ - Species (see Fig 1.)
+
+
+
+
 
 <br/>
 
-<p align="center">
-  <img src="./JPEGs/iris_species.jpg" width="500" />
-</p>  
-
-
 | <img src="JPEGs/iris_species.jpg"  width="600"/>|
 |----------|
-| col 1 is |
+| Fig 1. Iris Species [X]|
 
 <br/>
 
@@ -68,10 +71,7 @@ Ronald Fisher was an accomplished statistician and geneticist, born in 1890 in L
 
 | <img src="JPEGs/Ronald_Fisher.jpg"  width="400"/>|
 |----------|
-| Fig.X   Ronald Fisher  [x]|
-
-
-
+| Fig 2. Ronald Fisher [X]|
 
 
 <br/>
