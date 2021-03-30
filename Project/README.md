@@ -58,7 +58,7 @@ Ronald Fisher was an accomplished statistician and geneticist, born in 1890 in L
 
 | Ronald Fisher(Fig. 3  [x])|
 | ------------- |
-|  ![iris_species](./JPEGs/Ronald_Fisher.jpg/200/300?style=centerme)|
+|  ![iris_species](./JPEGs/Ronald_Fisher.jpg=100x20)|
 
 
 
