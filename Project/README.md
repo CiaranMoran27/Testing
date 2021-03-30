@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="./JPEGs/GMIT_logo.jpg" width="500" />
-</p>  <Source: https://image.ibb.co/gw4Gen/Index_GMIT.png>
+</p>  
 
 <br/>
 <br/>
@@ -32,12 +32,24 @@
 <br/>
 
 
+  
 
-aa|bb|cc
---|--|--
-ee|ff|gg 
+
+| Dataset Attributes  | Species Type |
+| ------------- | ------------- |
+| 1. sepal length in cm | ![iris_species](/JPEGs/Ronald_Fisher.jpg) |
+| 2. sepal width in cm | 
+| 3. petal length in cm | 
+| 4. petal width in cm |
+| 5. Species (see Fig 1.) |
+ 
 
 # markdown-pdf example.md
+1. sepal length in cm
+2. sepal width in cm
+3. petal length in cm
+4. petal width in cm
+5. Species (see Fig 1.)
 
 
 
