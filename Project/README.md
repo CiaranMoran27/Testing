@@ -63,10 +63,10 @@ Dataset Attributes:
 | col 2 is |    centered   |   $12 |
 | col 3 is | right-aligned |    $1 |
 
-| Tables   |
+| <img src="JPEGs/iris_species.jpg"  width="800"/>|
 |----------|
 | col 1 is |
-| <img src="JPEGs/iris_species.jpg"  width="800"/>|
+
 
 
 alt="centered image"
