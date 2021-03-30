@@ -47,7 +47,9 @@ Dataset Attributes:
 
 
 
-| <img src="JPEGs/iris_species.jpg" alt="centered image" width="200"/>|
+| <img src="JPEGs/iris_species.jpg" alt="centered image" width="800"/>|
+| Fig.X   Iris Species  [x]|
+
 |  ![iris_species](./JPEGs/iris_species.jpg)|
 
 
@@ -61,7 +63,7 @@ Ronald Fisher was an accomplished statistician and geneticist, born in 1890 in L
 
 
 | <img src="JPEGs/Ronald_Fisher.jpg" alt="centered image" width="400"/>|
-| Ronald Fisher(Fig. 3  [x])|
+| Fig.X   Ronald Fisher  [x]|
 
 
 
