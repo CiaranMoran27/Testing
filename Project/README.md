@@ -31,17 +31,20 @@
 <br/>
 <br/>
 
-
-
-
-| Dataset Attributes  | Species Type |
-| ------------- | ------------- |
-| 1. sepal length in cm | ![iris_species](./JPEGs/GMIT_logo.jpg) |
+| Dataset Attributes  |
+| ------------- |
+| 1. sepal length in cm | 
 | 2. sepal width in cm | 
 | 3. petal length in cm | 
 | 4. petal width in cm |
 | 5. Species (see Fig 1.) |
- 
+
+| Species Types |
+| ------------- |
+| ![iris_species](./JPEGs/Ronald_Fisher.jpg)|
+
+
+
 
 # markdown-pdf example.md
 1. sepal length in cm
