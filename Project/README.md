@@ -32,12 +32,11 @@
 <br/>
 
 
-  ![iris_species](/JPEGs/Ronald_Fisher.jpg)
 
 
 | Dataset Attributes  | Species Type |
 | ------------- | ------------- |
-| 1. sepal length in cm | ![iris_species](/JPEGs/Ronald_Fisher.jpg) |
+| 1. sepal length in cm | ![iris_species](./JPEGs/GMIT_logo.jpg) |
 | 2. sepal width in cm | 
 | 3. petal length in cm | 
 | 4. petal width in cm |
