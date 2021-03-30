@@ -33,7 +33,7 @@
 
 ### 1. Introduction 
 #### 1.1 Background
-##### 1.1.1 Describing the Data Set
+&emsp; **1.1.1 Describing the Data Set**
 
 The iris dataset is widely recognised in the field of data analytics as being a relatively small dataset of which non-trivial deductions can be made. The dataset is comprised of 150 observations (rows of data) and 5 attributes (columns of data). The attributes contain data on the iris petal / sepal dimensions across three even species samples (50 rows each)[1]. 
 In summary, each row of data pertains to a single observation across the four listed anatomical dimensional attributes for a given species of iris. (see fig1. for attributes[2]). 
@@ -50,7 +50,7 @@ Dataset Attributes:
 |  ![iris_species](./JPEGs/iris_species.jpg)|
 
 
-##### 1.1.2 History of the Iris Data Set
+&emsp; **1.1.2 History of the Iris Data Set**
 
 The iris data set observations were collected at the Gaspé Peninsula by a botanist named Edgar Anderson [5]. Born in 1897 in New York, he made many contributions to botanical genetics. He worked alongside a successful scientist named Ronald Fisher, who would explore the dataset using statistical techniques that are widely today.<br/>
 <br/>
@@ -58,7 +58,7 @@ Ronald Fisher was an accomplished statistician and geneticist, born in 1890 in L
 
 | Ronald Fisher(Fig. 3  [x])|
 | ------------- |
-|  ![iris_species](./JPEGs/Ronald_Fisher.jpg)|
+|  ![iris_species](./JPEGs/Ronald_Fisher.jpg/200/300?style=centerme)|
 
 
 
