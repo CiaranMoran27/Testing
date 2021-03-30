@@ -47,6 +47,11 @@ Dataset Attributes:
 
 <br/>
 
+<p align="center">
+  <img src="./JPEGs/iris_species.jpg" width="500" />
+</p>  
+
+
 | <img src="JPEGs/iris_species.jpg"  width="600"/>|
 |----------|
 | col 1 is |
