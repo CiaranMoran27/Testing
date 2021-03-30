@@ -1,0 +1,30 @@
+species
+Iris-setosa        50
+Iris-versicolor    50
+Iris-virginica     50
+dtype: int64
+
+       species  sepal_length  sepal_width  petal_length  petal_width
+0       setosa          5.01         3.42          1.46         0.24
+1   versicolor          5.94         2.77          4.26         1.33
+2    virginica          6.59         2.97          5.55         2.03
+3  all_species          5.84         3.05          3.76         1.20
+
+       species  sepal_length  sepal_width  petal_length  petal_width
+0       setosa          0.35         0.38          0.17         0.11
+1   versicolor          0.52         0.31          0.47         0.20
+2    virginica          0.64         0.32          0.55         0.27
+3  all_species          0.83         0.43          1.76         0.76
+
+       sepal_length  sepal_width  petal_length  petal_width
+count        150.00       150.00        150.00       150.00
+mean           5.84         3.05          3.76         1.20
+std            0.83         0.43          1.76         0.76
+min            4.30         2.00          1.00         0.10
+25%            5.10         2.80          1.60         0.30
+50%            5.80         3.00          4.35         1.30
+75%            6.40         3.30          5.10         1.80
+max            7.90         4.40          6.90         2.50
+
+(150, 5)
+
