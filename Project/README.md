@@ -46,11 +46,12 @@ Dataset Attributes:
 5. Species (see Fig 1.)
 
 
-
+<center>
 | <img src="JPEGs/iris_species.jpg" alt="centered image" width="800"/>|
+|----------|
 | Fig.X   Iris Species  [x]|
+<center>
 
-|  ![iris_species](./JPEGs/iris_species.jpg)|
 
 
 
@@ -61,12 +62,11 @@ The iris data set observations were collected at the Gaspé Peninsula by a botan
 <br/>
 Ronald Fisher was an accomplished statistician and geneticist, born in 1890 in London and a pioneer in applying statistical procedures to the design of experiments [3]. According to Hald (1998, as cited in Fernandes, 2016) ,“Fisher was a genius who almost single-handedly, created the foundations for modern statistical science” [4]. In 1936, with Edgar’s consent, Fisher published a famous paper titled “the Use of Multiple Measurements in Taxonomic Problems” that explored a linear function to distinguish between iris species based on their morphology [5]. The paper shows how fisher explored classification of different species through Linear Discrimination Analysis on the multivariate data set. Based on his contributions, the iris dataset is commonly referred to as the Fisher iris data set [3].
 
-
+<center>
 | <img src="JPEGs/Ronald_Fisher.jpg" alt="centered image" width="400"/>|
+|----------|
 | Fig.X   Ronald Fisher  [x]|
-
-
-
+<center>
 
 
 
