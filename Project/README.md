@@ -20,7 +20,7 @@
 ### 2. Background
 &emsp; 2.1 Describing the Data Set <br>
 &emsp; 2.2 History of the Data Set <br>
-&emsp; 2.2 History of the Data Set <br>
+&emsp; 2.2 Linear Discriminant Analysis and Machine learning <br>
 ### 3. Investigation
 ### 4. Discussion 
 ### 5. Summary 
@@ -70,7 +70,7 @@ Ronald Fisher was an accomplished statistician and geneticist, born in 1890 in L
 <br/>
 <br/>
 
-&nbsp;**1.3 Exploring what model to use**<br/>
+&nbsp;**2.3 Linear Discriminant Analysis and Machine learning**<br/>
 
 Today LDA is a generalization of Fishers Linear discriminant, labelled as a supervised classification method that has the potential to separate two or more classes [9] (species in the case of Iris data set). As detailed by Gonzalez (2018), the separation algorithm works by a reduction technique where the data is projected onto a lower-dimensional space, while retaining the class-discriminatory information. Although this reduction technique allows for linear classification it is important to note that the model does have two underlying assumptions which are described by Brownlee (2016):<br/>
 1.	The data distribution is Gaussian, i.e is shaped like a bell curve.
@@ -78,7 +78,15 @@ Today LDA is a generalization of Fishers Linear discriminant, labelled as a supe
 
 This model’s first assumption can be successfully applied to many data sets as Gaussian distributions appear regularly in the real-world data. This was explained well by Sharma (2019) where he described how larger data sets with finite variances and independent feature probabilities will have a data distribution that favours the bell curve shape [7]. When considering the second assumption it its important to note that covariance indicates the direction of the linear relationship between variables [8] and is used as a measure of how two random variables vary together. If one assumes that each species in the Iris data set has the same covariance matrix they assume that the linear correlation between randomly selected variables in a given species is that same for the same variables in all other species. <br/>
 
-It is important to understand the implications of choosing a particular model and the potential for inaccurate results if the model assumptions are not representative of the data set. Today the advances in Machine Learning provides us an opportunity to test and adapt multiple data analysis models to our needs. As described by Wakefield (2018), “machine learning uses programmed algorithms that receive and analyze input data to predict output values within an acceptable range. As new data is fed to these algorithms, they learn and optimize their operations to improve performance, developing intelligence over time”.<br/>
+It is important to understand the implications of choosing a particular model and the potential for inaccurate results if the model assumptions are not representative of the data set. Today the advances in Machine Learning provides us an opportunity to test and alter multiple data analysis library models to our needs. As described by Wakefield (2018), “machine learning uses programmed algorithms that receive and analyze input data to predict output values within an acceptable range. As new data is fed to these algorithms, they learn and optimize their operations to improve performance, developing intelligence over time”. <br/>
+
+Machine learning is broken into two main categories, supervised and unsupervised (Soni 2018).<br/>
+
+1.	Unsupervised learning deals with the inherent structure of the data without using labels, an example would be a clustering algorithm that can segregate datapoints into objects based on their relative distance to other datapoints. 
+2.	Supervised learning is typically used for classification problems, when one wants to map the inputs to a desired labelled output, or regression when one wants to map the input to a continuous output [y]. 
+
+This project will further explore and test supervised machine learning classification models on the Iris Dataset.
+
 
 
 
