@@ -38,7 +38,7 @@ This Repository contains all the files relevant to my 2021 Project as part of my
 The projects main aims are to achieve the following through incremental progress:
 - Research the data set online and detail findings.
 - Download the data set and add it to my repository. 
-  - Write a python program (analysis.py) that contains functions that can do the following:
+- Write a python program (analysis.py) that contains functions that can do the following:
   - Output a summary of each variable to a single text file.
   - Save a histogram of each variable to png files.
   - Save scatter plots of each pair of variables to png files.
