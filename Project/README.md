@@ -43,6 +43,8 @@ The projects main aims are to achieve the following through incremental progress
   - Save a histogram of each variable to png files.
   - Save scatter plots of each pair of variables to png files.
 
+<br/>
+<br/>
 
 ### 2. Background
 &nbsp;**2.1 Describing the Data Set**
@@ -63,6 +65,7 @@ In summary, each row of data pertains to a single observation across the four li
 |----------|
 | Fig 1. Iris Species [2]|
 
+<br/>
 <br/>
 
 &nbsp;**2.2 History of the Iris Data Set**
@@ -94,10 +97,8 @@ It is important to understand the implications of choosing a particular model an
 
 This project will further explore and test supervised machine learning classification models on the Iris Dataset.
 
-
-
-
-
+<br/>
+<br/>
 
 ### 5. Reference:
 [1]. Cui, Y 2020, The Iris dataset – a little bit of history and biology, towards data science, viewed 26 Match 2021, **<https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5>**<br/>
