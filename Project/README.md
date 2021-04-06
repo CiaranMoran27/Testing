@@ -17,6 +17,18 @@
 ## Table Of Contents 
 ### 1. Introduction
 &emsp; 1.1 Project Outline and Objectives<br> 
+
+This Repository contains all the files relevant to my 2021 Project as part of my Programming and Scripting module. The project investigates the famous Fisher Iris Data set and applies a python-based methodology to explore the data. This README file contains of Summary of my findings.
+The projects main aims are to achieve the following through incremental progress:
+- Research the data set online and detail findings.
+- Download the data set and add it to my repository. 
+  - Write a python program (analysis.py) that contains functions that can do the following:
+  - Output a summary of each variable to a single text file.
+  - Save a histogram of each variable to png files.
+  - Save scatter plots of each pair of variables to png files.
+
+
+
 ### 2. Background
 &emsp; 2.1 Describing the Data Set <br>
 &emsp; 2.2 History of the Data Set <br>
