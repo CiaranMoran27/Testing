@@ -22,6 +22,7 @@
 &emsp; 2.2 History of the Data Set <br>
 &emsp; 2.2 Linear Discriminant Analysis and Machine learning <br>
 ### 3. Investigation
+&emsp; 3.1 Getting Started <br>
 ### 4. Discussion 
 ### 5. Summary 
 ### 6. References 
@@ -99,6 +100,62 @@ This project will further explore and test supervised machine learning classific
 
 <br/>
 <br/>
+
+### 3. Investigation
+&nbsp;**3.1 Getting Started**
+
+This Section details the modules, tools, libraries and dependencies for this project.
+<br/>
+
+- Visual Studio Code 1.55.0 was the chosen source code editor.
+    - Download here (https://code.visualstudio.com/download)
+
+- Python 3.8.5 was used as the programming language for this data analysis project.
+    - Download here (https://www.python.org/downloads/)
+
+- Anacondas was downloaded for its many useful libraries included in the package.
+    - Download here (https://docs.anaconda.com/anaconda/install/)
+        - Libraries used:
+        - numpy 1.19.2
+        - pandas 1.1.3
+        - matplotlib 3.3.2
+        - seaborn 0.11.0
+
+- Analysis.py is the Python module written that contains all of the code used to generate a summary text file and output plots (PNG format) throughout this project. The module is broken down into numerous functions that will referenced throughout this investigation.
+
+- Fisher Iris Dataset: 
+    - Download here (http://archive.ics.uci.edu/ml/datasets/Iris) 
+    - Perform one of the following:
+        1.	Save Dataset as ‘’Iris_Data_Set.txt” in the same directory as the Analysis.py module, this will enable the module to read the data set.
+        2.	Alternatively clone the github repository by following instructions laid out here (https://docs.github.com/en/github/creating-cloning
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### 5. Reference:
 [1]. Cui, Y 2020, The Iris dataset – a little bit of history and biology, towards data science, viewed 26 Match 2021, **<https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5>**<br/>
