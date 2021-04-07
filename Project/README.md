@@ -105,14 +105,14 @@ This project will further explore and test supervised machine learning classific
 ### 3. Investigation
 &nbsp;**3.1 Getting Started**
 
-This Section details the modules, tools, libraries and dependencies for this project.
+This Section details the downloads, modules, tools, libraries and dependencies for this project.
 <br/>
 
 - Visual Studio Code 1.55.0 was the chosen source code editor. <br/>
-      - Download here (**<https://code.visualstudio.com/download>**)
+      - Downloaded here (**<https://code.visualstudio.com/download>**)
 
 - Python 3.8.5 was used as the programming language for this data analysis project. <br/>
-      - Download here (**<https://www.python.org/downloads/>**)
+      - Downloaded here (**<https://www.python.org/downloads/>**)
 
 - Anacondas was downloaded for its many useful libraries included in the package. <br/>
       - Download here (**<https://docs.anaconda.com/anaconda/install/>**)<br/>
@@ -122,19 +122,19 @@ This Section details the modules, tools, libraries and dependencies for this pro
             - matplotlib 3.3.2 <br/>
             - seaborn 0.11.0 <br/>
 
+- Fisher Iris Dataset:
+    - Downloaded here (**<http://archive.ics.uci.edu/ml/datasets/Iris>**) <br/>
+    - Saved as ‘’Iris_Data_Set.txt” in the same directory as Analysis.py module.
+
 - Analysis.py is the Python module written for this Project.<br/>
-    - The module contains the source code used to generate the Summary Text file and output plots.  
-    - It makes directory hierarchy assumptions relative to its location and thereforce will perform best if this repository is cloned
- (**<https://docs.github.com/en/github/creating-cloning>**). 
+      - This module:
+        - Contains the source code used to generate the Summary text file and output plots. <br/>
+        - Conists of numerous functions that will be referenced throughout this investigation. <br/>
+            - All code References will be recorded in the Analysis.py file and donted via [*1]...[*n...] etc.. <br/>
+        - Makes directory hierarchy assumptions relative to its location for its outputs as per fig X below.
+            - For easy of use clone repository here (**<https://docs.github.com/en/github/creating-cloning>**)
 
-The module is broken down into numerous functions that will be referenced throughout this investigation. All code References will be recorded in the Analysis.py file and donted via [*1]...[*n...] etc.. <br/>
 
-Fisher Iris Dataset, which can be acquired via one of the following: <br/>
-Download here (**<http://archive.ics.uci.edu/ml/datasets/Iris>**) and save as ‘’Iris_Data_Set.txt” in the same directory as 
-the Analysis.py module, this will enable the module to read the data set. <br/>
-
-Alternatively clone the github repository by following instructions previously laid out.<br/> 
-      
 
 
 
