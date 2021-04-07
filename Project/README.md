@@ -20,9 +20,10 @@
 ### 2. Background
 &emsp; 2.1 Describing the Data Set <br>
 &emsp; 2.2 History of the Data Set <br>
-&emsp; 2.2 Linear Discriminant Analysis and Machine learning <br>
+&emsp; 2.3 Linear Discriminant Analysis and Machine learning <br>
 ### 3. Investigation
 &emsp; 3.1 Getting Started <br>
+&emsp; 3.2 Exploring The Data Set <br>
 ### 4. Discussion 
 ### 5. Summary 
 ### 6. References 
@@ -130,6 +131,8 @@ This Section details the modules, tools, libraries and dependencies for this pro
 
 
 
+
+&nbsp;**3.1 Exploring The Data Set**
 
 
 
