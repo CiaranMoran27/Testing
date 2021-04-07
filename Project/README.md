@@ -108,24 +108,24 @@ This Section details the modules, tools, libraries and dependencies for this pro
 <br/>
 
 - Visual Studio Code 1.55.0 was the chosen source code editor.
-    - Download here (**<https://code.visualstudio.com/download>**)
+      - Download here (**<https://code.visualstudio.com/download>**)
 
 - Python 3.8.5 was used as the programming language for this data analysis project.
-    - Download here (**<https://www.python.org/downloads/>**)
+      - Download here (**<https://www.python.org/downloads/>**)
 
 - Anacondas was downloaded for its many useful libraries included in the package.
-    - Download here (**<https://docs.anaconda.com/anaconda/install/>**)
-        - Libraries used:
-        - numpy 1.19.2
-        - pandas 1.1.3
-        - matplotlib 3.3.2
-        - seaborn 0.11.0
+      - Download here (**<https://docs.anaconda.com/anaconda/install/>**)
+          - Libraries used:
+          - numpy 1.19.2
+          - pandas 1.1.3
+          - matplotlib 3.3.2
+          - seaborn 0.11.0
 
 - Analysis.py is the Python module written that contains all of the code used to generate a summary text file and output plots (PNG format) throughout this project. The module is broken down into numerous functions that will referenced throughout this investigation.
 
 - Fisher Iris Dataset: 
-    - Perform one of the following:
-          1. Download here (**<http://archive.ics.uci.edu/ml/datasets/Iris>**) and save as ‘’Iris_Data_Set.txt” in the same directory as the Analysis.py module, this will enable the module to read the data set.
+      - Perform one of the following:
+          1. Download here (**<http://archive.ics.uci.edu/ml/datasets/Iris>**) and save as ‘’Iris_Data_Set.txt” in the same directory as the Analysis.py module, this will enable the module to read the data set. <br/>
           2. Alternatively clone the github repository by following instructions laid out here:<br/>
 (**<https://docs.github.com/en/github/creating-cloning>**)
 
