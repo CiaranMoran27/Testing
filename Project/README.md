@@ -121,7 +121,7 @@ This Section details the modules, tools, libraries and dependencies for this pro
           - matplotlib 3.3.2 <br/>
           - seaborn 0.11.0 <br/>
 
-- Analysis.py is the Python module written that contains all of the code used to generate a summary text file and output plots (PNG format) throughout this project. The module is broken down into numerous functions that will referenced throughout this investigation.
+- Analysis.py is the Python module written for this Project. It contains all of the code used to generate the summary text file and .PNG output plots that were discusssed in the Introduction. The module is broken down into numerous functions that will be referenced throughout this investigation.
 
 - Fisher Iris Dataset, which can be acquired via one of the following: <br/>
       1. Download here (**<http://archive.ics.uci.edu/ml/datasets/Iris>**) and save as ‘’Iris_Data_Set.txt” in the same directory as the Analysis.py module, this will enable the module to read the data set. <br/>
