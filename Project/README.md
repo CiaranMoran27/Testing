@@ -122,8 +122,6 @@ This Section details the modules, tools, libraries and dependencies for this pro
             - matplotlib 3.3.2 <br/>
             - seaborn 0.11.0 <br/>
 
-            Directory Hierarchy
-
 - Analysis.py is the Python module written for this Project. 
       - The module contains the source code used to generate the Summary Text file and output plots, however it does make some <br/> directory hierarchy assumptions relative to its location and thereforce would perform best if this repository is cloned, see here (**<https://docs.github.com/en/github/creating-cloning>**). <br/> 
       - The module is broken down into numerous functions that will be referenced throughout this investigation. All code References  will be record in the Analysis.py file and donted via [*1]...[*n...] etc.. <br/>
