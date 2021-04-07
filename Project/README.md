@@ -114,7 +114,7 @@ This Section details the modules, tools, libraries and dependencies for this pro
       - Download here (**<https://www.python.org/downloads/>**)
 
 - Anacondas was downloaded for its many useful libraries included in the package. <br/>
-      - Download here (**<https://docs.anaconda.com/anaconda/install/>**)
+      - Download here (**<https://docs.anaconda.com/anaconda/install/>**)<br/>
           - Libraries used: <br/>
           - numpy 1.19.2 <br/>
           - pandas 1.1.3 <br/>
