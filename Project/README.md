@@ -109,21 +109,21 @@ This Section details the downloads, modules, tools, libraries and dependencies f
 <br/>
 
 - Visual Studio Code 1.55.0 was the chosen source code editor. <br/>
-  - Downloaded here (**<https://code.visualstudio.com/download>**)
+  - Downloaded here (**<https://code.visualstudio.com/download>**).
 
 - Python 3.8.5 was used as the programming language for this data analysis project. <br/>
-  - Downloaded here (**<https://www.python.org/downloads/>**)
+  - Downloaded here (**<https://www.python.org/downloads/>**).
 
 - Anacondas was downloaded for its many useful libraries included in the package. <br/>
-  - Download here (**<https://docs.anaconda.com/anaconda/install/>**)<br/>
-    - Main libraries used: <br/>
+  - Download here (**<https://docs.anaconda.com/anaconda/install/>**).<br/>
+    Main libraries used: <br/>
     - numpy 1.19.2 <br/>
     - pandas 1.1.3 <br/>
     - matplotlib 3.3.2 <br/>
     - seaborn 0.11.0 <br/>
 
 - Fisher Iris Dataset:
-  - Downloaded here (**<http://archive.ics.uci.edu/ml/datasets/Iris>**) <br/>
+  - Downloaded here (**<http://archive.ics.uci.edu/ml/datasets/Iris>**). <br/>
   - Saved as ‘’Iris_Data_Set.txt” in the same directory as Analysis.py module. <br/>
 
 - Analysis.py<br/>
@@ -131,7 +131,7 @@ This Section details the downloads, modules, tools, libraries and dependencies f
   - Conists of numerous functions that will be referenced throughout this investigation. <br/>
   - All code References will be recorded in the Analysis.py file and donted via [*1]...[*n...] etc.. <br/>
   - Makes directory hierarchy assumptions relative to its location for its outputs as per fig X below. <br/>
-  - Note: For easy of use clone repository here (**<https://docs.github.com/en/github/creating-cloning>**)
+  - Note: For easy of use clone repository here (**<https://docs.github.com/en/github/creating-cloning>**).
 
 
 
