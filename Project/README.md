@@ -123,16 +123,16 @@ This Section details the downloads, modules, tools, libraries and dependencies f
             - seaborn 0.11.0 <br/>
 
 - Fisher Iris Dataset:
-    - Downloaded here (**<http://archive.ics.uci.edu/ml/datasets/Iris>**) <br/>
-    - Saved as ‘’Iris_Data_Set.txt” in the same directory as Analysis.py module.
+      - Downloaded here (**<http://archive.ics.uci.edu/ml/datasets/Iris>**) <br/>
+      - Saved as ‘’Iris_Data_Set.txt” in the same directory as Analysis.py module.
 
 - Analysis.py is the Python module written for this Project.<br/>
-      - This module:
-        - Contains the source code used to generate the Summary text file and output plots. <br/>
-        - Conists of numerous functions that will be referenced throughout this investigation. <br/>
-            - All code References will be recorded in the Analysis.py file and donted via [*1]...[*n...] etc.. <br/>
-        - Makes directory hierarchy assumptions relative to its location for its outputs as per fig X below.
-            - For easy of use clone repository here (**<https://docs.github.com/en/github/creating-cloning>**)
+      - This module: <br/>
+          - Contains the source code used to generate the Summary text file and output plots. <br/>
+          - Conists of numerous functions that will be referenced throughout this investigation. <br/>
+              - All code References will be recorded in the Analysis.py file and donted via [*1]...[*n...] etc.. <br/>
+          - Makes directory hierarchy assumptions relative to its location for its outputs as per fig X below. <br/>
+              - For easy of use clone repository here (**<https://docs.github.com/en/github/creating-cloning>**)
 
 
 
