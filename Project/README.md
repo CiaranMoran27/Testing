@@ -115,11 +115,11 @@ This Section details the modules, tools, libraries and dependencies for this pro
 
 - Anacondas was downloaded for its many useful libraries included in the package. <br/>
       - Download here (**<https://docs.anaconda.com/anaconda/install/>**)<br/>
-          - Libraries used: <br/>
-            - numpy 1.19.2 <br/>
-            - pandas 1.1.3 <br/>
-            - matplotlib 3.3.2 <br/>
-            - seaborn 0.11.0 <br/>
+          - Main Libraries used: <br/>
+          1. numpy 1.19.2 <br/>
+          2. pandas 1.1.3 <br/>
+          3. matplotlib 3.3.2 <br/>
+          4. seaborn 0.11.0 <br/>
 
 - Analysis.py is the Python module written for this Project. It contains all of the code used to generate the summary text file and .PNG output plots that were discusssed in the Introduction. The module is broken down into numerous functions that will be referenced throughout this investigation.
 
