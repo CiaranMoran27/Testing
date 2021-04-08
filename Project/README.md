@@ -127,15 +127,14 @@ This Section details the downloads, modules, tools, libraries and dependencies f
   - Saved as ‘’Iris_Data_Set.txt” in the same directory as Analysis.py module. <br/>
 
 - Analysis.py<br/>
-  - Python module that contains the source code used to generate the Summary text file and output plots. <br/>
-  - Conists of numerous functions that will be referenced throughout this investigation. <br/>
-  - All code References will be recorded in the Analysis.py file and donted via [*1]...[*n...] etc.. <br/>
-  - Makes directory hierarchy assumptions relative to its location for its outputs as per fig X below. <br/>
-  - Note: For easy of use clone repository here (**<https://docs.github.com/en/github/creating-cloning>**).
+  - This Python module contains the source code used to generate a Summary text file and output plots. <br/>
+  - It Conists of numerous functions that will be referenced throughout this investigation. <br/>
+  - Code References will be located here and donted via [*1]...[*n...] etc.. <br/>
+  - The module makes directory hierarchy assumptions relative to its location for reading the Iris dataset / outputing plots. <br/>
+  - Note: For best results and ease of use clone repository as described here: <br/>(**<https://docs.github.com/en/github/creating-cloning>**).
 
-
-
-
+<br/>
+<br/>
 
 &nbsp;**3.1 Exploring The Data Set**
 
