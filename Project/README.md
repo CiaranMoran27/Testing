@@ -144,7 +144,7 @@ This Section details the downloads, modules, tools, libraries and dependencies f
 | Fig 2.[*2] Fig 3.[*2]|
 
 
-| <img src="data_types_and_nulls.jpg"  width="250"/>|
+| <img src="test.jpg"  width="250"/>|
 |----------|
 | Fig 2. Ronald Fisher [6]|
 
