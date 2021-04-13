@@ -139,16 +139,11 @@ This Section details the downloads, modules, tools, libraries and dependencies f
 &nbsp;**3.1 Exploring The Data Set**
 
 
-| <img src="Images/summary_1.jpg"  width="250"/>|
+| <img src="Images/summary_variables_1.png"  width="600"/>|
 |----------|
-| Fig 2.[*2]                  Fig 3.[*2]|
+| Fig 2.[*2]  &nbsp; &nbsp; &nbsp; &nbsp; Fig 3.[*2]|
 
 
-
-
-| <img src="Images/Ronald_Fisher.jpg"  width="250"/>|
-|----------|
-| Fig 2. Ronald Fisher [6]|
 
 
 
