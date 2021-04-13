@@ -139,10 +139,9 @@ This Section details the downloads, modules, tools, libraries and dependencies f
 &nbsp;**3.1 Exploring The Data Set**
 
 
-| <img src="data_types_and_nulls.jpg"  width="250"/>|
+| <img src="data_types_and_nulls.jpg"width="250"/>|
 |----------|
-| Fig 2.[*2]                Fig 3.[*2]|
-
+| Fig 2.[*2] Fig 3.[*2]|
 
 
 
