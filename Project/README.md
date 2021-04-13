@@ -141,7 +141,9 @@ This Section details the downloads, modules, tools, libraries and dependencies f
 
 | <img src="Images/summary_variables_1.png"  width="475"/>|
 |----------|
-| Fig 2.[*2]  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Fig 3.[*2]|
+| Fig 2.[*2]  &emsp; &emsp; &emsp; &emsp; Fig 3.[*2]|
+
+
 
 
 
