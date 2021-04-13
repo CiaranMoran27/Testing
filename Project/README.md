@@ -128,8 +128,8 @@ This Section details the downloads, modules, tools, libraries and dependencies f
 
 - Analysis.py<br/>
   - This Python module contains the source code used to generate a Summary text file and output plots. <br/>
-  - It Conists of numerous functions that will be referenced throughout this investigation. <br/>
-  - Code References will be located here and donted via [*1]...[*n...] etc.. <br/>
+  - It Conisits of numerous functions that will be referenced throughout this investigation. <br/>
+  - Code References will be located in the module and donted via [*1]...[*n...] etc.. <br/>
   - The module makes directory hierarchy assumptions relative to its location for reading the Iris dataset / outputing plots. <br/>
   - Note: For best results and ease of use clone repository as described here: <br/>(**<https://docs.github.com/en/github/creating-cloning>**).
 
@@ -139,7 +139,9 @@ This Section details the downloads, modules, tools, libraries and dependencies f
 &nbsp;**3.1 Exploring The Data Set**
 
 
-
+| <img src="Images/data_types.jpg"  width="600"/>|
+|----------|
+| Fig 3. Iris Species [*2]|
 
 
 
