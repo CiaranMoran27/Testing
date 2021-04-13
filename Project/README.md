@@ -139,7 +139,7 @@ This Section details the downloads, modules, tools, libraries and dependencies f
 &nbsp;**3.1 Exploring The Data Set**
 
 
-| <img src="Images/summary_variables_1.png"  width="600"/>|
+| <img src="Images/summary_variables_1.png"  width="475"/>|
 |----------|
 | Fig 2.[*2]  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Fig 3.[*2]|
 
