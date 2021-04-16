@@ -163,14 +163,14 @@ shape = (len(iris_df.axes[1]),len(iris_df.axes[0]))
 ```
 <br/>
 
-The pandas library provides aggregation functions to group a column and perform many operations such as sum, count and mean. This functionality was used to confirm that the dataset was made up three different species, each contributing 50 instances to the 150 total row count (See Fig 4 below). The operation was performed using the following syntax: *df.groupby('species').size()*.
+The pandas library provides aggregation functions to group a column and perform many operations such as sum, count and mean. This functionality was used to confirm that the dataset was made up three different species, each contributing 50 instances to the 150 total row count (See Fig 4 below). The operation was performed using the following syntax: *df.groupby('species').size()*.<br/>
 
 <br/>
-Having looked at the first 5 rows of the dataset assumptions were made that the sepal legth, sepal width, petal length and petal widge columns were floating point numbers and the species column was of type string. These assumptions were tested by applying the *.dtypes* method on the dataframe. The output showed that the four dimensional variable columns were of type 'float64' and the species class column of type 'object' (see Fig. 6). Moffitt 2018 explained this by describing how pandas stores datatypes in a categorical way and buckets type str and mix data types into the 'object' category. 
+Having looked at the first 5 rows of the dataset assumptions were made that the sepal legth, sepal width, petal length and petal widge columns were floating point numbers and the species column was of type string. These assumptions were tested by applying the *.dtypes* method on the dataframe. The output showed that the four dimensional variable columns were of type 'float64' and the species class column of type 'object' (see Fig. 6). Moffitt 2018 explained this by describing how pandas stores datatypes in a categorical way and buckets type str and mix data types into the 'object' category.<br/> 
 
 <br/>
 
-Pandas and Numpy work effectively together to help clean dataframes, for example the *isnull()* function is used to detect missing values in an array. This function returns a boolean object where missing values get mapped to True and non-missing values get mapped to False [GfG 2020 NaN]. It is possible to sum the True values from the boolean array by applying the *sum()* function to quickly check if a dataset has any null values. This operation was performed on the Iris dataframe and yielded no null values via the following syntax: *df.groupby('species').size()*. See the output of this operation in Fig. 5 below. Testing this code on the dataframe showed that the *isnull()* will categorise NA, NaN or blanks as null values. 
+Pandas and Numpy work effectively together to help clean dataframes, for example the *isnull()* function is used to detect missing values in an array. This function returns a boolean object where missing values get mapped to True and non-missing values get mapped to False [GfG 2020 NaN]. It is possible to sum the True values from the boolean array by applying the *sum()* function to quickly check if a dataset has any null values. This operation was performed on the Iris dataframe and yielded no null values via the following syntax: *df.groupby('species').size()*. See the output of this operation in Fig. 5 below. Testing this code on the dataframe showed that the *isnull()* will categorise NA, NaN or blanks as null values.<br/> 
 
 <br/>
 
@@ -185,10 +185,6 @@ If one was dealing with larger datasets it would be unlikely that a null count o
 Fig. 4  |  Fig. 5  |  Fig. 6
 
 
-### Output Plot:
-<p align="center">
-  <img src="week08/plottask.png" width="600" height="500" />
-</p>  
 
 
 
