@@ -61,7 +61,7 @@ def write_plot(plot,file_name):
 
 def scatter_plot(): 
 
-    fig, axes = plt.subplots(2, 3, figsize=(18, 10),sharex=True)
+    fig, axes = plt.subplots(2, 3, figsize=(18, 10))
     plt.subplots_adjust(wspace=0.3, hspace=0.3)
     fig.suptitle('Scatter Plot of all variables (Units = cm)',fontsize = 25)
     
@@ -71,7 +71,7 @@ def scatter_plot():
     sns.scatterplot(ax=axes[1, 0], data=iris_df, x='sepal_length', y='sepal_width', hue = 'species',legend = False)
     sns.scatterplot(ax=axes[1, 1], data=iris_df, x='sepal_length', y='petal_width', hue = 'species',legend = False)
     sns.scatterplot(ax=axes[1, 2], data=iris_df, x='sepal_width',  y='petal_width', hue = 'species')
-    fig.tight_layout()
+    #fig.tight_layout()
     plt.legend(fontsize='12', loc = 2 ,bbox_to_anchor=(0.675, 1),borderaxespad=0.,)
 
 
@@ -80,6 +80,7 @@ def scatter_plot():
         y = ax.get_ylabel()
         ax.set_xlabel(x, fontsize=12)
         ax.set_ylabel(y, fontsize=12)
+        ax.set_xlim((0,8))
          
     plt.savefig('Images/' + 'scatter_plots' +'.png')
 
