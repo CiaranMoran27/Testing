@@ -155,19 +155,16 @@ The first 5 rows of the Dataframe were observed by passing 5 into the df.head(n)
 <br/>
 
 As mentioned in Section 2.1 the Iris dataset is made up of 150 rows and 5 columns. Like many applications in pandas the array size can be confirmed in more than one way, for example using the df.shape method or alternatively one can deduce the axes lengths using this code:
-
-### Code:
 ``` Python
 shape = (len(iris_df.axes[1]),len(iris_df.axes[0]))   
 ```
-
+<br/>
 The next action taken was to confirm that the species column contained three classes, each contributing 50 instances to the 150 total row count, see code and figure 4 below.  
 
 
-| <img src="Images/species_groupby.png"  width="200"/>|
+| <img src="Images/species_groupby.png"  width="175"/>|
 |----------|
 | Fig 4.[F2*]|
-### Code:
 ``` Python
 species_count = iris_df.groupby('species').size()        
 ```
