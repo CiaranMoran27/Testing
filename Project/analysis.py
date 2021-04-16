@@ -71,7 +71,7 @@ def scatter_plot():
     sns.scatterplot(ax=axes[1, 0], data=iris_df, x='sepal_length', y='sepal_width', hue = 'species',legend = False)
     sns.scatterplot(ax=axes[1, 1], data=iris_df, x='sepal_length', y='petal_width', hue = 'species',legend = False)
     sns.scatterplot(ax=axes[1, 2], data=iris_df, x='sepal_width',  y='petal_width', hue = 'species')
-    #fig.tight_layout()
+    fig.tight_layout()
     plt.legend(fontsize='12', loc = 2 ,bbox_to_anchor=(0.675, 1),borderaxespad=0.,)
 
 
