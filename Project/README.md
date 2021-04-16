@@ -149,11 +149,11 @@ __Analysing the Dataframe__ ['F2*] <br/>
 The first 5 rows of the Dataframe were observed by passing 5 into the df.head(n) method of the pandas library. This method is useful as it allows the user to look at a subset of the data to deduce what columns are relevant and to perform quick checks to see if data transformations are performing as expected. It was noticed that the column headers were indexed from 0-3 by pandas as the Dataset that was downloaded did not include column names. Based on these findings the correct column names were passed as a list to the df.columns method, see figure 3.
 
 <br/>
-
+</center>
 | <img src="Images/df_head(5).png"  width="550"/>|
 |----------|
 | Fig 3.|
-
+</center>
 
 <br/>
 
@@ -163,15 +163,15 @@ shape = (len(iris_df.axes[1]),len(iris_df.axes[0]))
 ```
 <br/>
 
-The pandas library provides aggregation functions to group a column and perform many operations such as sum, count and mean. This functionality was used to confirm that the dataset was made up three different species, each contributing 50 instances to the 150 total row count (See Fig 4). The operation was performed using the following syntax: *df.groupby('species').size()*.
+The pandas library provides aggregation functions to group a column and perform many operations such as sum, count and mean. This functionality was used to confirm that the dataset was made up three different species, each contributing 50 instances to the 150 total row count (See Fig 4 below). The operation was performed using the following syntax: *df.groupby('species').size()*.
 
 <br/>
 
-
-<img src="Images/species_groupby.png"  width="165"/>|<img src="Images/data_types.png"  width="200"/> | <img src="Images/null_count.png"  width="185"/>
+</center>
+<img src="Images/species_groupby.png"  width="165"/>|<img src="Images/data_types.png"  width="200"/> | <img src="Images/null_count.png"  width="200"/>
 :-------------------------:|:-------------------------:|:-------------------------:
 Fig. 4  |  Fig. 5  |  Fig. 6
-
+</center>
 
 
 
