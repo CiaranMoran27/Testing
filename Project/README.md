@@ -138,12 +138,12 @@ This Section details the downloads, modules, tools, libraries and dependencies f
 
 &nbsp;**3.2 Exploring The Data Set**
 
-**Reading the Iris Dataset into a Dataframe: [F1*]**
+**Reading the Iris Dataset into a Dataframe: [F1*]**<br/>
 This was achieved using the pandas.read_csv()  method of the pandas library.  This method also works on text files as one can declare the delimiter value that separates each data field, which in this case is a comma. 
 
 <br/>
 
-**Analysing the Dataframe [F2*]**
+**Analysing the Dataframe [F2*]**<br/>
 The first 5 rows of the Dataframe were observed by passing 5 into the df.head(n) method of the pandas library. This method is useful as it allows the user to look at a subset of the data to deduce what columns are relevant and to perform quick checks to see if data transformations are performing as expected. It was noticed that the column headers were indexed from 0-3 by pandas as the Dataset that was downloaded did not include column names. Based on these findings the correct column names were passed as a list to the df.columns method, see figure 3.
 
 <br/>
@@ -160,7 +160,7 @@ shape = (len(iris_df.axes[1]),len(iris_df.axes[0]))
 ```
 <br/>
 
-The pandas library provides aggregation functions to group a column and perform many operations such as sum, count and mean. This functionality was used to confirm that the dataset was made up three different species, each contributing 50 instances to the 150 total row count. The operation was performed using the following syntax: *df.groupby('species').size()*.
+The pandas library provides aggregation functions to group a column and perform many operations such as sum, count and mean. This functionality was used to confirm that the dataset was made up three different species, each contributing 50 instances to the 150 total row count (See Fig 4). The operation was performed using the following syntax: *df.groupby('species').size()*.
 
 <br/>
 
@@ -169,6 +169,13 @@ The pandas library provides aggregation functions to group a column and perform 
 | <img src="Images/species_groupby.png"  width="175"/>|
 |----------|
 | Fig 4.[F2*]|
+
+
+
+
+
+
+
 
 
 | <img src="Images/species_groupby.png"  width="175"/>|
