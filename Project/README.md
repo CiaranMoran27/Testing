@@ -183,6 +183,11 @@ Fig 5  |  Fig 6.
 
 
 
+<img src="Images/species_groupby.png"  width="175"/>|<img src="Images/species_groupby.png"  width="175"/> | <img src="Images/species_groupby.png"  width="175"/>
+:-------------------------:|:-------------------------:|:-------------------------:
+Fig. 3  |  Fig. 5  |  Fig. 6
+
+
 
 
 
