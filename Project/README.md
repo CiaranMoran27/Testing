@@ -169,6 +169,11 @@ The next action taken was to confirm that the species column contained three cla
 species_count = iris_df.groupby('species').size()        
 ```
 
+```
+species_count = iris_df.groupby('species').size()        
+```
+
+
 
 
 
