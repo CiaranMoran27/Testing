@@ -190,7 +190,7 @@ If one was dealing with larger datasets it would be unlikely that a null count o
 
 
 
-| <img src="Images/summary_traits.png"  width="1000"/>|
+| <img src="Images/summary_traits.png"  width="525"/>|
 |----------|
 | Fig 7.|
 
@@ -218,7 +218,7 @@ If one was dealing with larger datasets it would be unlikely that a null count o
 <br/>
 
 
-| <img src="Images/scatter_plots.png"  width="525"/>|
+| <img src="Images/scatter_plots.png"  width="1000"/>|
 |----------|
 | Fig X.|
 
