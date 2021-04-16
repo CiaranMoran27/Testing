@@ -187,8 +187,9 @@ Fig. 4  |  Fig. 5  |  Fig. 6
 
 
 
-<img align="centre" width="500" height="600" src="Images/plottask.png">
-
+<p align="center">
+  <img src="Images/plottask.png" width="500" height="600" />
+</p>  
 
 
 
