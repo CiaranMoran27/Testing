@@ -150,13 +150,9 @@ The first 5 rows of the Dataframe were observed by passing 5 into the df.head(n)
 
 <br/>
 
-| <img src="Images/df_head(5).png"  width="550"/>|<img src="Images/df_head(5).png"  width="550"/>|
-|----------|----------|
-| Fig 3.[F2*]|----------|
-
-<img src="Images/df_head(5).png"  width="550"/>|  <img src="Images/df_head(5).png"  width="550"/>|       
-:-------------------------:|:-------------------------:
-Fig 3.[F2*]  |  Fig 3.[F2*]
+| <img src="Images/df_head(5).png"  width="550"/>|
+|----------|
+| Fig 3.|
 
 
 <br/>
@@ -171,7 +167,12 @@ The pandas library provides aggregation functions to group a column and perform 
 
 <br/>
 
-    
+  
+| <img src="Images/species_groupby.png"  width="175"/>|<img src="Images/species_groupby.png"  width="175"/>|<img src="Images/species_groupby.png"  width="175"/>|
+|----------|----------|----------|  
+
+| Fig 4.|Fig 5.|Fig 6.|  
+  
 
 | <img src="Images/species_groupby.png"  width="175"/>|
 |----------|
