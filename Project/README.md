@@ -187,7 +187,7 @@ Fig. 4  |  Fig. 5  |  Fig. 6
 
 ### Output Plot:
 <p align="center">
-  <img src="plottask.png" width="600" height="500" />
+  <img src="Images/plottask.png" width="600" height="500" />
 </p>  
 
 
