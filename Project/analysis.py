@@ -62,7 +62,7 @@ def write_plot(plot,file_name):
 def scatter_plot(): 
 
     fig, axes = plt.subplots(2, 3, figsize=(18, 10))
-    plt.subplots_adjust(wspace=0.3, hspace=0.3)
+    plt.subplots_adjust(wspace=0.15,hspace=0.15)#  hspace=0.3
     fig.suptitle('Scatter Plot of all variables (Units = cm)',fontsize = 25)
     
     sns.scatterplot(ax=axes[0, 0], data=iris_df, x='petal_length', y='petal_width', hue = 'species',legend = False)
@@ -71,9 +71,7 @@ def scatter_plot():
     sns.scatterplot(ax=axes[1, 0], data=iris_df, x='sepal_length', y='sepal_width', hue = 'species',legend = False)
     sns.scatterplot(ax=axes[1, 1], data=iris_df, x='sepal_length', y='petal_width', hue = 'species',legend = False)
     sns.scatterplot(ax=axes[1, 2], data=iris_df, x='sepal_width',  y='petal_width', hue = 'species')
-    fig.tight_layout()
-    #plt.legend(fontsize='12', loc = 2 ,bbox_to_anchor=(0.675, 1),borderaxespad=0.,)
-
+    #fig.tight_layout()
 
     for ax in plt.gcf().axes:
         x = ax.get_xlabel()
@@ -95,8 +93,7 @@ def plot_histograms():
     sns.histplot(ax=axes[0, 1], data=iris_df, x='petal_width',  hue = 'species', bins = 20, legend = False)
     sns.histplot(ax=axes[1, 0], data=iris_df, x='sepal_length', hue = 'species', bins = 20, legend = False)
     sns.histplot(ax=axes[1, 1], data=iris_df, x='sepal_width',  hue = 'species', bins = 20)
-    #plt.legend(fontsize='14', labels = ['virginica', 'versicolor','setosa'], loc = 2 ,bbox_to_anchor=(0.795, 1),borderaxespad=0.,)
-    #fig.tight_layout()
+
     for ax in plt.gcf().axes:
         x = ax.get_xlabel()
         y = ax.get_ylabel()
