@@ -5,7 +5,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-x = np.arange(0,4,1)                              # x-axis values, range is 0 to 4 in steps of 1
+x = np.arange(0,5,1)                              # x-axis values, range is 0 to 4 in steps of 1
                                                   # y-axis:                                              
 y1  =  x                                          # f(x)=x 
 y2  =  x**2                                       # g(x)=x^2

@@ -136,19 +136,39 @@ This Section details the downloads, modules, tools, libraries and dependencies f
 <br/>
 <br/>
 
-&nbsp;**3.1 Exploring The Data Set**
+&nbsp;**3.2 Exploring The Data Set**
+
+**Reading the Iris Dataset into a Dataframe: [F1*]**
+This was achieved using the pandas.read_csv()  method of the pandas library.  This method also works on text files as one can declare the delimiter value that separates each data field, which in this case is a comma. 
+
+<br/>
+
+**Analysing the Dataframe [F2*]**
+The first 5 rows of the Dataframe were observed by passing 5 into the df.head(n) method of the pandas library. This method is useful as it allows the user to look at a subset of the data to deduce what columns are relevant and to perform quick checks to see if data transformations are performing as expected. It was noticed that the column headers were indexed from 0-3 by pandas as the Dataset that was downloaded did not include column names. Based on these findings the correct column names were passed as a list to the df.columns method, see figure 3.
+
+<br/>
+
+| <img src="Images/df_head(5).png"  width="550"/>|
+|----------|
+| Fig 3.[F2*]|
+
+<br/>
+
+As mentioned in Section 2.1 the Iris dataset is made up of 150 rows and 5 columns. Like many applications in pandas the array size can be confirmed in more than one way, for example using the df.shape method or alternatively one can deduce the axes lengths using this code:
+
+### Code:
+``` Python
+shape = (len(iris_df.axes[1]),len(iris_df.axes[0]))   
+```
+
+The next action taken was to confirm that the species column contained three classes, each contributing 50 instances to the 150 total row count, see code and figure 4 below.  
 
 
 | <img src="Images/summary_variables_1.png"  width="550"/>|
 |----------|
-| Fig 3.[*2]|
-
-
-
-
-
-
-
+| '''species_count = iris_df.groupby('species').size()      '''|
+|----------|
+| Fig 4.[F2*]|
 
 
 
