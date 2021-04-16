@@ -167,6 +167,12 @@ The pandas library provides aggregation functions to group a column and perform 
 
 <br/>
 
+Pandas and Numpy can work effectively together to help clean dataframes, for example the isnull() function is used to detect missing values in an array. This function returns a boolean object where missing values get mapped to True and non-missing values get mapped to False [Reference]. It is possible to sum the True values from the boolean array by applying the sum() function to quickly check if a dataset has any null values. This operation was performed on the Iris dataframe and yielded no null values via the following syntax: *df.groupby('species').size()*. See the output of this operation in Fig. 5 below. 
+
+<br/>
+
+
+
 
 <img src="Images/species_groupby.png"  width="165"/>|<img src="Images/data_types.png"  width="200"/> | <img src="Images/null_count.png"  width="200"/>
 :-------------------------:|:-------------------------:|:-------------------------:
