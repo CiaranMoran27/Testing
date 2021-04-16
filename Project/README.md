@@ -159,22 +159,23 @@ As mentioned in Section 2.1 the Iris dataset is made up of 150 rows and 5 column
 shape = (len(iris_df.axes[1]),len(iris_df.axes[0]))   
 ```
 <br/>
-The next action taken was to confirm that the species column contained three classes, each contributing 50 instances to the 150 total row count, see code and figure 4 below.  
+
+The pandas library provides aggregation functions to group a column and perform many operations such as sum, count and mean. This functionality was used to confirm that the dataset was made up three different species, each contributing 50 instances to the 150 total row count. ''' species_count = iris_df.groupby('species').size()  '''
+
+<br/>
+
+    
+
+| <img src="Images/species_groupby.png"  width="175"/>|
+|----------|
+| Fig 4.[F2*]|
 
 
 | <img src="Images/species_groupby.png"  width="175"/>|
 |----------|
 | Fig 4.[F2*]|
-``` Python
-species_count = iris_df.groupby('species').size()        
-```
 
-```
-species_count = iris_df.groupby('species').size()        
-```
-
-
-
+>
 
 
 
