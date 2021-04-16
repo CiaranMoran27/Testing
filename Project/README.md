@@ -150,7 +150,7 @@ The first 5 rows of the Dataframe were observed by passing 5 into the df.head(n)
 
 <br/>
 
-| <img src="Images/df_head(5).png"  width="550"/>|
+| <img src="Images/df_head(5).png"  width="450"/>|
 |----------|
 | Fig 3.|
 
@@ -177,7 +177,7 @@ Pandas and Numpy work effectively together to help clean dataframes, for example
 
 
 
-<img src="Images/species_groupby.png"  width="185"/>|<img src="Images/data_types.png"  width="210"/> | <img src="Images/null_count.png"  width="200"/>
+<img src="Images/species_groupby.png"  width="165"/>|<img src="Images/data_types.png"  width="190"/> | <img src="Images/null_count.png"  width="180"/>
 :-------------------------:|:-------------------------:|:-------------------------:
 Fig. 4  |  Fig. 5  |  Fig. 6
   
