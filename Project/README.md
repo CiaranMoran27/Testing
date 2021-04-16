@@ -185,10 +185,9 @@ If one was dealing with larger datasets it would be unlikely that a null count o
 Fig. 4  |  Fig. 5  |  Fig. 6
 
 
-
-
+### Output Plot:
 <p align="center">
-  <img src="Images/plottask.png" width="600" height="500" />
+  <img src="plottask.png" width="600" height="500" />
 </p>  
 
 
