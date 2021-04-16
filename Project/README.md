@@ -168,7 +168,7 @@ The pandas library provides aggregation functions to group a column and perform 
 <br/>
 
 
-<img src="Images/species_groupby.png"  width="175"/>|<img src="Images/data_types.png"  width="200"/> | <img src="Images/null_count.png"  width="175"/>
+<img src="Images/species_groupby.png"  width="175"/>|<img src="Images/data_types.png"  width="200"/> | <img src="Images/null_count.png"  width="185"/>
 :-------------------------:|:-------------------------:|:-------------------------:
 Fig. 4  |  Fig. 5  |  Fig. 6
 
