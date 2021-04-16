@@ -174,18 +174,21 @@ Having looked at the first 5 rows of the dataset assumptions were made that the 
 Pandas and Numpy work effectively together to help clean dataframes, for example the *isnull()* function is used to detect missing values in an array. This function returns a boolean object where missing values get mapped to True and non-missing values get mapped to False [GfG 2020 NaN]. It is possible to sum the True values from the boolean array by applying the *sum()* function to quickly check if a dataset has any null values. This operation was performed on the Iris dataframe and yielded no null values via the following syntax: *df.groupby('species').size()*, see the output of this operation in Fig. 6 below.<br/> 
 
 <br/>
-  
-If one was dealing with larger datasets it would be unlikely that a null count of zero will be encountered. One can clean a dataset with null values in a number of ways. For example its possible to replace null values with a selection of your choice by passing this selection into the*.fillna()* pandas function, or alternatibely drop rows that contain null values using *.drop na()*. Solomon 2020 detailed more dynamic datset cleaning approaches. He described how NumPy's ability to generate Boolean masks on arrays can be utilised alongside pandas functions to perform fast detailed cleaning operations. An example of this would be using the Numpy *np.where()* function alongisde pandas *.replace()* function to replace string in a series at defined sections 
-
-
-<br/>
-
 
 
 
 <img src="Images/species_groupby.png"  width="165"/>|<img src="Images/data_types.png"  width="200"/> | <img src="Images/null_count.png"  width="200"/>
 :-------------------------:|:-------------------------:|:-------------------------:
 Fig. 4  |  Fig. 5  |  Fig. 6
+  
+<br/>
+
+If one was dealing with larger datasets it would be unlikely that a null count of zero will be encountered. One can clean a dataset with null values in a number of ways. For example its possible to replace null values with a selection of your choice by passing this selection into the*.fillna()* pandas function, or alternatibely drop rows that contain null values using *.drop na()*. Solomon 2020 detailed more dynamic datset cleaning approaches. He described how NumPy's ability to generate Boolean masks on arrays can be utilised alongside pandas functions to perform fast detailed cleaning operations. An example of this would be using the Numpy *np.where()* function alongisde pandas *.replace()* function to replace string in a series at defined sections. 
+
+<br/>
+
+
+
 
 
 
