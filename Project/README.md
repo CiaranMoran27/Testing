@@ -139,7 +139,7 @@ This Section details the downloads, modules, tools, libraries and dependencies f
 
 &nbsp;**3.2 Exploring The Data Set**
 
-__Reading the Iris Dataset into a Dataframe:__ [F1*] <br/>
+__Reading in the Dataset:__ [F1*] <br/>
 This was achieved using the pandas.read_csv()  method of the pandas library.  This method also works on text files as one can declare the delimiter value that separates each data field, which in this case is a comma. 
 
 <br/>
@@ -184,7 +184,7 @@ Fig. 4  |  Fig. 5  |  Fig. 6
   
 <br/>
 
-If one was dealing with larger datasets it would be unlikely that a null count of zero will be encountered. One can clean a dataset with null values in a number of ways. For example its possible to replace null values with a selection of your choice by passing this selection into the*.fillna()* pandas function, or alternatibely drop rows that contain null values using *.drop na()*. Solomon 2020 detailed more dynamic datset cleaning approaches. He described how NumPy's ability to generate Boolean masks on arrays can be utilised alongside pandas functions to perform fast detailed cleaning operations. An example of this would be using the Numpy *np.where()* function alongside pandas *.replace()* function to replace string in a series at defined sections. 
+If one was dealing with larger datasets it would be unlikely that a null count of zero will be encountered. One can clean a dataset with null values in a number of ways. For example its possible to replace null values with a selection of your choice by passing this selection into the*.fillna()* pandas function, or alternatibely drop rows that contain null values using *.drop na()*. Solomon 2020 detailed more dynamic datset cleaning approaches. He described how NumPy's ability to generate Boolean masks on arrays can be utilised alongside pandas functions to perform fast detailed cleaning operations. An example of this would be using the Numpy *np.where()* function alongside pandas *.replace()* function to replace string in a series at defined locationw. 
 
 <br/>
 
@@ -196,9 +196,41 @@ If one was dealing with larger datasets it would be unlikely that a null count o
 
 <br/>
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+| <img src="Images/histograms.png"  width="525"/>|
+|----------|
+| Fig X.|
+
+<br/>
+<br/>
 
 
+| <img src="Images/scatter_plots.png"  width="525"/>|
+|----------|
+| Fig X.|
 
+<br/>
+<br/>
+
+| <img src="Images/correlation_statistics.png"  width="525"/>|
+|----------|
+| Fig X.|
+
+<br/>
+<br/>
 
 ### 5. Reference:
 [1]. Cui, Y 2020, The Iris dataset – a little bit of history and biology, towards data science, viewed 26 Match 2021,**<https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5>**<br/>

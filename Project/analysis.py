@@ -62,16 +62,16 @@ def write_plot(plot,file_name):
 def scatter_plot(): 
 
 
-    fig, axes = plt.subplots(2, 3, figsize=(18, 10))
+    fig, axes = plt.subplots(2, 3, figsize=(18, 10),sharex=True)
     plt.subplots_adjust(wspace=0.3, hspace=0.3)
     fig.suptitle('Scatter Plot of all variables (Units = cm)',fontsize = 25)
     
-    ax = sns.scatterplot(ax=axes[0, 0], data=iris_df, x='petal_length', y='petal_width', hue = 'species',legend = False)
-    ax = sns.scatterplot(ax=axes[0, 1], data=iris_df, x='petal_length', y='sepal_length',hue = 'species',legend = False)
-    ax = sns.scatterplot(ax=axes[0, 2], data=iris_df, x='petal_length', y='sepal_width', hue = 'species',legend = False)
-    ax = sns.scatterplot(ax=axes[1, 0], data=iris_df, x='sepal_length', y='sepal_width', hue = 'species',legend = False)
-    ax = sns.scatterplot(ax=axes[1, 1], data=iris_df, x='sepal_length', y='petal_width', hue = 'species',legend = False)
-    ax = sns.scatterplot(ax=axes[1, 2], data=iris_df, x='sepal_width',  y='petal_width', hue = 'species')
+    sns.scatterplot(ax=axes[0, 0], data=iris_df, x='petal_length', y='petal_width', hue = 'species',legend = False)
+    sns.scatterplot(ax=axes[0, 1], data=iris_df, x='petal_length', y='sepal_length',hue = 'species',legend = False)
+    sns.scatterplot(ax=axes[0, 2], data=iris_df, x='petal_length', y='sepal_width', hue = 'species',legend = False)
+    sns.scatterplot(ax=axes[1, 0], data=iris_df, x='sepal_length', y='sepal_width', hue = 'species',legend = False)
+    sns.scatterplot(ax=axes[1, 1], data=iris_df, x='sepal_length', y='petal_width', hue = 'species',legend = False)
+    sns.scatterplot(ax=axes[1, 2], data=iris_df, x='sepal_width',  y='petal_width', hue = 'species')
 
     plt.legend(fontsize='12', loc = 2 ,bbox_to_anchor=(1.02, 1),borderaxespad=0.,)
 
@@ -90,20 +90,22 @@ def plot_histograms():
     fig, axes = plt.subplots(2, 2, figsize=(18, 10))
     fig.suptitle('Histogram of all variables (Units = cm)',fontsize = 25)
 
-    ax = sns.histplot(ax=axes[0, 0], data=iris_df, x='petal_length', hue = 'species', bins = 30, legend = False)
-    ax = sns.histplot(ax=axes[0, 1], data=iris_df, x='petal_width',  hue = 'species', bins = 30, legend = False)
-    ax = sns.histplot(ax=axes[1, 0], data=iris_df, x='sepal_length', hue = 'species', bins = 30, legend = False)
-    ax = sns.histplot(ax=axes[1, 1], data=iris_df, x='sepal_width',  hue = 'species', bins = 30)
+    sns.histplot(ax=axes[0, 0], data=iris_df, x='petal_length', hue = 'species', bins = 20, legend = False)
+    sns.histplot(ax=axes[0, 1], data=iris_df, x='petal_width',  hue = 'species', bins = 20, legend = False)
+    sns.histplot(ax=axes[1, 0], data=iris_df, x='sepal_length', hue = 'species', bins = 20, legend = False)
+    sns.histplot(ax=axes[1, 1], data=iris_df, x='sepal_width',  hue = 'species', bins = 20)
     plt.legend(fontsize='14', labels = ['virginica', 'versicolor','setosa'], loc = 2 ,bbox_to_anchor=(1.02, 1),borderaxespad=0.,)
 
     for ax in plt.gcf().axes:
         x = ax.get_xlabel()
         y = ax.get_ylabel()
         ax.set_xlabel(x, fontsize=15)
-        ax.set_ylabel(y, fontsize=15)
+        ax.set_ylabel(y, fontsize=15) 
+        ax.set_xlim((0,8))
 
     plt.savefig('Images/' + 'histograms' +'.png')
-
+    plt.show()
+#plot_histograms()
 #plot_histograms()
 
 
