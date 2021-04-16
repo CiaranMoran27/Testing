@@ -160,7 +160,7 @@ shape = (len(iris_df.axes[1]),len(iris_df.axes[0]))
 ```
 <br/>
 
-The pandas library provides aggregation functions to group a column and perform many operations such as sum, count and mean. This functionality was used to confirm that the dataset was made up three different species, each contributing 50 instances to the 150 total row count. ''' species_count = iris_df.groupby('species').size()  '''
+The pandas library provides aggregation functions to group a column and perform many operations such as sum, count and mean. This functionality was used to confirm that the dataset was made up three different species, each contributing 50 instances to the 150 total row count. The operation was performed using the following syntax: *df.groupby('species').size()*.
 
 <br/>
 
