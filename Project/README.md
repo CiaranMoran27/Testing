@@ -154,6 +154,11 @@ The first 5 rows of the Dataframe were observed by passing 5 into the df.head(n)
 |----------|----------|
 | Fig 3.[F2*]|----------|
 
+<img src="Images/df_head(5).png"  width="550"/>|  <img src="Images/df_head(5).png"  width="550"/>|       
+:-------------------------:|:-------------------------:
+Fig 3.[F2*]  |  Fig 3.[F2*]
+
+
 <br/>
 
 As mentioned in Section 2.1 the Iris dataset is made up of 150 rows and 5 columns. Like many applications in pandas the array size can be confirmed in more than one way, for example using the df.shape method or alternatively one can deduce the axes lengths using this code:
