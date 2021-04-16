@@ -167,7 +167,7 @@ The pandas library provides aggregation functions to group a column and perform 
 
 <br/>
 
-Having looked at the first 5 rows of the dataset assumptions were made that the sepal legth, sepal width, petal length and petal widge columns were floating point numbers and the species column was of type string. These assumptions were tested by applying the *.dtypes* method on the dataframe. The output showed that the four dimensional variable columns were of type 'float64' and the species class column of type 'object' (see Fig. 5 below). Moffitt 2018 explained this by describing how pandas stores datatypes in a categorical way and buckets type str and mix data types into the 'object' category.<br/> 
+Having looked at the first 5 rows of the dataset assumptions were made that the sepal legth, sepal width, petal length and petal width columns were floating point numbers and the species column was of type string. These assumptions were tested by applying the *.dtypes* method on the dataframe. The output showed that the four dimensional variable columns were of type 'float64' and the species class column of type 'object' (see Fig. 5 below). Moffitt 2018 explained this by describing how pandas stores datatypes in a categorical way and buckets type str and mix data types into the 'object' category.<br/> 
 
 <br/>
 
@@ -177,13 +177,13 @@ Pandas and Numpy work effectively together to help clean dataframes, for example
 
 
 
-<img src="Images/species_groupby.png"  width="165"/>|<img src="Images/data_types.png"  width="200"/> | <img src="Images/null_count.png"  width="200"/>
+<img src="Images/species_groupby.png"  width="185"/>|<img src="Images/data_types.png"  width="210"/> | <img src="Images/null_count.png"  width="200"/>
 :-------------------------:|:-------------------------:|:-------------------------:
 Fig. 4  |  Fig. 5  |  Fig. 6
   
 <br/>
 
-If one was dealing with larger datasets it would be unlikely that a null count of zero will be encountered. One can clean a dataset with null values in a number of ways. For example its possible to replace null values with a selection of your choice by passing this selection into the*.fillna()* pandas function, or alternatibely drop rows that contain null values using *.drop na()*. Solomon 2020 detailed more dynamic datset cleaning approaches. He described how NumPy's ability to generate Boolean masks on arrays can be utilised alongside pandas functions to perform fast detailed cleaning operations. An example of this would be using the Numpy *np.where()* function alongisde pandas *.replace()* function to replace string in a series at defined sections. 
+If one was dealing with larger datasets it would be unlikely that a null count of zero will be encountered. One can clean a dataset with null values in a number of ways. For example its possible to replace null values with a selection of your choice by passing this selection into the*.fillna()* pandas function, or alternatibely drop rows that contain null values using *.drop na()*. Solomon 2020 detailed more dynamic datset cleaning approaches. He described how NumPy's ability to generate Boolean masks on arrays can be utilised alongside pandas functions to perform fast detailed cleaning operations. An example of this would be using the Numpy *np.where()* function alongside pandas *.replace()* function to replace string in a series at defined sections. 
 
 <br/>
 
