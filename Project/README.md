@@ -164,15 +164,13 @@ shape = (len(iris_df.axes[1]),len(iris_df.axes[0]))
 The next action taken was to confirm that the species column contained three classes, each contributing 50 instances to the 150 total row count, see code and figure 4 below.  
 
 
-| <img src="Images/summary_variables_1.png"  width="550"/>|
-|----------|
-| '''species_count = iris_df.groupby('species').size()      '''|
+| <img src="Images/species_groupby.png"  width="550"/>|
 |----------|
 | Fig 4.[F2*]|
-
-
-
-
+### Code:
+``` Python
+species_count = iris_df.groupby('species').size()        
+```
 
 
 
