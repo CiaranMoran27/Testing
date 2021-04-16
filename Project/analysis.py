@@ -62,7 +62,7 @@ def write_plot(plot,file_name):
 def scatter_plot(): 
 
     fig, axes = plt.subplots(2, 3, figsize=(22, 14))
-    plt.subplots_adjust(wspace=0.15,hspace=0.15)#  hspace=0.3
+    plt.subplots_adjust(wspace=0.2,hspace=0.2)#  hspace=0.3
     fig.suptitle('Scatter Plot of all variables (Units = cm)',fontsize = 25)
     
     sns.scatterplot(ax=axes[0, 0], data=iris_df, x='petal_length', y='petal_width', hue = 'species',legend = False)
@@ -71,13 +71,13 @@ def scatter_plot():
     sns.scatterplot(ax=axes[1, 0], data=iris_df, x='sepal_length', y='sepal_width', hue = 'species',legend = False)
     sns.scatterplot(ax=axes[1, 1], data=iris_df, x='sepal_length', y='petal_width', hue = 'species',legend = False)
     sns.scatterplot(ax=axes[1, 2], data=iris_df, x='sepal_width',  y='petal_width', hue = 'species')
-    #fig.tight_layout()
+    fig.tight_layout()
 
     for ax in plt.gcf().axes:
         x = ax.get_xlabel()
         y = ax.get_ylabel()
-        ax.set_xlabel(x, fontsize=12)
-        ax.set_ylabel(y, fontsize=12)
+        ax.set_xlabel(x, fontsize=14)
+        ax.set_ylabel(y, fontsize=14)
         ax.set_xlim((0,8))
          
     plt.savefig('Images/' + 'scatter_plots' +'.png')
@@ -97,8 +97,8 @@ def plot_histograms():
     for ax in plt.gcf().axes:
         x = ax.get_xlabel()
         y = ax.get_ylabel()
-        ax.set_xlabel(x, fontsize=15)
-        ax.set_ylabel(y, fontsize=15) 
+        ax.set_xlabel(x, fontsize=17)
+        ax.set_ylabel(y, fontsize=17) 
         ax.set_xlim((0,8))
 
     plt.savefig('Images/' + 'histograms' +'.png')
