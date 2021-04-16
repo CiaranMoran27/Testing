@@ -221,7 +221,7 @@ Fig X.
 <br/>
 
 
-<img src="Images/scatter_plots.png"  width="1200"/>
+<img src="Images/scatter_plots.png"  width="2000"/>
  Fig X.
 
 <br/>
