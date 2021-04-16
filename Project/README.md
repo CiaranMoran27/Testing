@@ -210,17 +210,19 @@ If one was dealing with larger datasets it would be unlikely that a null count o
 <br/>
 <br/>
 
-| <img src="Images/histograms.png"  width="1000"/>|
-|----------|
-| Fig X.|
+<p align="center">
+  <img src="Images/histograms.png" width="1000" />
+</p>  
+Fig X.
+
+
 
 <br/>
 <br/>
 
 
-| <img src="Images/scatter_plots.png"  width="1000"/>|
-|----------|
-| Fig X.|
+<img src="Images/scatter_plots.png"  width="1000"/>
+ Fig X.
 
 <br/>
 <br/>
