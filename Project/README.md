@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="./Images/GMIT_logo.jpg" width="500" />
-</p>  <Source: https://image.ibb.co/gw4Gen/Index_GMIT.png>
+</p>  
 
 <br/>
 <br/>
@@ -188,9 +188,6 @@ Fig. 4  |  Fig. 5  |  Fig. 6
 
 
 <img align="centre" width="500" height="600" src="Images/plottask.png">
-
-
-
 
 
 
