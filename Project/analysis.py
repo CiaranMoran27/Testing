@@ -61,7 +61,7 @@ def write_plot(plot,file_name):
 
 def scatter_plot(): 
 
-    fig, axes = plt.subplots(2, 3, figsize=(18, 10))
+    fig, axes = plt.subplots(2, 3, figsize=(22, 14))
     plt.subplots_adjust(wspace=0.15,hspace=0.15)#  hspace=0.3
     fig.suptitle('Scatter Plot of all variables (Units = cm)',fontsize = 25)
     
@@ -86,7 +86,7 @@ scatter_plot()
 
 def plot_histograms():
 
-    fig, axes = plt.subplots(2, 2, figsize=(18, 10))
+    fig, axes = plt.subplots(2, 2, figsize=(22, 14))
     fig.suptitle('Histogram of all variables (Units = cm)',fontsize = 25)
 
     sns.histplot(ax=axes[0, 0], data=iris_df, x='petal_length', hue = 'species', bins = 20, legend = False)
