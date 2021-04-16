@@ -181,10 +181,10 @@ The pandas library provides aggregation functions to group a column and perform 
 
 
 
-Solarized dark             |  Solarized Ocean
+
 :-------------------------:|:-------------------------:
 <img src="Images/species_groupby.png"  width="175"/>  |  <img src="Images/species_groupby.png"  width="175"/>
-
+Solarized dark             |  Solarized Ocean
 
 >
 
