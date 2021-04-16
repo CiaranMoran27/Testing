@@ -143,8 +143,8 @@ This was achieved using the pandas.read_csv()  method of the pandas library.  Th
 
 <br/>
 
-**Analysing the Dataframe ['F2*]**<br/>
-Analysing the Dataframe ['F2*]<br/>
+*Analysing the Dataframe* ['F2*]<br/>
+*Analysing the Dataframe* ['F2*]<br/>
 
 The first 5 rows of the Dataframe were observed by passing 5 into the df.head(n) method of the pandas library. This method is useful as it allows the user to look at a subset of the data to deduce what columns are relevant and to perform quick checks to see if data transformations are performing as expected. It was noticed that the column headers were indexed from 0-3 by pandas as the Dataset that was downloaded did not include column names. Based on these findings the correct column names were passed as a list to the df.columns method, see figure 3.
 
