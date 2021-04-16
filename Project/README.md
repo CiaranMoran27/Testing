@@ -138,22 +138,21 @@ This Section details the downloads, modules, tools, libraries and dependencies f
 
 &nbsp;**3.2 Exploring The Data Set**
 
-**Reading the Iris Dataset into a Dataframe: [F1*]**<br/>
+__Reading the Iris Dataset into a Dataframe:__ ['F1*] <br/>
 This was achieved using the pandas.read_csv()  method of the pandas library.  This method also works on text files as one can declare the delimiter value that separates each data field, which in this case is a comma. 
 
 <br/>
 
 
 
-__Analysing the Dataframe__ <span style="color:red">some *['F2*] * text</span> <br/>
-<font color='red'>test blue color font</font>
+__Analysing the Dataframe__ ['F2*] <br/>
 The first 5 rows of the Dataframe were observed by passing 5 into the df.head(n) method of the pandas library. This method is useful as it allows the user to look at a subset of the data to deduce what columns are relevant and to perform quick checks to see if data transformations are performing as expected. It was noticed that the column headers were indexed from 0-3 by pandas as the Dataset that was downloaded did not include column names. Based on these findings the correct column names were passed as a list to the df.columns method, see figure 3.
 
 <br/>
 
-| <img src="Images/df_head(5).png"  width="550"/>|
-|----------|
-| Fig 3.[F2*]|
+| <img src="Images/df_head(5).png"  width="550"/>|<img src="Images/df_head(5).png"  width="550"/>|
+|----------|----------|
+| Fig 3.[F2*]|----------|
 
 <br/>
 
