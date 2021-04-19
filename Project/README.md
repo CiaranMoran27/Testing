@@ -191,9 +191,22 @@ If one was dealing with larger datasets it would be unlikely that a null count o
 __Descriptive Statistical Analysis__ [] <br/>
 
 
-The pandas *describe()* function is very useful quick statistics on a given dataset. This function was used to establish the min, max, mean, standard deviations, ranges, skewness/kurtosis and a few other important measurements pertaining to the Iris flower anatomy. Tables (Pandas DataFrames) and figures, i.e. A barplot and histograms were used for graphical representation of descriptive features of the dataset attributes.
+The pandas *describe()* function is a very useful statistical summary method that can be applied to a given dataset. In its standard form this function returns the min, max, mean, median 25th percentile, 75th percentile and standard deviation of the data. The Iris dataset was passed to this function, see Fig X below for statistical summary of the 4 attributes in the Iris Dataset. 
 
-Firstly, I established a summary for each Iris flower attribute by using the "describe" method from the Pandas library. This function returns a nice statistical summary of the data including the count, mean, min and max values as well as some upper and lower percentiles. For example, looking at the summary output we see that the sepal length mean is highest at 5.84cm while the petal width mean is notably low at 1.19cm. Another interesting feature is that sepal length ranges from 4.3cm to 7.9cm, while petal width has a much lower range of 0.1cm to 2.5cm. The median (middle) measurement of each column is represented by the 50th percentile row.
+
+The following observeations were drawn from Fig X:
+
+- Mean (cm):
+  - Sepal length > petal length > sepal width > petal width
+- Standard Deviation:
+  - Petal length samples shows the highest deviation from the mean.
+  - Sepal width samples show the lowest deviation from the mean.
+- Min / Max range (cm):
+  - Overlap between dimensional attributes exists.
+- Median (50th percentile) and mean comparison:
+  - Sepal length and sepal width have a lowest difference between their median and mean values which indicates a more “normal” or guassian distribution. This observation can be made as the median value is the midpoint of the frequency distribution and the mean value is the average of all the numbers. 
+- It can be difficult to visualise the 25th percentile and 75th percentile from a table.
+- In an attempt to draw more insight from the summary table it was decided to use the Seaborn library to create a box plot. Although Box plots by nature cover most of the summary fields displayed in Fig X, the mean was manually coded into the boxplot (see plot 1 below).
 
 
 <img src="Images/summary_traits.png"  width="525"/>|
