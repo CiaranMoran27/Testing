@@ -63,7 +63,7 @@ def scatter_plot():
 
     fig, axes = plt.subplots(2, 3, figsize=(22, 14))
     plt.subplots_adjust(wspace=0.2,hspace=0.2)#  hspace=0.3
-    fig.suptitle('Scatter Plot of all variables (Units = cm)',fontsize = 25)
+    fig.suptitle('Plot X: Scatter Plot of all variables (Units = cm)',fontsize = 25)
     
     sns.scatterplot(ax=axes[0, 0], data=iris_df, x='petal_length', y='petal_width', hue = 'species',legend = False)
     sns.scatterplot(ax=axes[0, 1], data=iris_df, x='petal_length', y='sepal_length',hue = 'species',legend = False)
@@ -88,8 +88,8 @@ def scatter_plot():
 
 def plot_histograms():
 
-    fig, axes = plt.subplots(2, 2, figsize=(22, 14))
-    fig.suptitle('Histogram of all variables (Units = cm)',fontsize = 25)
+    fig, axes = plt.subplots(2, 2, figsize=(30, 22))
+    fig.suptitle('Plot X: Histogram of all variables (Units = cm)',fontsize = 25)
 
     sns.histplot(ax=axes[0, 0], data=iris_df, x='petal_length', hue = 'species', bins = 20, legend = False)
     sns.histplot(ax=axes[0, 1], data=iris_df, x='petal_width',  hue = 'species', bins = 20, legend = False)
@@ -113,7 +113,7 @@ def plot_box_plot():
     # reference: https://www.python-graph-gallery.com/30-basic-boxplot-with-seaborn
 
     ax = sns.boxplot(data = iris_df.loc[:, ['sepal_length', 'sepal_width', 'petal_length', 'petal_width']])
-    plt.suptitle('Boxplot of all variables',fontsize = 16)
+    plt.suptitle('Plot X: Boxplot of all variables',fontsize = 16)
     ax.set_ylabel('length of variable (cm)', fontsize=12) 
     sns.set(style="darkgrid")
     

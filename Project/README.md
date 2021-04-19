@@ -192,20 +192,15 @@ __Descriptive Statistical Analysis__ [] <br/>
 
 
 
-<div align="center">
+
 | <img src="Images/summary_traits.png"  width="525"/>|
 |----------|
 | Fig 7.|
-</div>
 
 
 
-
-<p align="center">
-  <img src="Images/box_plot.png" width="650" />
-</p>  
-Fig X.
-
+  <img src="Images/box_plot.png" width="700" />
+  
 
 <br/>
 <br/>
@@ -214,15 +209,13 @@ Fig X.
 <p align="center">
   <img src="Images/histograms.png" width="2000" />
 </p>  
-Fig X.
-
 
 <br/>
 <br/>
 
 
 <img src="Images/scatter_plots.png"  width="2000"/>
- Fig X.
+
 
 <br/>
 <br/>
