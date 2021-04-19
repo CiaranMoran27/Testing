@@ -95,7 +95,7 @@ def plot_histograms():
     sns.histplot(ax=axes[0, 1], data=iris_df, x='petal_width',  hue = 'species', bins = 20, legend = False)
     sns.histplot(ax=axes[1, 0], data=iris_df, x='sepal_length', hue = 'species', bins = 20, legend = False)
     sns.histplot(ax=axes[1, 1], data=iris_df, x='sepal_width',  hue = 'species', bins = 20)
-
+    fig.tight_layout()
     for ax in plt.gcf().axes:
         x = ax.get_xlabel()
         y = ax.get_ylabel()
