@@ -203,16 +203,16 @@ The pandas *describe()* function is a very useful statistical summary method tha
 
 The following observations were drawn from Fig X:
 
-- Mean (cm): <br/>
+- **Mean (cm):** <br/>
   Sepal length > petal length > sepal width > petal width.<br/>
  
-- Standard Deviation: <br/>
+- **Standard Deviation:** <br/>
   Petal length samples shows the highest deviation from the mean. Sepal width samples show the lowest deviation from the mean.<br/>
   
-- Min / Max range (cm):<br/>
+- **Min / Max range (cm):**<br/>
  Overlap between dimensional attributes exists.<br/>
 
-- Median (50th percentile) and mean comparison:<br/>
+- **Median (50th percentile) and Mean comparison:**<br/>
   Sepal length and sepal width have a lowest difference between their median and mean values which indicates a more “normal” or guassian distribution. This observation can be made as the median value is the midpoint of the frequency distribution and the mean value is the average of all the numbers.<br/> 
 
 - It can be difficult to visualise the 25th percentile and 75th percentile from a table.<br/>
