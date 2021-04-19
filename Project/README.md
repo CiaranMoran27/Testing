@@ -188,15 +188,15 @@ If one was dealing with larger datasets it would be unlikely that a null count o
 
 <br/>
 
-__Descriptive Statistical Analysis__ [F2*] <br/>
+__Descriptive Statistical Analysis__ [] <br/>
 
 
 
-
+<p align="center">
 | <img src="Images/summary_traits.png"  width="525"/>|
 |----------|
 | Fig 7.|
-
+<p align="center">
 
 
 
