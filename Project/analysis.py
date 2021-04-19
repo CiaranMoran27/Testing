@@ -24,12 +24,14 @@ def summary_variables():
     species_count = iris_df.groupby('species').size()                                    
     desc_all_species = iris_df.describe()
     df_head = iris_df.head(5)
+    skewness_all_species = iris_df.skew()
+    kurtosis_all_species = iris_df.kurtosis()
     correlation = iris_df.corr()
     pd.set_option("display.precision", 2)
-    print(set(iris_df['species'].apply(lambda x: type(x))))
-    print(set(iris_df['sepal_length'].apply(lambda x: type(x))))
+    #print(set(iris_df['species'].apply(lambda x: type(x))))
+    #print(set(iris_df['sepal_length'].apply(lambda x: type(x))))
     
-    return shape, data_types, null_count, species_count, df_head, desc_all_species, correlation
+    return shape, data_types, null_count, species_count, desc_all_species, df_head, skewness_all_species, kurtosis_all_species, correlation
     
 summary_tuple = summary_variables()   
 
@@ -47,7 +49,9 @@ def write_summary_variables(summary_tuple):
         f.write('Row Count per Species: \n'+ str(summary_tuple[3]) + skip_three_lines)  
         f.write(' '*17 + 'First 5 rows of the Dataset\n' + str(summary_tuple[4])  + skip_three_lines)
         f.write(' '*17 + 'All Species : Summary Statistics \n' + str(summary_tuple[5]) + skip_three_lines)
-        f.write(' '*17 + 'All Species : Correlation Statistics \n' + str(summary_tuple[6]) + skip_three_lines)
+        f.write('Distribution Skewness \n' + str(summary_tuple[6]) + skip_three_lines)
+        f.write('Distribution Kurtosis \n' + str(summary_tuple[7]) + skip_three_lines)
+        f.write(' '*17 + 'All Species : Correlation Statistics \n' + str(summary_tuple[8]) + skip_three_lines)
 
 write_summary_variables(summary_tuple)
 
@@ -121,9 +125,6 @@ def plot_box_plot():
     plt.savefig('Images/' + 'box_plot' +'.png')
 
 plot_box_plot()
-
-
-
 
 
 #if __name__ == __main__:

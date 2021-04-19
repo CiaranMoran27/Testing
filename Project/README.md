@@ -203,32 +203,49 @@ The pandas *describe()* function is a very useful statistical summary method tha
 
 The following observations were drawn from Fig X:
 
-- **Mean (cm):** <br/>
+- **Mean:** <br/>
   Sepal length > petal length > sepal width > petal width.<br/>
  
 - **Standard Deviation:** <br/>
   Petal length samples shows the highest deviation from the mean. Sepal width samples show the lowest deviation from the mean.<br/>
   
-- **Min / Max range (cm):**<br/>
+- **Min / Max range:**<br/>
  Overlap between dimensional attributes exists.<br/>
 
 - **Median (50th percentile) and Mean comparison:**<br/>
-  Sepal length and sepal width have a lowest difference between their median and mean values which indicates a more “normal” or guassian distribution. This observation can be made as the median value is the midpoint of the frequency distribution and the mean value is the average of all the numbers.<br/> 
+  Sepal length and sepal width have the lowest difference between their median and mean values which indicates that these attributes have a distribution that closer fits the bell curve / guassian distribution when compared to that of petal length and petal width. This observation was made because when data is distriubted in a "normal" manner the mean and median values are equal, however when the data skewed the mean defiates from the mode[Dan 2020].<br/> 
 
-- It can be difficult to visualise the 25th percentile and 75th percentile from a table.<br/>
+<br/>
 
-- In an attempt to draw more insight from the summary table it was decided to use the Seaborn library to create a box plot.
-Box plots by nature cover most of the summary fields displayed in Fig X, the mean was manually coded into the boxplot (see plot 1 below).
+It was possible to investigate the shape of the data ditribution using pandas **df.skew()** and **Series.kurtosis()** functions
+Dan 2020 describes these two functions and how to evaluate their outputs:
+- **df.skew()**: Measures how symmetric a data distrubition is. The Function computes the "skewness" of the data present in a given axis of the DataFrame object. A skey value between -0.5 and 0.5 is considered symmetrical.
+- **series.kurtosis()**: Measures the heaviness of the distribution tails. The function computes the tail volumne difference relative to a guassian distribution curve. A kurtosis value of 0 is considered normal distribution, negative inidicates a flat thin-tailed distribution and positive kurtosis results from pointy fat- taileddistribution curves.
 
 
 
 
 
+
+
+
+
+Another time when we usually prefer the median over the mean (or mode) is when our data is skewed (i.e., the frequency distribution for our data is skewed). If we consider the normal distribution - as this is the most frequently assessed in statistics - when the data is perfectly normal, the mean, median and mode are identical. Moreover, they all represent the most typical value in the data set. However, as the data becomes skewed the mean loses its ability to provide the best central location for the data because the skewed data is dragging it away from the typical value. However, the median best retains this position and is not as strongly influenced by the skewed values. This is explained in more detail in the skewed distribution section later in this guide.
+
+
+
+- It can be difficult to visualise summary values from a table, especially the nth percentile values.<br/>
+In an attempt to draw more insight from the summary table it was decided to use the Seaborn library to create a box plot.
+Although Box plots by nature cover most of the summary fields displayed in Fig X, the mean was manually coded into the boxplot (see plot 1 below).
+
+<br/>
 
   <img src="Images/box_plot.png" width="700" />
   
-
 <br/>
+
+Looking at the boxplot the min:max ranges and standard deviation of the attributes become more apparent. 
+
 <br/>
  
 
@@ -266,6 +283,7 @@ Box plots by nature cover most of the summary fields displayed in Fig X, the mea
 [X] Brownlee, L, 2016, Linear discriminant analysis for Machine Learning, viewed 05 April 2021,<br/>**<https://machinelearningmastery.com/linear-discriminant-analysis-for-machine-learning/>**<br/>
 [X]: Wakefield, K. (2018). A guide to machine learning algorithms and their applications, viewed 05 April 2021, <br/>**<https://www.sas.com/en_ie/insights/articles/analytics/machine-learning-algorithms.html>**<br/>
 [X] Soni, D, 2018, Supervised Vs. unsupervised learning, towards data science, viewed 05 April 2021,<br/>**<https://towardsdatascience.com/supervised-vs-unsupervised-learning-14f68e32ea8d>**<br/>
-[X]GeeksforGeeks, 2020, Count NaN or missing values in Pandas DataFrame, viewed 15 April 2021,**<https://www.geeksforgeeks.org/count-nan-or-missing-values-in-pandas-dataframe>**<br/>
-[X]Moffitt, C, 2018, Overview of Pandas data types, Practical Business python, viewed 15 April 2021,**<https://pbpython.com/pandas_dtypes.html>**.<br/>
-[X]Solomon, B, 2021, Pandas GroupBy: Your Guide to Grouping Data in Python, RealPython, viewed 16 April 2021,**<https://realpython.com/pandas-groupby/#pandas-groupby-putting-it-all-together>**.
+[X] GeeksforGeeks, 2020, Count NaN or missing values in Pandas DataFrame, viewed 15 April 2021,**<https://www.geeksforgeeks.org/count-nan-or-missing-values-in-pandas-dataframe>**<br/>
+[X] Moffitt, C, 2018, Overview of Pandas data types, Practical Business python, viewed 15 April 2021,**<https://pbpython.com/pandas_dtypes.html>**.<br/>
+[X] Solomon, B, 2021, Pandas GroupBy: Your Guide to Grouping Data in Python, RealPython, viewed 16 April 2021,**<https://realpython.com/pandas-groupby/#pandas-groupby-putting-it-all-together>**.
+[X] Dan, A, 2022, Kurtosis() & Skew() Function In Pandas, medium.com, viewed 19 April 2021, **<https://medium.com/@atanudan/kurtosis-skew-function-in-pandas-aa63d72e20de>**.
