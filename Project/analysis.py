@@ -82,7 +82,9 @@ def scatter_plot():
          
     plt.savefig('Images/' + 'scatter_plots' +'.png')
 
-scatter_plot()
+#scatter_plot()
+
+
 
 def plot_histograms():
 
@@ -103,8 +105,27 @@ def plot_histograms():
 
     plt.savefig('Images/' + 'histograms' +'.png')
  
-plot_histograms()
+#plot_histograms()
+
+
+
+def plot_box_plot():
+    # reference: https://www.python-graph-gallery.com/30-basic-boxplot-with-seaborn
+
+    ax = sns.boxplot(data = iris_df.loc[:, ['sepal_length', 'sepal_width', 'petal_length', 'petal_width']])
+    plt.suptitle('Boxplot of all variables',fontsize = 16)
+    ax.set_ylabel('length of variable (cm)', fontsize=12) 
+    sns.set(style="darkgrid")
+    
+    plt.savefig('Images/' + 'box_plot' +'.png')
+    plt.show()
+
+
+plot_box_plot()
 
 
 
 
+
+#if __name__ == __main__:
+    #pass
