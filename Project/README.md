@@ -202,20 +202,19 @@ __Descriptive Statistical Analysis__ [] <br/>
 
 
 <p align="center">
-  <img src="Images/box_plot.png" width="850" />
+  <img src="Images/box_plot.png" width="100" />
 </p>  
 Fig X.
 
 
 <br/>
 <br/>
-
+ 
 
 <p align="center">
-  <img src="Images/histograms.png" width="1200" />
+  <img src="Images/histograms.png" width="2000" />
 </p>  
 Fig X.
-
 
 
 <br/>
