@@ -193,8 +193,15 @@ __Descriptive Statistical Analysis__ [] <br/>
 
 The pandas *describe()* function is a very useful statistical summary method that can be applied to a given dataset. In its standard form this function returns the min, max, mean, median 25th percentile, 75th percentile and standard deviation of the data. The Iris dataset was passed to this function, see Fig X below for statistical summary of the 4 attributes in the Iris Dataset. 
 
+<br/>
 
-The following observeations were drawn from Fig X:
+<img src="Images/summary_traits.png"  width="525"/>|
+|----------|
+| Fig 7.|
+
+<br/>
+
+The following observations were drawn from Fig X:
 
 - Mean (cm):
   - Sepal length > petal length > sepal width > petal width
@@ -210,14 +217,12 @@ The following observeations were drawn from Fig X:
   - Sepal length and sepal width have a lowest difference between their median and mean values which indicates a more “normal” or guassian distribution. This observation can be made as the median value is the midpoint of the frequency distribution and the mean value is the average of all the numbers. 
   <br/>
 - It can be difficult to visualise the 25th percentile and 75th percentile from a table.
-<br/>
-- In an attempt to draw more insight from the summary table it was decided to use the Seaborn library to create a box plot.<br/>
+
+- In an attempt to draw more insight from the summary table it was decided to use the Seaborn library to create a box plot.
 Box plots by nature cover most of the summary fields displayed in Fig X, the mean was manually coded into the boxplot (see plot 1 below).
 
 
-<img src="Images/summary_traits.png"  width="525"/>|
-|----------|
-| Fig 7.|
+
 
 
 
