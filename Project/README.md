@@ -198,15 +198,21 @@ The following observeations were drawn from Fig X:
 
 - Mean (cm):
   - Sepal length > petal length > sepal width > petal width
+  <br/>
 - Standard Deviation:
   - Petal length samples shows the highest deviation from the mean.
   - Sepal width samples show the lowest deviation from the mean.
+  <br/>
 - Min / Max range (cm):
   - Overlap between dimensional attributes exists.
+  <br/>
 - Median (50th percentile) and mean comparison:
   - Sepal length and sepal width have a lowest difference between their median and mean values which indicates a more “normal” or guassian distribution. This observation can be made as the median value is the midpoint of the frequency distribution and the mean value is the average of all the numbers. 
+  <br/>
 - It can be difficult to visualise the 25th percentile and 75th percentile from a table.
-- In an attempt to draw more insight from the summary table it was decided to use the Seaborn library to create a box plot. Although Box plots by nature cover most of the summary fields displayed in Fig X, the mean was manually coded into the boxplot (see plot 1 below).
+<br/>
+- In an attempt to draw more insight from the summary table it was decided to use the Seaborn library to create a box plot.<br/>
+Box plots by nature cover most of the summary fields displayed in Fig X, the mean was manually coded into the boxplot (see plot 1 below).
 
 
 <img src="Images/summary_traits.png"  width="525"/>|
