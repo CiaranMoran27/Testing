@@ -193,9 +193,9 @@ __Descriptive Statistical Analysis__ [] <br/>
 
 
 
-| <img src="Images/summary_traits.png"  width="525"/>|
-|----------|
-| Fig 7.|
+&emsp;| <img src="Images/summary_traits.png"  width="525"/>|
+&emsp;|----------|
+&emsp;| Fig 7.|
 
 
 
