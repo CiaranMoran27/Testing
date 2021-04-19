@@ -202,7 +202,7 @@ __Descriptive Statistical Analysis__ [F2*] <br/>
 
 
 <p align="center">
-  <img src="Images/box_plot.png" width="1200" />
+  <img src="Images/box_plot.png" width="850" />
 </p>  
 Fig X.
 
