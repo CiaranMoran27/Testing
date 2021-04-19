@@ -192,11 +192,11 @@ __Descriptive Statistical Analysis__ [] <br/>
 
 
 
-<p align="center">
+<div align="center">
 | <img src="Images/summary_traits.png"  width="525"/>|
 |----------|
 | Fig 7.|
-<p align="center">
+</div>
 
 
 
