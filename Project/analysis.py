@@ -110,20 +110,15 @@ def plot_histograms():
 
 
 def plot_box_plot():
-    # reference: https://www.python-graph-gallery.com/30-basic-boxplot-with-seaborn
-
-    ax = sns.boxplot(data = iris_df.loc[:, ['sepal_length', 'sepal_width', 'petal_length', 'petal_width']])
-    plt.suptitle('Plot X: Boxplot of all variables',fontsize = 16)
+    # reference: https://stackoverflow.com/questions/54132989/is-there-a-way-to-change-the-color-and-shape-indicating-the-mean-in-a-seaborn-bo
+    box_plot_data = iris_df.loc[:, ['sepal_length', 'sepal_width', 'petal_length', 'petal_width']]
+    ax = sns.boxplot(data = box_plot_data,showmeans=True, meanprops={"markerfacecolor":"black","markeredgecolor":"white"})
     
-    ax.set_ylabel('length of variable (cm)', fontsize=12) 
-    ax.yaxis.set_label_position("right")
-    ax.yaxis.tick_right()
-    
+    plt.suptitle('Plot X: Boxplot of all variables',fontsize = 16) 
+    ax.set_ylabel('length of variable (cm)', fontsize=12)  
     sns.set(style="darkgrid")
     
     plt.savefig('Images/' + 'box_plot' +'.png')
-    plt.show()
-
 
 plot_box_plot()
 

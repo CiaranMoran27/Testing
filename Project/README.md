@@ -191,6 +191,9 @@ If one was dealing with larger datasets it would be unlikely that a null count o
 __Descriptive Statistical Analysis__ [] <br/>
 
 
+The pandas *describe()* function is very useful quick statistics on a given dataset. This function was used to establish the min, max, mean, standard deviations, ranges, skewness/kurtosis and a few other important measurements pertaining to the Iris flower anatomy. Tables (Pandas DataFrames) and figures, i.e. A barplot and histograms were used for graphical representation of descriptive features of the dataset attributes.
+
+Firstly, I established a summary for each Iris flower attribute by using the "describe" method from the Pandas library. This function returns a nice statistical summary of the data including the count, mean, min and max values as well as some upper and lower percentiles. For example, looking at the summary output we see that the sepal length mean is highest at 5.84cm while the petal width mean is notably low at 1.19cm. Another interesting feature is that sepal length ranges from 4.3cm to 7.9cm, while petal width has a much lower range of 0.1cm to 2.5cm. The median (middle) measurement of each column is represented by the 50th percentile row.
 
 
 <img src="Images/summary_traits.png"  width="525"/>|
