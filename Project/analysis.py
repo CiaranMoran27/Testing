@@ -85,8 +85,12 @@ def scatter_plot():
         ax.set_xlabel(x, fontsize=20)
         ax.set_ylabel(y, fontsize=20)
         ax.set_xlim((0,8))
-        plt.setp(ax.get_xticklabels(), Fontsize=15)  
-        plt.setp(ax.get_yticklabels(), Fontsize=15)  
+
+        try:
+            plt.setp(ax.get_xticklabels(), Fontsize=15)  
+            plt.setp(ax.get_yticklabels(), Fontsize=15)  
+        except ValueError:
+            pass
 
     fig.tight_layout()     
     plt.savefig('Images/' + 'scatter_plots' +'.png')
@@ -112,14 +116,16 @@ def plot_histograms():
     plt.setp(hist_with_legend.get_legend().get_title(), fontsize='20') 
     
     for ax in plt.gcf().axes:
-        #sns.set(font_scale = 15)
         x = ax.get_xlabel()
         y = ax.get_ylabel()
         ax.set_xlabel(x, fontsize=20)
         ax.set_ylabel(y, fontsize=0)
-        plt.setp(ax.get_xticklabels(), Fontsize=15)  
-        plt.setp(ax.get_yticklabels(), Fontsize=15)  
-        #plt.tick_params(axis='both', which='major', labelsize=22)
+
+        try:
+            plt.setp(ax.get_xticklabels(), Fontsize=15)  
+            plt.setp(ax.get_yticklabels(), Fontsize=15)  
+        except ValueError:
+            pass
         
     fig.tight_layout() 
     plt.savefig('Images/' + 'histograms' +'.png')
