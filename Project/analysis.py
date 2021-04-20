@@ -64,7 +64,7 @@ def write_plot(plot,file_name):
 
 
 def scatter_plot(): 
-
+    plt.clf() 
     fig, axes = plt.subplots(2, 3, figsize=(22, 14))
     plt.subplots_adjust(wspace=0.2,hspace=0.2)#  hspace=0.3
     fig.suptitle('Plot X: Scatter Plot of all variables (Units = cm)',fontsize = 25)
@@ -94,6 +94,7 @@ def scatter_plot():
 
     fig.tight_layout()     
     plt.savefig('Images/' + 'scatter_plots' +'.png')
+    
 scatter_plot()
 
 
@@ -107,7 +108,7 @@ scatter_plot()
 def plot_histograms(filename, plot_name, chart_title, x_series_one, x_series_two):
 
     bin_number = 15
-
+    #fig, axes = plt.subplots(ncols=2, nrows=2, sharey=True, sharex=True)
     fig, axes = plt.subplots(2, 2, figsize=(14, 14))
     fig.suptitle('{}: Histogram of {} variables (cm)'.format(plot_name,chart_title),fontsize = 25)
 
@@ -116,26 +117,27 @@ def plot_histograms(filename, plot_name, chart_title, x_series_one, x_series_two
     sns.histplot(ax=axes[1, 0], data=iris_df, x = x_series_one, bins = bin_number, legend = False, hue = 'species',kde = True,element ="step") 
     hist_with_legend = sns.histplot(ax=axes[1, 1], data=iris_df, x = x_series_two, bins = bin_number, hue = 'species', kde = True,element = "step") 
     
-    plt.setp(ax.get_legend().get_texts(), fontsize='20') # for legend text
-    plt.setp(ax.get_legend().get_title(), fontsize='22') # for legend title
-
+    plt.setp(hist_with_legend.get_legend().get_texts(), fontsize='20') # for legend text
+    plt.setp(hist_with_legend.get_legend().get_title(), fontsize='22') # for legend title
+    
     for ax in plt.gcf().axes:
         x = ax.get_xlabel()
         y = ax.get_ylabel()
         ax.set_xlabel(x, fontsize=20)
         ax.set_ylabel(y, fontsize=0)
 
+        
         try:
             plt.setp(ax.get_xticklabels(), Fontsize=15)  
             plt.setp(ax.get_yticklabels(), Fontsize=15)  
         except ValueError:
             pass
-
+        
     fig.tight_layout() 
     plt.savefig('Images/' + filename +'.png')
  
-plot_histograms('histograms_sepals','Plot 1','Sepals','petal_length','petal_width')
-plot_histograms('histograms_petals','Plot 2','Petals','sepal_length','sepal_width')
+plot_histograms('histograms_pepals','Plot 1','Petals','petal_length','petal_width')
+plot_histograms('histograms_setals','Plot 2','Sepals','sepal_length','sepal_width')
 
 
 
