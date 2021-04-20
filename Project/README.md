@@ -222,15 +222,17 @@ Dan 2020 describes these two functions and how to evaluate their outputs:
 - **df.skew()**: Measures how symmetric a data distrubition is. The Function computes the "skewness" of the data present in a given axis of the DataFrame object. A skew value between -0.5 and 0.5 is considered symmetrical.
 - **series.kurtosis()**: Measures the heaviness of the distribution tails. The function computes the tail volumne difference relative to a guassian distribution curve. A kurtosis value of 0 is considered normal distribution, negative inidicates a flat thin-tailed distribution and positive kurtosis results from pointy fat- taileddistribution curves.
 
+These two distrubtion functions were used to analyse the distrubtion of the Iris dataframe (see Fig X for results).
 
+| <img src="Images/skewness_kurtosis_hue_False.png"  width="525"/>|
+|----------|
+| Fig X.|
 
-
-- It can be difficult to visualise summary values from a table, especially the nth percentile values.<br/>
-In an attempt to draw more insight from the summary table it was decided to use the Seaborn library to create a box plot.
-Although Box plots by nature cover most of the summary fields displayed in Fig X, the mean was manually coded into the boxplot (see plot 1 below).
-
-
+So, looking at the skewness and kurtosis output we can that sepal length and sepal width are slightly positively skewed, i.e.pulled to the right of the measurement spread. Conversely, petal length and petal width are negatively skewed, thus also diverging from the normal distribution. We can see that petal length revealed the highest kurtosis score of -1.4.
 Looking at the boxplot the min:max ranges and standard deviation of the attributes become more apparent. 
+
+
+
 
 <br/>
 
