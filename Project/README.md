@@ -224,9 +224,15 @@ Dan 2020 describes these two functions and how to evaluate their outputs:
 
 These two distrubtion functions were used to analyse the distrubtion of the Iris dataframe (see Fig X for results).
 
-| <img src="Images/skewness_kurtosis_hue_False.png"  width="525"/>|
+
+<img src="Images/skewness_kurtosis_hue_False.png"  width="525"/>|
 |----------|
-| Fig X.|
+| Fig 7.|
+
+
+
+
+
 
 So, looking at the skewness and kurtosis output we can that sepal length and sepal width are slightly positively skewed, i.e.pulled to the right of the measurement spread. Conversely, petal length and petal width are negatively skewed, thus also diverging from the normal distribution. We can see that petal length revealed the highest kurtosis score of -1.4.
 Looking at the boxplot the min:max ranges and standard deviation of the attributes become more apparent. 
