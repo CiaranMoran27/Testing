@@ -255,7 +255,7 @@ So, looking at the skewness and kurtosis output we can that sepal length and sep
 
 
 <p align="center">
-  <img src="Images/histograms_hue_species.png" width="900" />
+  <img src="Images/histograms_hue_species.png" width="1500" />
 </p>  
 
 <br/>
