@@ -197,9 +197,11 @@ The pandas *describe()* function is a very useful statistical summary method tha
 
 
 
-<img src="Images/skewness_kurtosis_hue_False.png"  width="525"/>|
+| <img src="skewness_kurtosis_hue_False"  width="525"/>|
 |----------|
-| Fig X.|
+| Fig 3.|
+
+
 
 <br/>
 
