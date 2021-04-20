@@ -244,14 +244,18 @@ Looking at the boxplot the min:max ranges and standard deviation of the attribut
 <br/>
 
 <p align="center">
-  <img src="Images/histograms.png" width="2000" />
+  <img src="Images/histograms.png" width="1200" />
 </p>  
 
 <br/>
 <br/>
 
 
-<img src="Images/scatter_plots.png"  width="2000"/>
+<p align="center">
+<img src="Images/scatter_plots.png"  width="1200"/>
+</p>  
+
+
 
 
 <br/>
