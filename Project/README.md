@@ -245,7 +245,7 @@ Looking at the boxplot the min:max ranges and standard deviation of the attribut
 
 
 <p align="center">
-  <img src="Images/scatter_plots.png" width="900" />
+  <img src="Images/scatter_plots.png" width="1100" />
 </p>  
 
 
