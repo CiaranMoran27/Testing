@@ -228,7 +228,7 @@ These two distrubtion functions were used to analyse the distrubtion of the Iris
 
 
 
-| <img src="Images/skewness_kurtosis_hue_False.png"  width="525"/>|
+| <img src="Images/test.png"  width="525"/>|
 |----------|
 | Fig X.|
 
