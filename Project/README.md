@@ -238,16 +238,10 @@ Another time when we usually prefer the median over the mean (or mode) is when o
 In an attempt to draw more insight from the summary table it was decided to use the Seaborn library to create a box plot.
 Although Box plots by nature cover most of the summary fields displayed in Fig X, the mean was manually coded into the boxplot (see plot 1 below).
 
-<br/>
-
-  <img src="Images/box_plot.png" width="700" />
-  
-<br/>
 
 Looking at the boxplot the min:max ranges and standard deviation of the attributes become more apparent. 
 
 <br/>
- 
 
 <p align="center">
   <img src="Images/histograms.png" width="2000" />
