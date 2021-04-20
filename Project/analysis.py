@@ -98,24 +98,29 @@ scatter_plot()
 
 
 
-def plot_histograms(filename, hue_input):
+def plot_histograms(filename):
 
     #Reference: https://www.python-graph-gallery.com/25-histogram-with-several-variables-seaborn
     #Refernce:  https://stackoverflow.com/questions/42404154/increase-tick-label-font-size-in-seaborn
 
     bin_number = 15
 
-    fig, axes = plt.subplots(2, 2, figsize=(14, 14))
+    fig, axes = plt.subplots(2, 4, figsize=(14, 14))
     fig.suptitle('Plot X: Histogram of all variables (Units = cm)',fontsize = 25)
 
-    sns.histplot(ax=axes[0, 0], data=iris_df, x='petal_length', bins = bin_number, legend = False, hue = hue_input, kde = True,element = "step")
-    sns.histplot(ax=axes[0, 1], data=iris_df, x='petal_width', bins = bin_number, legend = False, hue = hue_input, kde = True,element ="step")
-    sns.histplot(ax=axes[1, 0], data=iris_df, x='sepal_length', bins = bin_number, legend = False, hue = hue_input,kde = True,element ="step")
+    sns.histplot(ax=axes[0, 0], data=iris_df, x='petal_length', bins = bin_number, legend = False, kde = True,element = "step")
+    sns.histplot(ax=axes[0, 1], data=iris_df, x='petal_width', bins = bin_number, legend = False, kde = True,element ="step")
+    sns.histplot(ax=axes[0, 2], data=iris_df, x='sepal_length', bins = bin_number, legend = False, kde = True,element ="step")
+    sns.histplot(ax=axes[0, 3], data=iris_df, x='sepal_width', bins = bin_number, legend = False, kde = True,element ="step")
+
+    sns.histplot(ax=axes[1, 0], data=iris_df, x='petal_length', bins = bin_number, legend = False, hue = 'species', kde = True,element = "step")
+    sns.histplot(ax=axes[1, 1], data=iris_df, x='petal_width', bins = bin_number, legend = False, hue = 'species', kde = True,element ="step")
+    sns.histplot(ax=axes[1, 2], data=iris_df, x='sepal_length', bins = bin_number, legend = False, hue = 'species',kde = True,element ="step")
     
-    hist_with_legend = sns.histplot(ax=axes[1, 1], data=iris_df, x='sepal_width', bins = bin_number, hue = hue_input, kde = True,element = "step") 
+    hist_with_legend = sns.histplot(ax=axes[1, 3], data=iris_df, x='sepal_width', bins = bin_number, hue = 'species', kde = True,element = "step") 
 
 
-    if hue_input == None:
+    if 1 == None:
         pass
     else:
         plt.setp(hist_with_legend.get_legend().get_texts(), fontsize='20')  
@@ -136,8 +141,10 @@ def plot_histograms(filename, hue_input):
     fig.tight_layout() 
     plt.savefig('Images/' + filename +'.png')
  
-plot_histograms('histograms_hue_species','species')
-plot_histograms('histograms_hue_none',None)
+#plot_histograms('histograms_hue_species','species')
+#plot_histograms('histograms_hue_none',None)
+plot_histograms('histograms_hue_test')
+
 
 
 
