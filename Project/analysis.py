@@ -93,12 +93,13 @@ def scatter_plot():
             pass
 
     fig.tight_layout()     
-    plt.savefig('Images/' + 'scatter_plots' +'.png')
+    plt.savefig('Images/' + 'scatter_plots1' +'.png')
 scatter_plot()
 
 
 
-def plot_histograms():
+def plot_histograms(filename, hue_input):
+
     #Reference: https://www.python-graph-gallery.com/25-histogram-with-several-variables-seaborn
     #Refernce:  https://stackoverflow.com/questions/42404154/increase-tick-label-font-size-in-seaborn
 
@@ -107,13 +108,18 @@ def plot_histograms():
     fig, axes = plt.subplots(2, 2, figsize=(14, 14))
     fig.suptitle('Plot X: Histogram of all variables (Units = cm)',fontsize = 25)
 
-    sns.histplot(ax=axes[0, 0], data=iris_df, x='petal_length', bins = bin_number, legend = False, hue = 'species', kde = True,element = "step")
-    sns.histplot(ax=axes[0, 1], data=iris_df, x='petal_width', bins = bin_number, legend = False, hue = 'species', kde = True,element ="step")
-    sns.histplot(ax=axes[1, 0], data=iris_df, x='sepal_length', bins = bin_number, legend = False, hue = 'species', kde = True,element ="step")
+    sns.histplot(ax=axes[0, 0], data=iris_df, x='petal_length', bins = bin_number, legend = False, hue = hue_input, kde = True,element = "step")
+    sns.histplot(ax=axes[0, 1], data=iris_df, x='petal_width', bins = bin_number, legend = False, hue = hue_input, kde = True,element ="step")
+    sns.histplot(ax=axes[1, 0], data=iris_df, x='sepal_length', bins = bin_number, legend = False, hue = hue_input,kde = True,element ="step")
     
-    hist_with_legend = sns.histplot(ax=axes[1, 1], data=iris_df, x='sepal_width', bins = bin_number, hue = 'species', kde = True,element = "step") 
-    plt.setp(hist_with_legend.get_legend().get_texts(), fontsize='20')  
-    plt.setp(hist_with_legend.get_legend().get_title(), fontsize='20') 
+    hist_with_legend = sns.histplot(ax=axes[1, 1], data=iris_df, x='sepal_width', bins = bin_number, hue = hue_input, kde = True,element = "step") 
+
+
+    if hue_input == None:
+        pass
+    else:
+        plt.setp(hist_with_legend.get_legend().get_texts(), fontsize='20')  
+        plt.setp(hist_with_legend.get_legend().get_title(), fontsize='20') 
     
     for ax in plt.gcf().axes:
         x = ax.get_xlabel()
@@ -126,11 +132,13 @@ def plot_histograms():
             plt.setp(ax.get_yticklabels(), Fontsize=15)  
         except ValueError:
             pass
-        
+
     fig.tight_layout() 
-    plt.savefig('Images/' + 'histograms' +'.png')
+    plt.savefig('Images/' + filename +'.png')
  
-plot_histograms()
+plot_histograms('histograms_hue_species','species')
+plot_histograms('histograms_hue_none',None)
+
 
 
 

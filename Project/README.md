@@ -224,28 +224,32 @@ Dan 2020 describes these two functions and how to evaluate their outputs:
 - **df.skew()**: Measures how symmetric a data distrubition is. The Function computes the "skewness" of the data present in a given axis of the DataFrame object. A skew value between -0.5 and 0.5 is considered symmetrical.
 - **series.kurtosis()**: Measures the heaviness of the distribution tails. The function computes the tail volumne difference relative to a guassian distribution curve. A kurtosis value of 0 is considered normal distribution, negative inidicates a flat thin-tailed distribution and positive kurtosis results from pointy fat- taileddistribution curves.
 
-These two distrubtion functions were used to analyse the distrubtion of the Iris dataframe (see Fig X for results).
+These two distrubtion functions were used to analyse the distrubtion of the Iris dataframe (see Fig X for results). The results show that the data distrubtion has a degree of symmerty as all skew values lie between -0.5 and 0.5. The sepal length and sepal width attribues have a slightly right learning skew whearas the petal length and petal width attributes data curve is learning slightly to the left. This data also suggests that the petal width attribue is the closesy  to fully normal distribution as its skew value lies closer to zero.
+
+So, looking at the skewness and kurtosis output we can that sepal length and sepal width are slightly positively skewed, i.e.pulled to the right of the measurement spread. Conversely, petal length and petal width are negatively skewed, thus also diverging from the normal distribution. We can see that petal length revealed the highest kurtosis score of -1.4.
 
 
 
-| <img src="Images/skew_kurtosis_nohue.png"  width="525"/>|
+| <img src="Images/skew_kurtosis_nohue.png"  width="400"/>|
 |----------|
 | Fig X.|
 
 
+<br/>
+<br/>
 
-
-
-So, looking at the skewness and kurtosis output we can that sepal length and sepal width are slightly positively skewed, i.e.pulled to the right of the measurement spread. Conversely, petal length and petal width are negatively skewed, thus also diverging from the normal distribution. We can see that petal length revealed the highest kurtosis score of -1.4.
-Looking at the boxplot the min:max ranges and standard deviation of the attributes become more apparent. 
-
+<p align="center">
+  <img src="Images/histograms_hue_none.png" width="900" />
+</p>  
 
 
 
 <br/>
+<br/>
+
 
 <p align="center">
-  <img src="Images/histograms.png" width="900" />
+  <img src="Images/histograms_hue_species.png" width="900" />
 </p>  
 
 <br/>
