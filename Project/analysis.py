@@ -133,8 +133,8 @@ def plot_histograms(filename, plot_name, chart_title, x_series_one, x_series_two
     fig.tight_layout() 
     plt.savefig('Images/' + filename +'.png')
  
-plot_histograms('histograms_sepals',' Plot 2','Sepals','petal_length','petal_width')
-plot_histograms('histograms_petals','Plot 3','Petals','sepal_length','sepal_width')
+plot_histograms('histograms_sepals','Plot 1','Sepals','petal_length','petal_width')
+plot_histograms('histograms_petals','Plot 2','Petals','sepal_length','sepal_width')
 
 
 
