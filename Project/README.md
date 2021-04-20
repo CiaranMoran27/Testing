@@ -191,7 +191,7 @@ If one was dealing with larger datasets it would be unlikely that a null count o
 __Descriptive Statistical Analysis__ [] <br/>
 
 
-The pandas *describe()* function is a very useful statistical summary method that can be applied to a given dataset. In its standard form this function returns the min, max, mean, median 25th percentile, 75th percentile and standard deviation of the data. The Iris dataset was passed to this function, see Fig X below for statistical summary of the 4 attributes in the Iris Dataset. 
+The pandas *describe()* function is a very useful statistical summary method that can be applied to a given dataset. In its standard form this function returns the min, max, mean, median, 25th percentile, 75th percentile and standard deviation of the data. The Iris dataset was passed to this function, see Fig X below for statistical summary of the 4 attributes in the Iris Dataset. 
 
 <br/>
 
@@ -219,7 +219,7 @@ The following observations were drawn from Fig X:
 
 It was possible to investigate the shape of the data ditribution using pandas **df.skew()** and **Series.kurtosis()** functions
 Dan 2020 describes these two functions and how to evaluate their outputs:
-- **df.skew()**: Measures how symmetric a data distrubition is. The Function computes the "skewness" of the data present in a given axis of the DataFrame object. A skey value between -0.5 and 0.5 is considered symmetrical.
+- **df.skew()**: Measures how symmetric a data distrubition is. The Function computes the "skewness" of the data present in a given axis of the DataFrame object. A skew value between -0.5 and 0.5 is considered symmetrical.
 - **series.kurtosis()**: Measures the heaviness of the distribution tails. The function computes the tail volumne difference relative to a guassian distribution curve. A kurtosis value of 0 is considered normal distribution, negative inidicates a flat thin-tailed distribution and positive kurtosis results from pointy fat- taileddistribution curves.
 
 

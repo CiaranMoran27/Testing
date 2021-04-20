@@ -69,47 +69,80 @@ def scatter_plot():
     plt.subplots_adjust(wspace=0.2,hspace=0.2)#  hspace=0.3
     fig.suptitle('Plot X: Scatter Plot of all variables (Units = cm)',fontsize = 25)
     
-    sns.scatterplot(ax=axes[0, 0], data=iris_df, x='petal_length', y='petal_width', hue = 'species',legend = False)
-    sns.scatterplot(ax=axes[0, 1], data=iris_df, x='petal_length', y='sepal_length',hue = 'species',legend = False)
-    sns.scatterplot(ax=axes[0, 2], data=iris_df, x='petal_length', y='sepal_width', hue = 'species',legend = False)
-    sns.scatterplot(ax=axes[1, 0], data=iris_df, x='sepal_length', y='sepal_width', hue = 'species',legend = False)
-    sns.scatterplot(ax=axes[1, 1], data=iris_df, x='sepal_length', y='petal_width', hue = 'species',legend = False)
-    sns.scatterplot(ax=axes[1, 2], data=iris_df, x='sepal_width',  y='petal_width', hue = 'species')
-    fig.tight_layout()
+    sns.scatterplot(ax=axes[0, 0], data=iris_df, x='petal_length', y='petal_width', hue = 'species',legend = False, s = 70)
+    sns.scatterplot(ax=axes[0, 1], data=iris_df, x='petal_length', y='sepal_length',hue = 'species',legend = False, s = 70)
+    sns.scatterplot(ax=axes[0, 2], data=iris_df, x='petal_length', y='sepal_width', hue = 'species',legend = False, s = 70)
+    sns.scatterplot(ax=axes[1, 0], data=iris_df, x='sepal_length', y='sepal_width', hue = 'species',legend = False, s = 70)
+    sns.scatterplot(ax=axes[1, 1], data=iris_df, x='sepal_length', y='petal_width', hue = 'species',legend = False, s = 70)
+    
+    scatter_with_legend = sns.scatterplot(ax=axes[1, 2], data=iris_df, x='sepal_width',  y='petal_width', hue = 'species', s = 70)
+    plt.setp(scatter_with_legend.get_legend().get_texts(), fontsize='20')  
+    plt.setp(scatter_with_legend.get_legend().get_title(), fontsize='20') 
 
     for ax in plt.gcf().axes:
         x = ax.get_xlabel()
         y = ax.get_ylabel()
-        ax.set_xlabel(x, fontsize=14)
-        ax.set_ylabel(y, fontsize=14)
+        ax.set_xlabel(x, fontsize=20)
+        ax.set_ylabel(y, fontsize=20)
         ax.set_xlim((0,8))
-         
-    plt.savefig('Images/' + 'scatter_plots' +'.png')
+        plt.setp(ax.get_xticklabels(), Fontsize=15)  
+        plt.setp(ax.get_yticklabels(), Fontsize=15)  
 
-#scatter_plot()
+    fig.tight_layout()     
+    plt.savefig('Images/' + 'scatter_plots' +'.png')
+scatter_plot()
 
 
 
 def plot_histograms():
+    #Reference: https://www.python-graph-gallery.com/25-histogram-with-several-variables-seaborn
+    #Refernce:  https://stackoverflow.com/questions/42404154/increase-tick-label-font-size-in-seaborn
 
-    fig, axes = plt.subplots(2, 2, figsize=(30, 22))
+    bin_number = 15
+
+    fig, axes = plt.subplots(2, 2, figsize=(14, 14))
     fig.suptitle('Plot X: Histogram of all variables (Units = cm)',fontsize = 25)
 
-    sns.histplot(ax=axes[0, 0], data=iris_df, x='petal_length', hue = 'species', bins = 20, legend = False)
-    sns.histplot(ax=axes[0, 1], data=iris_df, x='petal_width',  hue = 'species', bins = 20, legend = False)
-    sns.histplot(ax=axes[1, 0], data=iris_df, x='sepal_length', hue = 'species', bins = 20, legend = False)
-    sns.histplot(ax=axes[1, 1], data=iris_df, x='sepal_width',  hue = 'species', bins = 20)
-    fig.tight_layout()
+    sns.histplot(ax=axes[0, 0], data=iris_df, x='petal_length', bins = bin_number, legend = False, hue = 'species', kde = True,element = "step")
+    sns.histplot(ax=axes[0, 1], data=iris_df, x='petal_width', bins = bin_number, legend = False, hue = 'species', kde = True,element ="step")
+    sns.histplot(ax=axes[1, 0], data=iris_df, x='sepal_length', bins = bin_number, legend = False, hue = 'species', kde = True,element ="step")
+    
+    hist_with_legend = sns.histplot(ax=axes[1, 1], data=iris_df, x='sepal_width', bins = bin_number, hue = 'species', kde = True,element = "step") 
+    plt.setp(hist_with_legend.get_legend().get_texts(), fontsize='20')  
+    plt.setp(hist_with_legend.get_legend().get_title(), fontsize='20') 
+    
     for ax in plt.gcf().axes:
+        #sns.set(font_scale = 15)
         x = ax.get_xlabel()
         y = ax.get_ylabel()
-        ax.set_xlabel(x, fontsize=17)
-        ax.set_ylabel(y, fontsize=17) 
-        ax.set_xlim((0,8))
-
+        ax.set_xlabel(x, fontsize=20)
+        ax.set_ylabel(y, fontsize=0)
+        plt.setp(ax.get_xticklabels(), Fontsize=15)  
+        plt.setp(ax.get_yticklabels(), Fontsize=15)  
+        #plt.tick_params(axis='both', which='major', labelsize=22)
+        
+    fig.tight_layout() 
     plt.savefig('Images/' + 'histograms' +'.png')
  
-#plot_histograms()
+plot_histograms()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -124,7 +157,28 @@ def plot_box_plot():
     
     plt.savefig('Images/' + 'box_plot' +'.png')
 
-plot_box_plot()
+#plot_box_plot()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #if __name__ == __main__:
