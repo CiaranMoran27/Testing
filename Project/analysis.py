@@ -93,14 +93,15 @@ def scatter_plot():
             pass
 
     fig.tight_layout()     
-    plt.savefig('Images/' + 'scatter_plots1' +'.png')
+    plt.savefig('Images/' + 'scatter_plots' +'.png')
 scatter_plot()
 
 
 
-
+    #Reference: https://seaborn.pydata.org/generated/seaborn.histplot.html
     #Reference: https://www.python-graph-gallery.com/25-histogram-with-several-variables-seaborn
-    #Refernce:  https://stackoverflow.com/questions/42404154/increase-tick-label-font-size-in-seaborn
+    #Reference: https://stackoverflow.com/questions/42404154/increase-tick-label-font-size-in-seaborn
+
 
 
 def plot_histograms(filename, plot_name, chart_title, x_series_one, x_series_two):
