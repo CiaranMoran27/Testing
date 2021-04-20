@@ -105,7 +105,7 @@ def plot_histograms(filename):
 
     bin_number = 15
 
-    fig, axes = plt.subplots(2, 4, figsize=(14, 14))
+    fig, axes = plt.subplots(2, 4, figsize=(14, 20))
     fig.suptitle('Plot X: Histogram of all variables (Units = cm)',fontsize = 25)
 
     sns.histplot(ax=axes[0, 0], data=iris_df, x='petal_length', bins = bin_number, legend = False, kde = True,element = "step")
