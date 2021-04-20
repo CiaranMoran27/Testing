@@ -225,15 +225,6 @@ Dan 2020 describes these two functions and how to evaluate their outputs:
 
 
 
-
-
-
-
-
-Another time when we usually prefer the median over the mean (or mode) is when our data is skewed (i.e., the frequency distribution for our data is skewed). If we consider the normal distribution - as this is the most frequently assessed in statistics - when the data is perfectly normal, the mean, median and mode are identical. Moreover, they all represent the most typical value in the data set. However, as the data becomes skewed the mean loses its ability to provide the best central location for the data because the skewed data is dragging it away from the typical value. However, the median best retains this position and is not as strongly influenced by the skewed values. This is explained in more detail in the skewed distribution section later in this guide.
-
-
-
 - It can be difficult to visualise summary values from a table, especially the nth percentile values.<br/>
 In an attempt to draw more insight from the summary table it was decided to use the Seaborn library to create a box plot.
 Although Box plots by nature cover most of the summary fields displayed in Fig X, the mean was manually coded into the boxplot (see plot 1 below).
@@ -249,11 +240,14 @@ Looking at the boxplot the min:max ranges and standard deviation of the attribut
 
 <br/>
 <br/>
+<br/>
+<br/>
 
 
 <p align="center">
-<img src="Images/scatter_plots.png"  width="900"/>
+  <img src="Images/scatter_plot.png" width="900" />
 </p>  
+
 
 
 
