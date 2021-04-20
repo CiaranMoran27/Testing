@@ -222,17 +222,27 @@ The following observations were drawn from Fig X:
 It was possible to investigate the shape of the data ditribution using pandas **df.skew()** and **Series.kurtosis()** functions
 Dan 2020 describes these two functions and how to evaluate their outputs:
 - **df.skew()**: Measures how symmetric a data distrubition is. The Function computes the "skewness" of the data present in a given axis of the DataFrame object. A skew value between -0.5 and 0.5 is considered symmetrical.
-- **series.kurtosis()**: Measures the heaviness of the distribution tails. The function computes the tail volumne difference relative to a guassian distribution curve. A kurtosis value of 0 is considered normal distribution, negative inidicates a flat thin-tailed distribution and positive kurtosis results from pointy fat- taileddistribution curves.
+- **series.kurtosis()**: Measures the heaviness of the distribution tails. The function computes the tail volumne difference relative to a guassian distribution curve. A kurtosis value of 0 is considered normal distribution, negative inidicates a flat thin-tailed distribution and positive kurtosis results from pointy fat- taileddistribution curves.<br/>
 
-These two distrubtion functions were used to analyse the distrubtion of the Iris dataframe (see Fig X for results). The results show that the data distrubtion has a degree of symmerty as all skew values lie between -0.5 and 0.5. The sepal length and sepal width attribues have a slightly right learning skew whearas the petal length and petal width attributes data curve is learning slightly to the left. This data also suggests that the petal width attribue is the closesy  to fully normal distribution as its skew value lies closer to zero.
-
-So, looking at the skewness and kurtosis output we can that sepal length and sepal width are slightly positively skewed, i.e.pulled to the right of the measurement spread. Conversely, petal length and petal width are negatively skewed, thus also diverging from the normal distribution. We can see that petal length revealed the highest kurtosis score of -1.4.
-
-
+These two distrubtion functions were used to analyse the distrubtion of the Iris dataframe (see Fig X for results). The results show that the data distrubtion has a degree of symmerty as all skew values lie between -0.5 and 0.5. The sepal length and sepal width attribues have a slightly right learning skew whearas the petal length and petal width attributes data curve is learning slightly to the left. This data also suggests that the petal width attribue is the closesy  to fully normal distribution as its skew value lies closer to zero. 
 
 | <img src="Images/skew_kurtosis_nohue.png"  width="400"/>|
 |----------|
 | Fig X.|
+
+Introduce Histograms -> further interpret the distribution 
+
+plotted:
+Histogram of each attribute (in blue) and the each attribute broken down into species (multi colored):
+
+As predicted from describe method the close median / mean values yielded a close to bell curve distribution shape for sepal length and sepal width (no hue).
+
+The distribution for petal length and petal width (no hue) looks almost bimodal This is due to clear seperation of the iris-setosa species.
+
+All attribues yielded what looked like a bell curve shape / nomral distribution when they were broken down into their respective species.
+
+tie in skew numbers with kurtosis
+
 
 
 <br/>
