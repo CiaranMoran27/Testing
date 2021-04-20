@@ -227,10 +227,10 @@ Dan 2020 describes these two functions and how to evaluate their outputs:
 These two distrubtion functions were used to analyse the distrubtion of the Iris dataframe (see Fig X for results).
 
 
-<img src="Images/skewness_kurtosis_hue_False.png"  width="525"/>|
-|----------|
-| Fig 7.|
 
+| <img src="Images/skewness_kurtosis_hue_False.png"  width="525"/>|
+|----------|
+| Fig X.|
 
 
 
