@@ -103,27 +103,21 @@ scatter_plot()
     #Refernce:  https://stackoverflow.com/questions/42404154/increase-tick-label-font-size-in-seaborn
 
 
-def plot_histograms(filename, x_series_one, x_series_two):
-
+def plot_histograms(filename, plot_name, chart_title, x_series_one, x_series_two):
 
     bin_number = 15
 
     fig, axes = plt.subplots(2, 2, figsize=(14, 14))
-    fig.suptitle('Plot X: Histogram of all variables (Units = cm)',fontsize = 25)
+    fig.suptitle('{}: Histogram of {} variables (cm)'.format(plot_name,chart_title),fontsize = 25)
 
     sns.histplot(ax=axes[0, 0], data=iris_df, x = x_series_one, bins = bin_number, legend = False, kde = True,element = "step")
     sns.histplot(ax=axes[0, 1], data=iris_df, x = x_series_two, bins = bin_number, legend = False, kde = True,element ="step")
-    sns.histplot(ax=axes[1, 0], data=iris_df, x = x_series_one, bins = bin_number, legend = False, hue = 'species',kde = True,element ="step")
-    
+    sns.histplot(ax=axes[1, 0], data=iris_df, x = x_series_one, bins = bin_number, legend = False, hue = 'species',kde = True,element ="step") 
     hist_with_legend = sns.histplot(ax=axes[1, 1], data=iris_df, x = x_series_two, bins = bin_number, hue = 'species', kde = True,element = "step") 
-
-    '''
-    if 1 == None:
-        pass
-    else:
-        plt.setp(hist_with_legend.get_legend().get_texts(), fontsize='20')  
-        plt.setp(hist_with_legend.get_legend().get_title(), fontsize='20') 
     
+    plt.setp(ax.get_legend().get_texts(), fontsize='20') # for legend text
+    plt.setp(ax.get_legend().get_title(), fontsize='22') # for legend title
+
     for ax in plt.gcf().axes:
         x = ax.get_xlabel()
         y = ax.get_ylabel()
@@ -135,14 +129,12 @@ def plot_histograms(filename, x_series_one, x_series_two):
             plt.setp(ax.get_yticklabels(), Fontsize=15)  
         except ValueError:
             pass
-    '''
+
     fig.tight_layout() 
     plt.savefig('Images/' + filename +'.png')
  
-#plot_histograms('histograms_hue_species','species')
-#plot_histograms('histograms_hue_none',None)
-plot_histograms('histograms_sepals','petal_length','petal_width')
-plot_histograms('histograms_petals','sepal_length','sepal_width')
+plot_histograms('histograms_sepals',' Plot 2','Sepals','petal_length','petal_width')
+plot_histograms('histograms_petals','Plot 3','Petals','sepal_length','sepal_width')
 
 
 
