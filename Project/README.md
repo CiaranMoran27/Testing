@@ -224,7 +224,7 @@ Histograms are considered simple plots but can give very useful visualisations o
 <br/>
 
 <p align="center">
-  <img src="Images/histograms_petals.png" width="850" />
+  <img src="Images/histograms_petals.png" width="600" />
 </p>  
 
 <br/>
@@ -242,7 +242,7 @@ The sepal width and sepal length variables were also plotted on histograms to ex
 <br/>
 
 <p align="center">
-  <img src="Images/histograms_sepals.png" width="850" />
+  <img src="Images/histograms_sepals.png" width="600" />
 </p>  
 
 <br/>
