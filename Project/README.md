@@ -219,6 +219,38 @@ The following observations were drawn from Fig X:
 
 <br/>
 
+Histograms are considered simple plots but can give very useful visualisations on the distribution of the data. To gain more insight into the Iris data a histogram of each dependant variable was plotted. Each dependent variable has two plots, one consists of the variables with no grouping (blue plots) and the second consists of the independent variables grouped by species (multi-coloured plots), see figure X below for petal variable plots.
+
+<br/>
+
+<p align="center">
+  <img src="Images/histograms_petals.png" width="850" />
+</p>  
+
+<br/>
+
+Looking at the density plots of the blue histograms in fig X it becomes apparent that although the petal length and width distribution curves do have a degree of symmetry, they do not exhibit the bell curve “normal” distribution. These distributions are typically referred to as bimodal as there is two local maximums present. It is possible to further explore a data distribution via grouping the dataset by its independent variables. The Seaborn library made this process easier as it has a grouping variable called “hue” that was used to separate the histogram into its three individual species classes. 
+
+<br/>
+
+The grouped histograms for petal length and petal width clearly show that for these attributes the Setosa species is well separated from Versicolor and Virginica. It was also noted that petal width and petal length showed a degree of separation between the versicolor and virginica species, with more overlap of probability densities apparent when looking at petal length. Based on these observations one could make an assumption that Iris petal attributes would play an important role in any attempt to classify the species class through any supervised machine learning model. Going one step further one could hypothesise the importance rank of the petal variables to a machine learning model as petal width > petal length.
+
+<br/>
+
+The sepal width and sepal length variables were also plotted on histograms to explore their distribution. As previously discussed, the median and mean values for both sepal variables are relatively similar, which would point towards a data curve that exhibits normal distribution (See fig Y). 
+
+<br/>
+
+<p align="center">
+  <img src="Images/histograms_sepals.png" width="850" />
+</p>  
+
+<br/>
+
+As forseen the un-grouped sepal variable plots (blue) are guassian in nature. On further breakdown of the plots into their species (multicoloured) it became apparent that there is significant overlapping of data between species for both variables. Due to this poor separation one would assume that the sepal length and width attributes would be less effect than the petal attributes at classifying a species in a machine learning model.
+
+<br/>
+
 It was possible to investigate the shape of the data ditribution using pandas **df.skew()** and **Series.kurtosis()** functions
 Dan 2020 describes these two functions and how to evaluate their outputs:
 - **df.skew()**: Measures how symmetric a data distrubition is. The Function computes the "skewness" of the data present in a given axis of the DataFrame object. A skew value between -0.5 and 0.5 is considered symmetrical.
@@ -230,35 +262,7 @@ These two distrubtion functions were used to analyse the distrubtion of the Iris
 |----------|
 | Fig X.|
 
-Introduce Histograms -> further interpret the distribution 
-
-plotted:
-Histogram of each attribute (in blue) and the each attribute broken down into species (multi colored):
-
-As predicted from describe method the close median / mean values yielded a close to bell curve distribution shape for sepal length and sepal width (no hue).
-
-The distribution for petal length and petal width (no hue) looks almost bimodal This is due to clear seperation of the iris-setosa species.
-
-All attribues yielded what looked like a bell curve shape / nomral distribution when they were broken down into their respective species.
-
-tie in skew numbers with kurtosis
-
-
-
 <br/>
-<br/>
-
-<p align="center">
-  <img src="Images/histograms_petals.png" width="850" />
-</p>  
-
-<br/>
-<br/>
-
-<p align="center">
-  <img src="Images/histograms_sepals.png" width="850" />
-</p>  
-
 
 <br/>
 <br/>

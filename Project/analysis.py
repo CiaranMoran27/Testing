@@ -59,15 +59,15 @@ write_summary_variables(summary_tuple)
 
 
 # !delete this if you cant pass plot to function sucessfully!
-def write_plot(plot,file_name):
-    fig.savefig('Images/' + file_name + '.png')
+#def write_plot(plot,file_name):
+    #fig.savefig('Images/' + file_name + '.png')
 
 
 def scatter_plot(): 
     plt.clf() 
     fig, axes = plt.subplots(2, 3, figsize=(22, 14))
     plt.subplots_adjust(wspace=0.2,hspace=0.2)#  hspace=0.3
-    fig.suptitle('Plot X: Scatter Plot of all variables (Units = cm)',fontsize = 25)
+    fig.suptitle('Plot X: Scatter Plot of all variables (units = cm)',fontsize = 25)
     
     sns.scatterplot(ax=axes[0, 0], data=iris_df, x='petal_length', y='petal_width', hue = 'species',legend = False, s = 70)
     sns.scatterplot(ax=axes[0, 1], data=iris_df, x='petal_length', y='sepal_length',hue = 'species',legend = False, s = 70)
@@ -86,11 +86,8 @@ def scatter_plot():
         ax.set_ylabel(y, fontsize=20)
         ax.set_xlim((0,8))
 
-        try:
-            plt.setp(ax.get_xticklabels(), Fontsize=15)  
-            plt.setp(ax.get_yticklabels(), Fontsize=15)  
-        except ValueError:
-            pass
+        plt.setp(ax.get_xticklabels(), fontsize=15)  
+        plt.setp(ax.get_yticklabels(), fontsize=15)  
 
     fig.tight_layout()     
     plt.savefig('Images/' + 'scatter_plots' +'.png')
@@ -99,23 +96,19 @@ scatter_plot()
 
 
 
-    #Reference: https://seaborn.pydata.org/generated/seaborn.histplot.html
-    #Reference: https://www.python-graph-gallery.com/25-histogram-with-several-variables-seaborn
-    #Reference: https://stackoverflow.com/questions/42404154/increase-tick-label-font-size-in-seaborn
+#Reference: https://seaborn.pydata.org/generated/seaborn.histplot.html
+#Reference: https://www.python-graph-gallery.com/25-histogram-with-several-variables-seaborn
+#Reference: https://stackoverflow.com/questions/42404154/increase-tick-label-font-size-in-seaborn
 
-
-
-def plot_histograms(filename, plot_name, chart_title, x_series_one, x_series_two):
-
+def plot_histograms(filename, plot_name, chart_title, x_series_one, x_series_two):  
     bin_number = 15
-    #fig, axes = plt.subplots(ncols=2, nrows=2, sharey=True, sharex=True)
     fig, axes = plt.subplots(2, 2, figsize=(14, 14))
     fig.suptitle('{}: Histogram of {} variables (cm)'.format(plot_name,chart_title),fontsize = 25)
 
     sns.histplot(ax=axes[0, 0], data=iris_df, x = x_series_one, bins = bin_number, legend = False, kde = True,element = "step")
     sns.histplot(ax=axes[0, 1], data=iris_df, x = x_series_two, bins = bin_number, legend = False, kde = True,element ="step")
-    sns.histplot(ax=axes[1, 0], data=iris_df, x = x_series_one, bins = bin_number, legend = False, hue = 'species',kde = True,element ="step") 
-    hist_with_legend = sns.histplot(ax=axes[1, 1], data=iris_df, x = x_series_two, bins = bin_number, hue = 'species', kde = True,element = "step") 
+    sns.histplot(ax=axes[1, 0], data=iris_df, x = x_series_one, bins = bin_number, legend = False, hue = 'species',kde = True, element ="step") 
+    hist_with_legend = sns.histplot(ax=axes[1, 1], data=iris_df, x = x_series_two, bins = bin_number, hue = 'species', kde = True, element = "step") 
     
     plt.setp(hist_with_legend.get_legend().get_texts(), fontsize='20') # for legend text
     plt.setp(hist_with_legend.get_legend().get_title(), fontsize='22') # for legend title
@@ -126,37 +119,14 @@ def plot_histograms(filename, plot_name, chart_title, x_series_one, x_series_two
         ax.set_xlabel(x, fontsize=20)
         ax.set_ylabel(y, fontsize=0)
 
-        
-        try:
-            plt.setp(ax.get_xticklabels(), Fontsize=15)  
-            plt.setp(ax.get_yticklabels(), Fontsize=15)  
-        except ValueError:
-            pass
-        
+        plt.setp(ax.get_xticklabels(), fontsize=15)  
+        plt.setp(ax.get_yticklabels(), fontsize=15)  
+      
     fig.tight_layout() 
     plt.savefig('Images/' + filename +'.png')
  
 plot_histograms('histograms_pepals','Plot 1','Petals','petal_length','petal_width')
 plot_histograms('histograms_setals','Plot 2','Sepals','sepal_length','sepal_width')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -172,25 +142,6 @@ def plot_box_plot():
     plt.savefig('Images/' + 'box_plot' +'.png')
 
 #plot_box_plot()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
