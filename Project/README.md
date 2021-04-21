@@ -229,16 +229,10 @@ Histograms are considered simple plots but can give very useful visualisations o
 
 <br/>
 
-Looking at the density plots of the blue histograms in fig X it becomes apparent that although the petal length and width distribution curves do have a degree of symmetry, they do not exhibit the bell curve “normal” distribution. These distributions instead, are typically referred to as bimodal as there is two local maximums present. This distribution often occuers when there is more than one population or class of data in the master data. In light of this the data was grouped by species using the Seaborn library's grouping variable called “hue”, which seperated the histogram into its three individual species classes. 
-
-
-
+Looking at the density plots of the blue histograms in fig X it becomes apparent that although the petal length and width distribution curves do have a degree of symmetry, they do not exhibit the bell curve “normal” distribution. These distributions instead, are typically referred to as bimodal as there is two local maximums present. This distribution often occuers when there is more than one population or class of data in the master data. In light of this the data was grouped by species using the Seaborn library's grouping variable called “hue”, which seperated the histogram into its three individual species classes. <br/>
 The grouped histograms for petal length and petal width clearly show that for these attributes the Setosa species is well separated from Versicolor and Virginica. It was also noted that petal width and petal length showed a degree of separation between the versicolor and virginica species, with more overlap of probability densities apparent when looking at petal length. Based on these observations one could make an assumption that Iris petal attributes would play an important role in any attempt to classify the species class through any supervised machine learning model. Going one step further one could hypothesise the importance rank of the petal variables to a machine learning model as petal width > petal length.
-
 <br/>
-
 The sepal width and sepal length variables were also plotted on histograms to explore their distribution. As previously discussed, the median and mean values for both sepal variables are relatively similar, which would point towards a data curve that exhibits normal distribution (See fig Y). 
-
 <br/>
 
 <p align="center">
