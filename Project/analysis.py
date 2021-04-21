@@ -127,9 +127,11 @@ plot_histograms('histograms_petals','Plot 1','Petals','petal_length','petal_widt
 plot_histograms('histograms_sepals','Plot 2','Sepals','sepal_length','sepal_width')
 
 
-
+'''
 def plot_box_plot():
+    plt.clf()
     # reference: https://stackoverflow.com/questions/54132989/is-there-a-way-to-change-the-color-and-shape-indicating-the-mean-in-a-seaborn-bo
+     
     box_plot_data = iris_df.loc[:, ['sepal_length', 'sepal_width', 'petal_length', 'petal_width']]
     ax = sns.boxplot(data = box_plot_data,showmeans=True, meanprops={"markerfacecolor":"black","markeredgecolor":"white"})
     
@@ -138,9 +140,22 @@ def plot_box_plot():
     sns.set(style="darkgrid")
     
     plt.savefig('Images/' + 'box_plot' +'.png')
+    plt.show()
 
-#plot_box_plot()
+plot_box_plot()
+'''
+
+
+def plot_box_plot():
+    #plt.show()
+    plt.close()
+    sns.boxplot( x = iris_df["species"], y = iris_df["sepal_length"] )
+    plt.savefig('Images/' + 'box_plot' +'.png')
+
+plot_box_plot()
 
 
 #if __name__ == __main__:
     #pass
+
+
