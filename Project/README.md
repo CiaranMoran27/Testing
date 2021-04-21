@@ -24,18 +24,18 @@
 ### 3. Investigation
 &emsp; 3.1 Getting Started <br>
 &emsp; 3.2 Exploring The Data Set <br>
-&emsp; 3.3 Trending the Data <br>
+&emsp; &emsp; 3.2.1 Reading in the Dataset<br/>
+&emsp; &emsp; 3.2.2 Analysing the Dataframe<br/>
+&emsp; &emsp; 3.2.3 Descriptive Statistical Analysis<br/>
+
 ### 4. Discussion 
 ### 5. Summary 
 ### 6. References 
 
+__Reading in the Dataset:__ [F1*] <br/>
+This was achieved using the pandas.read_csv()  method of the pandas library.  This method also works on text files as one can declare the delimiter value that separates each data field, which in this case is a comma. 
 
 <br/>
-<br/>
-
-### 1. Introduction 
-&nbsp;**1.1 Project Outline and Objectives**
-
 
 This Repository contains all the files relevant to my 2021 Project as part of my Programming and Scripting module. The project investigates the famous Fisher Iris Data set and applies a python-based methodology to explore the data. This README file contains of Summary of my findings.
 The projects main aims are to achieve the following through incremental progress:
@@ -188,7 +188,7 @@ If one was dealing with larger datasets it would be unlikely that a null count o
 
 <br/>
 
-__Descriptive Statistical Analysis__ [] <br/>
+__Descriptive Statistical Analysis__<br/>
 
 
 The pandas *describe()* function is a very useful statistical summary method that can be applied to a given dataset. In its standard form this function returns the min, max, mean, median, 25th percentile, 75th percentile and standard deviation of the data. The Iris dataset was passed to this function, see Fig X below for statistical summary of the 4 attributes in the Iris Dataset. 
@@ -251,8 +251,7 @@ The un-grouped sepal variable histograms (blue) do show the expected guassian cu
 
 <br/>
 
-It was possible also possible to gain insight into data distributions via two pandas functions called **df.skew()** and **Series.kurtosis()**.<br/>
-Dan 2020 describes these two functions and how to evaluate their outputs:
+It was possible also possible to gain insight into data distributions via two pandas functions called **df.skew()** and **Series.kurtosis()**. Dan 2020 describes these two functions and how to evaluate their outputs:
 - **df.skew()**: Measures how symmetric a data distrubition is. The Function computes the "skewness" of the data present in a given axis of the DataFrame object. A skew value between -0.5 and 0.5 is considered symmetrical.
 - **series.kurtosis()**: Measures the heaviness of the distribution tails. The function computes the tail volumne difference relative to a guassian distribution curve. A kurtosis value of 0 is considered normal distribution, negative inidicates a flat thin-tailed distribution, positive indicates pointy fat-tailed distribution curves and a kurtosis value that exceeds absolute 3 indicates Excess Kurtosis.<br/>
 
@@ -302,5 +301,5 @@ These two distrubtion functions were used to further analyse the iris independan
 [X] Soni, D, 2018, Supervised Vs. unsupervised learning, towards data science, viewed 05 April 2021,<br/>**<https://towardsdatascience.com/supervised-vs-unsupervised-learning-14f68e32ea8d>**<br/>
 [X] GeeksforGeeks, 2020, Count NaN or missing values in Pandas DataFrame, viewed 15 April 2021,**<https://www.geeksforgeeks.org/count-nan-or-missing-values-in-pandas-dataframe>**<br/>
 [X] Moffitt, C, 2018, Overview of Pandas data types, Practical Business python, viewed 15 April 2021,**<https://pbpython.com/pandas_dtypes.html>**.<br/>
-[X] Solomon, B, 2021, Pandas GroupBy: Your Guide to Grouping Data in Python, RealPython, viewed 16 April 2021,**<https://realpython.com/pandas-groupby/#pandas-groupby-putting-it-all-together>**.
-[X] Dan, A, 2022, Kurtosis() & Skew() Function In Pandas, medium.com, viewed 19 April 2021, **<https://medium.com/@atanudan/kurtosis-skew-function-in-pandas-aa63d72e20de>**.
+[X] Solomon, B, 2021, Pandas GroupBy: Your Guide to Grouping Data in Python, RealPython, viewed 16 April 2021,**<https://realpython.com/pandas-groupby/#pandas-groupby-putting-it-all-together>**.<br/>
+[X] Dan, A, 2022, Kurtosis() & Skew() Function In Pandas, medium.com, viewed 19 April 2021, **<https://medium.com/@atanudan/kurtosis-skew-function-in-pandas-aa63d72e20de>**.<br/>
