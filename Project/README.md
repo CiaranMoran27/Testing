@@ -229,7 +229,7 @@ Histograms are considered simple plots but can give very useful visualisations o
 
 <br/>
 
-Looking at the density plots of the blue histograms in fig X it becomes apparent that although the petal length and width distribution curves do have a degree of symmetry, they do not exhibit the bell curve “normal” distribution. These distributions are typically referred to as bimodal as there is two local maximums present. It is possible to further explore a data distribution via grouping the dataset by its independent variables. The Seaborn library made this process easier as it has a grouping variable called “hue” that was used to separate the histogram into its three individual species classes. 
+Looking at the density plots of the blue histograms in fig X it becomes apparent that although the petal length and width distribution curves do have a degree of symmetry, they do not exhibit the bell curve “normal” distribution. These distributions instead, are typically referred to as bimodal as there is two local maximums present. This distribution often occuers when there is more than one population or class of data in the master data. In light of this the data was grouped by species using the Seaborn library's grouping variable called “hue”, which seperated the histogram into its three individual species classes. 
 
 <br/>
 
@@ -247,14 +247,14 @@ The sepal width and sepal length variables were also plotted on histograms to ex
 
 <br/>
 
-As forseen the un-grouped sepal variable plots (blue) are guassian in nature. On further breakdown of the plots into their species (multicoloured) it became apparent that there is significant overlapping of data between species for both variables. Due to this poor separation one would assume that the sepal length and width attributes would be less effect than the petal attributes at classifying a species in a machine learning model.
+The un-grouped sepal variable histograms (blue) do show the expected guassian curve. On further breakdown of the plots into their species (multicoloured) it became apparent that there is significant overlapping of data between species for both variables. Due to this poor separation one would assume that the sepal length and width attributes would be less effect than the petal attributes at classifying a species in a machine learning model.
 
 <br/>
 
-It was possible to investigate the shape of the data ditribution using pandas **df.skew()** and **Series.kurtosis()** functions
+It was possible also possible to gain insight into data distributions via two pandas functions called **df.skew()** and **Series.kurtosis()**.<br/>
 Dan 2020 describes these two functions and how to evaluate their outputs:
 - **df.skew()**: Measures how symmetric a data distrubition is. The Function computes the "skewness" of the data present in a given axis of the DataFrame object. A skew value between -0.5 and 0.5 is considered symmetrical.
-- **series.kurtosis()**: Measures the heaviness of the distribution tails. The function computes the tail volumne difference relative to a guassian distribution curve. A kurtosis value of 0 is considered normal distribution, negative inidicates a flat thin-tailed distribution and positive kurtosis results from pointy fat- taileddistribution curves.<br/>
+- **series.kurtosis()**: Measures the heaviness of the distribution tails. The function computes the tail volumne difference relative to a guassian distribution curve. A kurtosis value of 0 is considered normal distribution, negative inidicates a flat thin-tailed distribution and positive kurtosis results from pointy fat-tailed distribution curves.<br/>
 
 These two distrubtion functions were used to analyse the distrubtion of the Iris dataframe (see Fig X for results). The results show that the data distrubtion has a degree of symmerty as all skew values lie between -0.5 and 0.5. The sepal length and sepal width attribues have a slightly right learning skew whearas the petal length and petal width attributes data curve is learning slightly to the left. This data also suggests that the petal width attribue is the closesy  to fully normal distribution as its skew value lies closer to zero. 
 
