@@ -12,6 +12,7 @@ def read_iris_dataset():
     iris_df = pd.read_csv(iris_data_file, delimiter = ',', header = None)                              # read in Iris Dataset via Pandas Library
     iris_df.columns =['sepal_length', 'sepal_width', 'petal_length', 'petal_width','species']          # add columns headers
     return iris_df
+
 iris_df = read_iris_dataset()
 
     
@@ -28,8 +29,6 @@ def summary_variables():
     kurtosis_all_species = iris_df.kurtosis()
     correlation = iris_df.corr()
     pd.set_option("display.precision", 2)
-    #print(set(iris_df['species'].apply(lambda x: type(x))))
-    #print(set(iris_df['sepal_length'].apply(lambda x: type(x))))
     
     return shape, data_types, null_count, species_count, desc_all_species, df_head, skewness_all_species, kurtosis_all_species, correlation
     
@@ -54,7 +53,6 @@ def write_summary_variables(summary_tuple):
         f.write(' '*17 + 'All Species : Correlation Statistics \n' + str(summary_tuple[8]) + skip_three_lines)
 
 write_summary_variables(summary_tuple)
-
 
 
 
@@ -125,8 +123,8 @@ def plot_histograms(filename, plot_name, chart_title, x_series_one, x_series_two
     fig.tight_layout() 
     plt.savefig('Images/' + filename +'.png')
  
-plot_histograms('histograms_pepals','Plot 1','Petals','petal_length','petal_width')
-plot_histograms('histograms_setals','Plot 2','Sepals','sepal_length','sepal_width')
+plot_histograms('histograms_petals','Plot 1','Petals','petal_length','petal_width')
+plot_histograms('histograms_sepals','Plot 2','Sepals','sepal_length','sepal_width')
 
 
 
@@ -142,8 +140,6 @@ def plot_box_plot():
     plt.savefig('Images/' + 'box_plot' +'.png')
 
 #plot_box_plot()
-
-
 
 
 #if __name__ == __main__:
