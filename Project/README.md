@@ -271,7 +271,7 @@ In addition to the analyis already performed it was considered necessary to visu
 
 <br/>
 
-| <img src="Images/skew_kurtosis_nohue.png"  width="400"/>|
+| <img src="Images/box_plots.png"  width="400"/>|
 |----------|
 | Fig X.|
 
