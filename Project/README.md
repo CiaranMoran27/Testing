@@ -271,6 +271,12 @@ In addition to the analyis already performed it was considered necessary to visu
 
 <br/>
 
+| <img src="Images/skew_kurtosis_nohue.png"  width="400"/>|
+|----------|
+| Fig X.|
+
+<br/>
+
 Findings:
 - Size: 
   - Setosa species generally has the smallest features.
