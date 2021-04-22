@@ -260,6 +260,7 @@ The following observations were drawn from Fig X:
   
 - **Min / Max range:**<br/>
  Overlap between dimensional attributes exists.<br/>
+  Setosa species generally has the smallest features while Virginica species tends to have largest features.
 
 - **Median (50th percentile) and Mean comparison:**<br/>
   Sepal length and sepal width have the lowest difference between their median and mean values which indicates that these attributes have a distribution that closer fits the bell curve / guassian distribution when compared to that of petal length and petal width. This observation was made because when data is distriubted in a "normal" manner the mean and median values are equal, however when the data skewed the mean defiates from the mode[Dan 2020].<br/> 
@@ -271,12 +272,9 @@ In addition to the analyis already performed considered necessary to visualise t
 
 <br/>
 
-  <img src="Images/box_plots.png"  width="1200"/> 
+<img src="Images/box_plots.png"  width="1200"/> 
 
 Findings:
-- Size: 
-  - Setosa species generally has the smallest features while Virginica species tends to have largest features.
-  
 - Data Distribution:
   - Petal width data doesn’t overlap with other features across all species. This observation suggests that a machine learning model could identify this attribute while retaining all other iris features in the model.
   - Petal length data range is the largest, especially for the virginica species. 
