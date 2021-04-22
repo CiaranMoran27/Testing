@@ -115,7 +115,7 @@ def plot_boxplot():
     virgi = mpatches.Patch(color='green')
 
     plt.legend(title = False, labels=legend_labels,
-              handles=[setosa, versi, virgi], bbox_to_anchor=(0.2, 1.1),
+              handles=[setosa, versi, virgi], bbox_to_anchor=(-0.3, 1.1),
               fancybox=False, shadow=False, ncol=3, loc='upper right', fontsize = 25)
 
     for ax in plt.gcf().axes:
@@ -139,13 +139,13 @@ plot_boxplot()
 def scatter_plot(): 
     from matplotlib import patches as mpatches
     
-    fig, axes = plt.subplots(2, 3, figsize=(22, 22))
-    plt.subplots_adjust(wspace=0.2,hspace=0.2)#  hspace=0.3
+    fig, axes = plt.subplots(2, 3, figsize=(22, 18))
+    plt.subplots_adjust(wspace=0.2,hspace=0.4)
     fig.suptitle('Plot X: Scatter Plot of all variables (units = cm)',fontsize = 25)
     
     sns.scatterplot(ax=axes[0, 0], data=iris_df, x='petal_length', y='petal_width', hue = 'species',legend = False, s = 70)
     sns.scatterplot(ax=axes[0, 1], data=iris_df, x='petal_length', y='sepal_length',hue = 'species',legend = False, s = 70)
-    sns.scatterplot(ax=axes[0, 2], data=iris_df, x='petal_length', y='sepal_width', hue = 'species',legend = False, s = 70)
+    sns.scatterplot(ax=axes[0, 2], data=iris_df, x='petal_length', y='sepal_width', hue = 'species',legend = False, s = 70) 
     sns.scatterplot(ax=axes[1, 0], data=iris_df, x='sepal_length', y='sepal_width', hue = 'species',legend = False, s = 70)
     sns.scatterplot(ax=axes[1, 1], data=iris_df, x='sepal_length', y='petal_width', hue = 'species',legend = False, s = 70) 
     sns.scatterplot(ax=axes[1, 2], data=iris_df, x='sepal_width',  y='petal_width', hue = 'species',legend = False, s = 70)
