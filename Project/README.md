@@ -224,7 +224,7 @@ Histograms are considered simple plots but can give very useful visualisations o
 
 <br/>
 
-__skew & kurtosis functions:__:
+__Skew & Kurtosis functions:__:
 It was possible also possible to gain insight into data distributions via two pandas functions called **df.skew()** and **Series.kurtosis()**. Dan 2020 describes these two functions and how to evaluate their outputs:
 - **df.skew()**: Measures how symmetric a data distrubition is. The Function computes the "skewness" of the data present in a given axis of the DataFrame object. A skew value between -0.5 and 0.5 is considered symmetrical.
 - **series.kurtosis()**: Measures the heaviness of the distribution tails. The function computes the tail volumne difference relative to a guassian distribution curve. A kurtosis value of 0 is considered normal distribution, negative inidicates a flat thin-tailed distribution, positive indicates pointy fat-tailed distribution curves and a kurtosis value that exceeds absolute 3 indicates Excess Kurtosis.<br/>
@@ -236,7 +236,7 @@ These two distrubtion functions were used to further analyse the ungrouped iris 
 | <img src="Images/skew_kurtosis_nohue.png"  width="400"/>|
 |----------|
 | Fig X.|
-
+<br/>
 <br/>
 
 **describe() Function**<br/>
@@ -266,8 +266,8 @@ The following observations were drawn from Fig X:
 
 <br/>
 
-*Boxplot Analysis* <br/>
-In addition to the analyis already performed it was considered necessary to visualise the data distriubtion with the same y-axis scaling for each iris feature across all species. The boxplot came to mind as a suitable plotting method as it displays the data distribution in a standardized way and yields information on the symmetry and outliers in the dataset (see figure X). 
+__Boxplot Analysis:__ <br/>
+In addition to the analyis already performed considered necessary to visualise the data distriubtion with the same y-axis scaling for each iris feature across all species. The boxplot came to mind as a suitable plotting method as it displays the data distribution in a standardized way and yields information on the symmetry and outliers in the dataset (see figure X). 
 
 <br/>
 
@@ -275,17 +275,16 @@ In addition to the analyis already performed it was considered necessary to visu
 
 Findings:
 - Size: 
-  - Setosa species generally has the smallest features.
-  - Virginica species tends to have largest features.
-
+  - Setosa species generally has the smallest features while Virginica species tends to have largest features.
+  
 - Data Distribution:
-  - Petal width data doesn’t overlap with other features across all species. This observation suggests that a machine learning model could identify this attribute while retaining all other attributes in the model.
+  - Petal width data doesn’t overlap with other features across all species. This observation suggests that a machine learning model could identify this attribute while retaining all other iris features in the model.
   - Petal length data range is the largest, especially for the virginica species. 
   - Although the skew model indicated that petal width data as a whole had a skew value nearest to zero, it can be observed in the boxplot that the distribution appears negatively skewed for the Versicolour species on its own. This observation was made as the median is closer to the first quartile while the lower whisker is shorter than that of the top whisker. This can also be observed on the histogram in Fig X. 
 - Outliers:
-  - The setosa species has four outliers, two for petal length and two for Petal width features. 
+  - The setosa species has four outliers, two for petal length and two for petal width features. 
   - The Virginica species also has three outliers, one for sepal length and two for sepal width.
-  - Having analysed the outliers from the boxplot it became apparent that one can deduce outlier information from a histogram also. If a large number of bins are set in the histogram the outlier will be obvious, however in this case where a medium value of bins were selected one can see potential outliers where there is a large difference between bin height and the probability densitry curve.(see fig X petal length).
+  - Having analysed the outliers from the boxplot it became apparent that one can deduce outlier information from a histogram also. If a large number of bins are set in the histogram the outlier will be obvious, however in this case where a medium value of bins were selected one can see potential outliers where there is a large difference between bin height and the probability density curve.(see fig X petal length).
 
 <br/>
 
@@ -293,9 +292,6 @@ Findings:
   <img src="Images/scatter_plots.png" width="1100" />
 </p>  
 
-
-
-<br/>
 <br/>
 
 | <img src="Images/correlation_statistics.png"  width="525"/>|
