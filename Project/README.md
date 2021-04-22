@@ -272,7 +272,7 @@ In addition to the analyis already performed it was considered necessary to visu
 <br/>
 
 <p align="center">
-  <img src="Images/box_plots.png"  width="1000"/> />
+  <img src="Images/box_plots.png"  width="1100"/> />
 </p>  
 
 
@@ -288,9 +288,9 @@ Findings:
   - Petal length data range is the largest, especially for the virginica species. 
   - Although the skew model indicated that petal width data as a whole had a skew value nearest to zero, it can be observed in the boxplot that the distribution appears negatively skewed for the Versicolour species on its own. This observation was made as the median is closer to the first quartile while the lower whisker is shorter than that of the top whisker. This can also be observed on the histogram in Fig X. 
 - Outliers:
-  - The setosa species has three outliers, one for petal length and two for Petal width features. 
+  - The setosa species has four outliers, two for petal length and two for Petal width features. 
   - The Virginica species also has three outliers, one for sepal length and two for sepal width.
-  - Having compared the outliers from the boxplot to the histograms it became apparent that one can deduce outlier information from a histogram. If a large number of bins are set in the histogram the outlier will be obvious, however in this case where a medium value of bins were selected one can see potential outliers where there is a large difference between bin height and the probability densitry curve (see fig X petal length).
+  - Having analysed the outliers from the boxplot it became apparent that one can deduce outlier information from a histogram also. If a large number of bins are set in the histogram the outlier will be obvious, however in this case where a medium value of bins were selected one can see potential outliers where there is a large difference between bin height and the probability densitry curve.(see fig X petal length).
 
 <br/>
 

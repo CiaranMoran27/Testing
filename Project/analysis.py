@@ -101,7 +101,7 @@ plot_histograms('histograms_sepals','Plot 2','Sepals','sepal_length','sepal_widt
 def plot_boxplot():
     from matplotlib import patches as mpatches
 
-    fig, axes = plt.subplots(1,4, figsize=(22, 16))
+    fig, axes = plt.subplots(1,4, figsize=(22, 22))
     fig.suptitle('Fig X : Boxplot of Iris dependant variables (cm)', fontsize = 25)
 
     sns.boxplot(ax=axes[0], x = iris_df["species"], y = iris_df["petal_length"], data = iris_df, width=0.5)
@@ -139,7 +139,7 @@ plot_boxplot()
 def scatter_plot(): 
     from matplotlib import patches as mpatches
     
-    fig, axes = plt.subplots(2, 3, figsize=(22, 14))
+    fig, axes = plt.subplots(2, 3, figsize=(22, 22))
     plt.subplots_adjust(wspace=0.2,hspace=0.2)#  hspace=0.3
     fig.suptitle('Plot X: Scatter Plot of all variables (units = cm)',fontsize = 25)
     
@@ -149,9 +149,6 @@ def scatter_plot():
     sns.scatterplot(ax=axes[1, 0], data=iris_df, x='sepal_length', y='sepal_width', hue = 'species',legend = False, s = 70)
     sns.scatterplot(ax=axes[1, 1], data=iris_df, x='sepal_length', y='petal_width', hue = 'species',legend = False, s = 70) 
     sns.scatterplot(ax=axes[1, 2], data=iris_df, x='sepal_width',  y='petal_width', hue = 'species',legend = False, s = 70)
-    
-    #plt.setp(scatter_with_legend.get_legend().get_texts(), fontsize='20')  
-    #plt.setp(scatter_with_legend.get_legend().get_title(), fontsize='20') 
 
     legend_labels = ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
     setosa = mpatches.Patch(color='steelblue')
