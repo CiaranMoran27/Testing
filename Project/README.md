@@ -230,15 +230,11 @@ Histograms are considered simple plots but can give very useful visualisations o
 
 <br/>
 
-Looking at the density plots of the blue histograms in fig X it becomes apparent that although the petal length and width distribution curves do have a degree of symmetry, they do not exhibit the bell curve “normal” distribution. These distributions instead, are typically referred to as bimodal as there is two local maximums present. This distribution often occuers when there is more than one population or class of data in the master data. In light of this the data was grouped by species using the Seaborn library's grouping variable called “hue”, which seperated the histogram into its three individual species classes. <br/>
+- Looking at the density plots of the blue histograms in fig X it becomes apparent that although the petal length and width distribution curves do have a degree of symmetry, they do not exhibit the bell curve “normal” distribution. These distributions instead, are typically referred to as bimodal as there is two local maximums present [Ye 2020]. This distribution often occuers when there is more than one population or class of data in the master data. In light of this the data was grouped by species using the Seaborn library's grouping variable called “hue”, which seperated the histogram into its three individual species classes. <br/>
 
 <br/>
 
-The grouped histograms for petal length and petal width clearly show that for these attributes the Setosa species is well separated from Versicolor and Virginica. It was also noted that petal width and petal length showed a degree of separation between the versicolor and virginica species, with more overlap of probability densities apparent when looking at petal length. Based on these observations one could make an assumption that Iris petal attributes would play an important role in any attempt to classify the species class through any supervised machine learning model. Going one step further one could hypothesise the importance rank of the petal variables to a machine learning model as petal width > petal length.
-
-<br/>
-
-The sepal width and sepal length variables were also plotted on histograms to explore their distribution. As previously discussed, the median and mean values for both sepal variables are relatively similar, which would point towards a data curve that exhibits normal distribution (See fig Y).<br/>
+- The grouped histograms for petal length and petal width clearly show that for these features the Setosa species is well separated from Versicolor and Virginica. It was also noted that petal width and petal length showed a degree of separation between the versicolor and virginica species, with more overlap of probability densities apparent when looking at petal length. Based on these observations one could speculate that the petal attributes could play an important role in any attempt to classify the setosa class through any supervised machine learning model. The sepal width and sepal length variables were also plotted on histograms to explore their distribution. As previously discussed, the median and mean values for both sepal variables are relatively similar, which would point towards a data curve that exhibits normal distribution (See fig Y).<br/>
 
 <br/>
 
@@ -271,12 +267,9 @@ In addition to the analyis already performed it was considered necessary to visu
 
 <br/>
 
-<p align="center">
-  <img src="Images/box_plots.png"  width="1100"/> />
-</p>  
 
+  <img src="Images/box_plots.png"  width="1100"/> 
 
-<br/>
 
 Findings:
 - Size: 
@@ -292,6 +285,8 @@ Findings:
   - The Virginica species also has three outliers, one for sepal length and two for sepal width.
   - Having analysed the outliers from the boxplot it became apparent that one can deduce outlier information from a histogram also. If a large number of bins are set in the histogram the outlier will be obvious, however in this case where a medium value of bins were selected one can see potential outliers where there is a large difference between bin height and the probability densitry curve.(see fig X petal length).
 
+
+#Going one step further one could hypothesise the importance rank of the petal variables to a machine learning model as petal width > petal length.
 <br/>
 
 <p align="center">
@@ -327,3 +322,4 @@ Findings:
 [X] Moffitt, C, 2018, Overview of Pandas data types, Practical Business python, viewed 15 April 2021,**<https://pbpython.com/pandas_dtypes.html>**.<br/>
 [X] Solomon, B, 2021, Pandas GroupBy: Your Guide to Grouping Data in Python, RealPython, viewed 16 April 2021,**<https://realpython.com/pandas-groupby/#pandas-groupby-putting-it-all-together>**.<br/>
 [X] Dan, A, 2022, Kurtosis() & Skew() Function In Pandas, medium.com, viewed 19 April 2021, **<https://medium.com/@atanudan/kurtosis-skew-function-in-pandas-aa63d72e20de>**.<br/>
+[X] Ye, A, 2020, viewed 22 April 2021, All the distributions you need to know, towards data science, viewed 22 April 2021,<br/> **<https://towardsdatascience.com/all-the-distributions-you-need-to-know-ad570514987b>**.
