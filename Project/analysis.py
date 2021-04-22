@@ -115,8 +115,8 @@ def plot_boxplot():
         ax.set_xticks([])
         x = ax.get_xlabel()
         y = ax.get_ylabel()
-        ax.set_xlabel(x, fontsize=20)
-        ax.set_ylabel(y, fontsize=20)
+        ax.set_xlabel(x, fontsize=25)
+        ax.set_ylabel(y, fontsize=25)
 
         plt.setp(ax.get_xticklabels(), fontsize=25)  
         plt.setp(ax.get_yticklabels(), fontsize=25)  
