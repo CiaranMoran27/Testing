@@ -268,7 +268,7 @@ In addition to the analyis already performed it was considered necessary to visu
 <br/>
 
 
-  <img src="Images/box_plots.png"  width="900"/> 
+  <img src="Images/box_plots.png"  width="700"/> 
 
 
 Findings:
