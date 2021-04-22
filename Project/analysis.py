@@ -101,7 +101,7 @@ plot_histograms('histograms_sepals','Plot 2','Sepals','sepal_length','sepal_widt
 def plot_boxplot():
     from matplotlib import patches as mpatches
 
-    fig, axes = plt.subplots(1,4, figsize=(22, 16))
+    fig, axes = plt.subplots(1,4, figsize=(26, 18))
     fig.suptitle('Fig X : Boxplot of Iris dependant variables (cm)', fontsize = 25)
 
     sns.boxplot(ax=axes[0], x = iris_df["species"], y = iris_df["petal_length"], data = iris_df, width=0.5)
