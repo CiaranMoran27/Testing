@@ -238,7 +238,9 @@ __Un-Grouped Petal Data__
 __Grouped Petal Data__
 - The grouped histograms for petal length and petal width clearly show that for these features the Setosa species is well separated from Versicolor and Virginica. It was also noted that petal width and petal length showed a degree of separation between the versicolor and virginica species, with more overlap of probability densities apparent when looking at petal length. Based on these observations one could speculate that the petal attributes could play an important role in any attempt to classify the setosa class through any supervised machine learning model. 
 
-__Sepal Data__
+<br/>
+
+__Un-Grouped Sepal Data__
 - The sepal width and sepal length variables were also plotted on histograms to explore their distribution. As previously discussed, the median and mean values for both sepal variables are relatively similar, which would point towards a data curve that exhibits normal distribution (See fig Y).<br/>
 
 <br/>
@@ -249,6 +251,7 @@ __Sepal Data__
 
 <br/>
 
+__Grouped Sepal Data__
 - The un-grouped sepal variable histograms (blue) do show the expected guassian curve. On further breakdown of the plots into their species (multicoloured) it became apparent that there is significant overlapping of data between species for both variables. Due to this poor separation one would assume that the sepal length and width attributes would be less effect than the petal attributes at classifying a species in a machine learning model.
 
 <br/>
@@ -272,7 +275,7 @@ In addition to the analyis already performed it was considered necessary to visu
 
 <br/>
 
-  <img src="Images/box_plots.png"  width="1000"/> 
+  <img src="Images/box_plots.png"  width="1200"/> 
 
 Findings:
 - Size: 
