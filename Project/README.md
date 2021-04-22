@@ -212,15 +212,13 @@ Histograms are considered simple plots but can give very useful visualisations o
 
 <br/>
 
-- __Un-Grouped Sepal Data__: The sepal width and sepal length variables were also plotted on histograms to explore their distribution. As previously discussed, the median and mean values for both sepal variables are relatively similar, which would point towards a data curve that exhibits normal distribution (See fig Y).<br/>
-
-<br/>
-
 <p align="center">
   <img src="Images/histograms_sepals.png" width="675" />
 </p>  
 
 <br/>
+
+-__Un-Grouped Sepal Data__: The sepal width and sepal length variables were also plotted on histograms to explore their distribution. As previously discussed, the median and mean values for both sepal variables are relatively similar, which would point towards a data curve that exhibits normal distribution (See fig Y).<br/>
 
 - __Grouped Sepal Data__: The un-grouped sepal variable histograms (blue) do show the expected guassian curve. On further breakdown of the plots into their species (multicoloured) it became apparent that there is significant overlapping of data between species for both sepal length and sepal width features. Due to this poor separation one would assume that the sepal length and width attributes would be less effect than the petal attributes at classifying a species in a machine learning model.
 
@@ -230,8 +228,9 @@ It was possible also possible to gain insight into data distributions via two pa
 - **df.skew()**: Measures how symmetric a data distrubition is. The Function computes the "skewness" of the data present in a given axis of the DataFrame object. A skew value between -0.5 and 0.5 is considered symmetrical.
 - **series.kurtosis()**: Measures the heaviness of the distribution tails. The function computes the tail volumne difference relative to a guassian distribution curve. A kurtosis value of 0 is considered normal distribution, negative inidicates a flat thin-tailed distribution, positive indicates pointy fat-tailed distribution curves and a kurtosis value that exceeds absolute 3 indicates Excess Kurtosis.<br/>
 
-These two distrubtion functions were used to further analyse the iris independant variables (see Fig X for results). The results showed that for all iris dependant variables a degree of symmetry exists in the data distributions as all skew values lie between -0.5 and 0.5. The sepal length and sepal width attribues have a slightly right learning skew whearas the petal length and petal width attributes data curve is learning slightly to the left. All the kurtosis values for this datset do not exceed absolute 3, which indicates that for future sample selection there would be a low probability of obtaining an extreme outlier relative to the normal distribution curve.
+These two distrubtion functions were used to further analyse the ungrouped iris features (see Fig X for results). The results showed that for iris features a degree of symmetry exists in the data distributions as all skew values lie between -0.5 and 0.5. The sepal length and sepal width attribues have a slightly right learning skew whearas the petal length and petal width attributes data curve is leaning slightly to the left. All the kurtosis values for this datset do not exceed absolute 3, which indicates that for future sample selection there would be a low probability of obtaining an extreme outlier relative to the normal distribution curve. <br/>
 
+<br/>
 
 | <img src="Images/skew_kurtosis_nohue.png"  width="400"/>|
 |----------|
@@ -239,7 +238,7 @@ These two distrubtion functions were used to further analyse the iris independan
 
 <br/>
 
-*describe()*<br/>
+**describe() Function**<br/>
 The pandas *describe()* function is a very useful statistical summary method that can be applied to a given dataset. In its standard form this function returns the min, max, mean, median, 25th percentile, 75th percentile and standard deviation of the data. The Iris dataset was passed to this function, see Fig X below for statistical summary of the 4 attributes in the Iris Dataset. 
 
 <br/>
@@ -247,7 +246,6 @@ The pandas *describe()* function is a very useful statistical summary method tha
 | <img src="Images/summary_traits.png"  width="525"/>|
 |----------|
 | Fig X.|
-
 
 <br/>
 
