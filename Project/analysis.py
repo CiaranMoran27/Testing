@@ -101,13 +101,13 @@ plot_histograms('histograms_sepals','Plot 2','Sepals','sepal_length','sepal_widt
 def plot_boxplot():
     from matplotlib import patches as mpatches
 
-    fig, axes = plt.subplots(1,4, figsize=(18, 18))
-    fig.suptitle('Fig X : Boxplot of Iris dependant variables (cm)', fontsize = 12)
+    fig, axes = plt.subplots(1,4, figsize=(22, 16))
+    fig.suptitle('Fig X : Boxplot of Iris dependant variables (cm)', fontsize = 25)
 
-    sns.boxplot(ax=axes[0], x = iris_df["species"], y = iris_df["petal_length"], data = iris_df, width=0.2)
-    sns.boxplot(ax=axes[1], x=iris_df["species"], y=iris_df["petal_width"], data = iris_df, width=0.2)
-    sns.boxplot(ax=axes[2], x=iris_df["species"], y=iris_df["sepal_length"], data = iris_df, width=0.2)
-    sns.boxplot(ax=axes[3], x=iris_df["species"], y=iris_df["sepal_width"], data  =iris_df, width=0.2)
+    sns.boxplot(ax=axes[0], x = iris_df["species"], y = iris_df["petal_length"], data = iris_df, width=0.5)
+    sns.boxplot(ax=axes[1], x=iris_df["species"], y=iris_df["petal_width"], data = iris_df, width=0.5)
+    sns.boxplot(ax=axes[2], x=iris_df["species"], y=iris_df["sepal_length"], data = iris_df, width=0.5)
+    sns.boxplot(ax=axes[3], x=iris_df["species"], y=iris_df["sepal_width"], data  =iris_df, width=0.5)
     
     legend_labels = ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
     setosa = mpatches.Patch(color='steelblue')
@@ -115,21 +115,30 @@ def plot_boxplot():
     virgi = mpatches.Patch(color='green')
 
     plt.legend(title = False, labels=legend_labels,
-              handles=[setosa, versi, virgi], bbox_to_anchor=(-0.5, 1.1),
-              fancybox=False, shadow=False, ncol=3, loc='upper right')
+              handles=[setosa, versi, virgi], bbox_to_anchor=(0.2, 1.1),
+              fancybox=False, shadow=False, ncol=3, loc='upper right', fontsize = 25)
 
     for ax in plt.gcf().axes:
         ax.set_xticks([])
-        ax.set_ylim([0, 8])
-        ax.set_ylim([0, 8])
+        x = ax.get_xlabel()
+        y = ax.get_ylabel()
+        ax.set_xlabel(x, fontsize=20)
+        ax.set_ylabel(y, fontsize=20)
 
+        plt.setp(ax.get_xticklabels(), fontsize=20)  
+        plt.setp(ax.get_yticklabels(), fontsize=20)  
+
+        ax.set_ylim([0, 8])
+        ax.set_ylim([0, 8])
+    plt.subplots_adjust(wspace=0.5)
     plt.savefig('Images/' + 'box_plots' +'.png')
 
 plot_boxplot()
 
 
 def scatter_plot(): 
-    plt.clf() 
+    from matplotlib import patches as mpatches
+    
     fig, axes = plt.subplots(2, 3, figsize=(22, 14))
     plt.subplots_adjust(wspace=0.2,hspace=0.2)#  hspace=0.3
     fig.suptitle('Plot X: Scatter Plot of all variables (units = cm)',fontsize = 25)
@@ -138,11 +147,20 @@ def scatter_plot():
     sns.scatterplot(ax=axes[0, 1], data=iris_df, x='petal_length', y='sepal_length',hue = 'species',legend = False, s = 70)
     sns.scatterplot(ax=axes[0, 2], data=iris_df, x='petal_length', y='sepal_width', hue = 'species',legend = False, s = 70)
     sns.scatterplot(ax=axes[1, 0], data=iris_df, x='sepal_length', y='sepal_width', hue = 'species',legend = False, s = 70)
-    sns.scatterplot(ax=axes[1, 1], data=iris_df, x='sepal_length', y='petal_width', hue = 'species',legend = False, s = 70)
+    sns.scatterplot(ax=axes[1, 1], data=iris_df, x='sepal_length', y='petal_width', hue = 'species',legend = False, s = 70) 
+    sns.scatterplot(ax=axes[1, 2], data=iris_df, x='sepal_width',  y='petal_width', hue = 'species',legend = False, s = 70)
     
-    scatter_with_legend = sns.scatterplot(ax=axes[1, 2], data=iris_df, x='sepal_width',  y='petal_width', hue = 'species', s = 70)
-    plt.setp(scatter_with_legend.get_legend().get_texts(), fontsize='20')  
-    plt.setp(scatter_with_legend.get_legend().get_title(), fontsize='20') 
+    #plt.setp(scatter_with_legend.get_legend().get_texts(), fontsize='20')  
+    #plt.setp(scatter_with_legend.get_legend().get_title(), fontsize='20') 
+
+    legend_labels = ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
+    setosa = mpatches.Patch(color='steelblue')
+    versi = mpatches.Patch(color='darkorange')
+    virgi = mpatches.Patch(color='green')
+
+    plt.legend(title = False, labels=legend_labels,
+              handles=[setosa, versi, virgi], bbox_to_anchor=(-0.1, 2.4),
+              fancybox=False, shadow=False, ncol=3, loc='upper right', fontsize = 18)
 
     for ax in plt.gcf().axes:
         x = ax.get_xlabel()
@@ -154,7 +172,8 @@ def scatter_plot():
         plt.setp(ax.get_xticklabels(), fontsize=15)  
         plt.setp(ax.get_yticklabels(), fontsize=15)  
 
-    fig.tight_layout()     
+    fig.tight_layout()
+    plt.subplots_adjust(wspace=0.25, hspace = 0.25, top = 0.9)     
     plt.savefig('Images/' + 'scatter_plots' +'.png')
     
 scatter_plot()
