@@ -143,12 +143,12 @@ Note: any use of abbreviation *df* refers to a dataframe.
 <br/>
 
 __Reading in the Dataset:__ [F1*] <br/>
-This was achieved using the pandas.read_csv()  method of the pandas library. This method also works on text files as one can declare the delimiter value that separates each data field, which in this case is a comma. 
+This was achieved using the *read_csv()* method of the pandas library. This method also works on text files as one can declare the delimiter value that separates each data field, which in this case is a comma. 
 
 <br/>
 
 __Analysing the Dataframe__ [F2*] <br/>
-The first 5 rows of the Dataframe were observed by passing 5 into the df.head(n) method of the pandas library. This method is useful as it allows the user to look at a subset of the data to deduce what columns are relevant and to perform quick checks to see if data transformations are performing as expected. It was noticed that the column headers were indexed from 0-3 by pandas as the Dataset that was downloaded did not include column names. Based on these findings the correct column names were passed as a list to the *df.columns method*, see figure 3.
+The first 5 rows of the Dataframe were observed by passing 5 into the *df.head(n)* method of the pandas library. This method is useful as it allows the user to look at a subset of the data to deduce what columns are relevant and to perform quick checks to see if data transformations are performing as expected. It was noticed that the column headers were indexed from 0-3 by pandas as the Dataset that was downloaded did not include column names. Based on these findings the correct column names were passed as a list to the *df.columns* method, see figure 3.
 
 <br/>
 
@@ -169,7 +169,7 @@ The pandas library provides aggregation functions to group a column and perform 
 
 <br/>
 
-Having looked at the first 5 rows of the dataset assumptions were made that the sepal legth, sepal width, petal length and petal width columns were floating point numbers and the species column was of type string. These assumptions were tested by applying the *.dtypes* method on the dataframe. The output showed that the four dimensional variable columns were of type 'float64' and the species class column of type 'object' (see Fig. 5 below). Moffitt 2018 explained this by describing how pandas stores datatypes in a categorical way and buckets type str and mix data types into the 'object' category.<br/> 
+Having looked at the first 5 rows of the dataset assumptions were made that the sepal legth, sepal width, petal length and petal width columns were floating point numbers and the species column was of type string. These assumptions were tested by passing the dataframe into the pandas *dtypes* function. The output showed that the four dimensional variable columns were of type 'float64' and the species class column of type 'object' (see Fig. 5 below). Moffitt 2018 explained this by describing how pandas stores datatypes in a categorical way and buckets type str and mix data types into the 'object' category.<br/> 
 
 <br/>
 
@@ -177,22 +177,20 @@ Pandas and Numpy work effectively together to help clean dataframes, for example
 
 <br/>
 
-
-
 <img src="Images/species_groupby.png"  width="165"/>|<img src="Images/data_types.png"  width="190"/> | <img src="Images/null_count.png"  width="180"/>
 :-------------------------:|:-------------------------:|:-------------------------:
 Fig. 4  |  Fig. 5  |  Fig. 6
   
 <br/>
 
-If one was dealing with larger datasets it would be unlikely that a null count of zero will be encountered. One can clean a dataset with null values in a number of ways. For example its possible to replace null values with a selection of your choice by passing this selection into the*.fillna()* pandas function, or alternatibely drop rows that contain null values using *.drop na()*. Solomon 2020 detailed more dynamic datset cleaning approaches. He described how NumPy's ability to generate Boolean masks on arrays can be utilised alongside pandas functions to perform fast detailed cleaning operations. An example of this would be using the Numpy *np.where()* function alongside pandas *.replace()* function to replace string in a series at defined locationw. 
+If one was dealing with larger datasets it would be unlikely that a null count of zero will be encountered. One can clean a dataset with null values in a number of ways. For example its possible to replace null values with a selection of your choice by passing this selection into the *fillna()* pandas function and applying it on your dataframe. It is also possible to drop rows that contain null values using the *drop na()* function. In addition to this Solomon 2020 detailed NumPy's ability to generate Boolean masks on arrays that can be utilised alongside pandas functions to perform fast detailed cleaning operations. An example of this would be using the Numpy *np.where()* function alongside pandas *replace()* function to replace string in a series at defined locations. The takeaway point here is that python libraries such as Pandas and NumPy have a lot of functionality that help deal with un-cleansed data. 
 
 <br/>
 
 __Descriptive Statistical Analysis__<br/>
 
 __Histogram Analysis__<br/>
-Histograms are considered simple plots but can give very useful visualisations on the distribution of the data. To gain more insight into the Iris data a histogram of each dependant variable was plotted. Each dependent variable has two plots, one consists of the variables with no grouping (blue plots) and the second consists of the independent variables grouped by species (multi-coloured plots), see figure X below for petal variable plots.
+Histograms are considered simple plots but can give very useful visualisations on the distribution of the data. To gain more insight into the Iris data a histogram of each feature (i.e dependant variable) was plotted. Each dependent variable has two plots, one consists of the variables with no grouping (blue plots) and the second consists of the variables grouped by species (multi-coloured plots), see figure X below for petal variable plots.
 
 <br/>
 
@@ -202,11 +200,11 @@ Histograms are considered simple plots but can give very useful visualisations o
 
 <br/>
 
-- __Un-grouped Petal Data__: Looking at the density plots of the blue histograms in fig X it becomes apparent that although the petal length and width distribution curves do have a degree of symmetry, they do not exhibit the bell curve “normal” distribution. These distributions instead, are typically referred to as bimodal as there is two local maximums present [Ye 2020]. This distribution often occuers when there is more than one population or class of data in the master data. In light of this the data was grouped by species using the Seaborn library's grouping variable called “hue”, which seperated the histogram into its three individual species classes. <br/>
+- __Un-grouped Petal Data__: Looking at the density plots of the blue histograms in fig X it becomes apparent that although the petal length and width distribution curves do have a degree of symmetry, they do not exhibit the bell curve “normal” distribution. These distributions instead, are typically referred to as bimodal as there is two local maximums present [Ye 2020]. This distribution often occurs when there is more than one population or class present in the data. In light of this the data was grouped by species using the Seaborn library's grouping variable called “hue”, which seperated the histogram into its three individual species classes. <br/>
 
 <br/>
 
-- __Grouped Petal Data__: The grouped histograms for petal length and petal width clearly show that for these features the Setosa species is well separated from Versicolor and Virginica. It was also noted that petal width and petal length showed a degree of separation between the versicolor and virginica species, with more overlap of probability densities apparent when looking at petal length. Based on these observations one could speculate that the petal attributes could play an important role in any attempt to classify the setosa class through any supervised machine learning model. 
+- __Grouped Petal Data__: The grouped histograms for petal length and petal width clearly show that for these features the Setosa species is well separated from Versicolor and Virginica. It was also noted that petal width and petal length showed a degree of separation between the versicolor and virginica species, with more overlap of probability densities apparent when looking at petal length. Based on these observations one could speculate that the petal attributes could play an important role in any attempt to classify the setosa class through any supervised machine learning model.
 
 <br/>
 
@@ -216,9 +214,8 @@ Histograms are considered simple plots but can give very useful visualisations o
 
 <br/>
 
-- __Un-grouped Sepal Data__:The sepal width and sepal length variables were also plotted on histograms to explore their distribution. As previously discussed, the median and mean values for both sepal variables are relatively similar, which would point towards a data curve that exhibits normal distribution (See fig Y).<br/>
-
-- __Grouped Sepal Data__: The un-grouped sepal variable histograms (blue) do show the expected guassian curve. On further breakdown of the plots into their species (multicoloured) it became apparent that there is significant overlapping of data between species for both sepal length and sepal width features. Due to this poor separation one would assume that the sepal length and width attributes would be less effect than the petal attributes at classifying a species in a machine learning model.
+- __Sepal Data__: 
+The un-grouped sepal variable histograms (blue) do show a guassian like distribution curve. On further breakdown of the plots into their species (multicoloured) it became apparent that there is significant overlapping of data between species for both sepal length and sepal width features. Due to this poor separation one could speculate that a machine learning moodel would find it harder to seperate the sepal length and width featues.
 
 <br/>
 
@@ -256,16 +253,16 @@ The following observations were drawn from Fig X:
   Petal length samples shows the highest deviation from the mean. Sepal width samples show the lowest deviation from the mean.<br/>
   
 - **Min / Max range:**<br/>
- Overlap between dimensional attributes exists.<br/>
-  Setosa species generally has the smallest features while Virginica species tends to have largest features.
+  Overlap between dimensional attributes exists.<br/>
+  Setosa species generally has the smallest features while Virginica species tends to have largest features. <br/>
 
 - **Median (50th percentile) and Mean comparison:**<br/>
-  Sepal length and sepal width have the lowest difference between their median and mean values which indicates that these attributes have a distribution that closer fits the bell curve / guassian distribution when compared to that of petal length and petal width. This observation was made because when data is distriubted in a "normal" manner the mean and median values are equal, however when the data skewed the mean defiates from the mode[Dan 2020].<br/> 
+  Sepal length and sepal width have the lowest difference between their median (50th percentile) and mean values which indicates that these attributes have a distribution that closer fits the bell curve / guassian distribution when compared to that of petal length and petal width. This observation was confirmed by referencing back to the histograms (see figure X). <br/> 
 
 <br/>
 
 __Boxplot Analysis:__ <br/>
-In addition to the analyis already performed considered necessary to visualise the data distriubtion with the same y-axis scaling for each iris feature across all species. The boxplot came to mind as a suitable plotting method as it displays the data distribution in a standardized way and yields information on the symmetry and outliers in the dataset (see figure X). 
+In addition to the analyis already performed it was considered necessary to visualise the data distriubtion with the same y-axis scaling for each iris feature across all species. The boxplot came to mind as a suitable plotting method as it displays the data distribution in a standardized way and yields information on the symmetry and outliers in the dataset (see figure X). 
 
 <br/>
 
@@ -273,7 +270,7 @@ In addition to the analyis already performed considered necessary to visualise t
 
 The following observations were drawn from Fig X:
 - Data Distribution:
-  - Petal width data doesn’t overlap with other features across all species. This observation suggests that a machine learning model could identify this attribute while retaining all other iris features in the model.
+  - Petal width data doesn’t overlap with other features across all species. This observation confirms that a machine learning classification model could identify this attribute while retaining all other iris features in the model.
   - Petal length data range is the largest, especially for the virginica species. 
   - Although the skew model indicated that petal width data as a whole had a skew value nearest to zero, it can be observed in the boxplot that the distribution appears negatively skewed for the Versicolour species on its own. This observation was made as the median is closer to the first quartile while the lower whisker is shorter than that of the top whisker. This can also be observed on the histogram in Fig X. 
 - Outliers:
