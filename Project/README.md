@@ -138,9 +138,6 @@ This Section details the downloads, modules, tools, libraries and dependencies f
 <br/>
 
 &nbsp;**3.2 Exploring The Data Set** <br/>
-
-<br/>
-
 Note: any use of abbreviation *df* refers to a dataframe.
 
 <br/>
