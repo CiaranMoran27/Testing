@@ -200,8 +200,6 @@ Histograms are considered simple plots but can give very useful visualisations o
 
 <br/>
 
-__Plot 1__
-
 - __Un-grouped Petal Data__: Looking at the density plots of the blue histograms in fig X it becomes apparent that although the petal length and width distribution curves do have a degree of symmetry, they do not exhibit the bell curve “normal” distribution. These distributions instead, are typically referred to as bimodal as there is two local maximums present [Ye 2020]. This distribution often occurs when there is more than one population or class present in the data. In light of this the data was grouped by species using the Seaborn library's grouping variable called “hue”, which seperated the histogram into its three individual species classes. <br/>
 
 <br/>
@@ -221,7 +219,7 @@ The un-grouped sepal variable histograms (blue) do show a guassian like distribu
 
 <br/>
 
-__Skew & Kurtosis functions:__:
+__Skew & Kurtosis functions:__:<br/>
 It was possible also possible to gain insight into data distributions via two pandas functions called **df.skew()** and **Series.kurtosis()**. Dan 2020 describes these two functions and how to evaluate their outputs:
 - **df.skew()**: Measures how symmetric a data distrubition is. The Function computes the "skewness" of the data present in a given axis of the DataFrame object. A skew value between -0.5 and 0.5 is considered symmetrical.
 - **series.kurtosis()**: Measures the heaviness of the distribution tails. The function computes the tail volumne difference relative to a guassian distribution curve. A kurtosis value of 0 is considered normal distribution, negative inidicates a flat thin-tailed distribution, positive indicates pointy fat-tailed distribution curves and a kurtosis value that exceeds absolute 3 indicates Excess Kurtosis.<br/>
