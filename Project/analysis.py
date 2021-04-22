@@ -16,7 +16,6 @@ def read_iris_dataset():
 iris_df = read_iris_dataset()
 
     
-
 def summary_variables():
     
     shape = (len(iris_df.axes[1]),len(iris_df.axes[0]))                                  # count # rows on each axis of array
@@ -33,7 +32,6 @@ def summary_variables():
     return shape, data_types, null_count, species_count, desc_all_species, df_head, skewness_all_species, kurtosis_all_species, correlation
     
 summary_tuple = summary_variables()   
-
 
 
 def write_summary_variables(summary_tuple):
@@ -55,15 +53,10 @@ def write_summary_variables(summary_tuple):
 write_summary_variables(summary_tuple)
 
 
-# !delete this if you cant pass plot to function sucessfully!
-#def write_plot(plot,file_name):
-    #fig.savefig('Images/' + file_name + '.png')
-
 
 #Reference: https://seaborn.pydata.org/generated/seaborn.histplot.html
 #Reference: https://www.python-graph-gallery.com/25-histogram-with-several-variables-seaborn
 #Reference: https://stackoverflow.com/questions/42404154/increase-tick-label-font-size-in-seaborn
-
 def plot_histograms(filename, plot_name, chart_title, x_series_one, x_series_two):  
 
     bin_number = 15
@@ -102,12 +95,12 @@ def plot_boxplot():
     from matplotlib import patches as mpatches
 
     fig, axes = plt.subplots(1,4, figsize=(26, 14))
-    fig.suptitle('Fig X : Boxplot of Iris dependant variables (cm)', fontsize = 25)
+    fig.suptitle('Fig X : Boxplot of Iris dependant variables (cm)', fontsize = 30)
 
-    sns.boxplot(ax=axes[0], x = iris_df["species"], y = iris_df["petal_length"], data = iris_df, width=0.5)
-    sns.boxplot(ax=axes[1], x=iris_df["species"], y=iris_df["petal_width"], data = iris_df, width=0.5)
-    sns.boxplot(ax=axes[2], x=iris_df["species"], y=iris_df["sepal_length"], data = iris_df, width=0.5)
-    sns.boxplot(ax=axes[3], x=iris_df["species"], y=iris_df["sepal_width"], data  =iris_df, width=0.5)
+    sns.boxplot(ax=axes[0], x = iris_df["species"], y = iris_df["petal_length"], data = iris_df, width=0.75)
+    sns.boxplot(ax=axes[1], x=iris_df["species"], y=iris_df["petal_width"], data = iris_df, width=0.75)
+    sns.boxplot(ax=axes[2], x=iris_df["species"], y=iris_df["sepal_length"], data = iris_df, width=0.75)
+    sns.boxplot(ax=axes[3], x=iris_df["species"], y=iris_df["sepal_width"], data  =iris_df, width=0.75)
     
     legend_labels = ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
     setosa = mpatches.Patch(color='steelblue')
@@ -125,8 +118,8 @@ def plot_boxplot():
         ax.set_xlabel(x, fontsize=20)
         ax.set_ylabel(y, fontsize=20)
 
-        plt.setp(ax.get_xticklabels(), fontsize=20)  
-        plt.setp(ax.get_yticklabels(), fontsize=20)  
+        plt.setp(ax.get_xticklabels(), fontsize=25)  
+        plt.setp(ax.get_yticklabels(), fontsize=25)  
 
         ax.set_ylim([0, 8])
         ax.set_ylim([0, 8])
@@ -174,8 +167,6 @@ def scatter_plot():
     plt.savefig('Images/' + 'scatter_plots' +'.png')
     
 scatter_plot()
-
-
 
 
 
