@@ -219,6 +219,7 @@ The following observations were drawn from Fig X:
 
 <br/>
 
+__Histogram Analysis__
 Histograms are considered simple plots but can give very useful visualisations on the distribution of the data. To gain more insight into the Iris data a histogram of each dependant variable was plotted. Each dependent variable has two plots, one consists of the variables with no grouping (blue plots) and the second consists of the independent variables grouped by species (multi-coloured plots), see figure X below for petal variable plots.
 
 <br/>
@@ -255,7 +256,7 @@ It was possible also possible to gain insight into data distributions via two pa
 - **df.skew()**: Measures how symmetric a data distrubition is. The Function computes the "skewness" of the data present in a given axis of the DataFrame object. A skew value between -0.5 and 0.5 is considered symmetrical.
 - **series.kurtosis()**: Measures the heaviness of the distribution tails. The function computes the tail volumne difference relative to a guassian distribution curve. A kurtosis value of 0 is considered normal distribution, negative inidicates a flat thin-tailed distribution, positive indicates pointy fat-tailed distribution curves and a kurtosis value that exceeds absolute 3 indicates Excess Kurtosis.<br/>
 
-These two distrubtion functions were used to further analyse the iris independant variables (see Fig X for results). The results showed that for all iris dependant variables a degree of symmetry exists in the data distributions as all skew values lie between -0.5 and 0.5. The sepal length and sepal width attribues have a slightly right learning skew whearas the petal length and petal width attributes data curve is learning slightly to the left. All the kurtosis values for this datset do not exceed absolute 3, which indicates that for future sample selection there would be a low probability of obtaining an extreme outlier relative to the normal distribution curse.
+These two distrubtion functions were used to further analyse the iris independant variables (see Fig X for results). The results showed that for all iris dependant variables a degree of symmetry exists in the data distributions as all skew values lie between -0.5 and 0.5. The sepal length and sepal width attribues have a slightly right learning skew whearas the petal length and petal width attributes data curve is learning slightly to the left. All the kurtosis values for this datset do not exceed absolute 3, which indicates that for future sample selection there would be a low probability of obtaining an extreme outlier relative to the normal distribution curve.
 
 
 | <img src="Images/skew_kurtosis_nohue.png"  width="400"/>|
@@ -264,11 +265,27 @@ These two distrubtion functions were used to further analyse the iris independan
 
 <br/>
 
-<br/>
-<br/>
-<br/>
+__Boxplot Analysis__
+
+In addition to the analyis already performed it was considered necessary to visualise the data distriubtion with the same y-axis scaling for each iris feature across all species. The boxplot came to mind as a suitable plotting method as it displays the data distribution in a standardized way and yields information on the symmetry and outliers in the dataset (see figure X). 
+
 <br/>
 
+Findings:
+- Size: 
+  - Setosa species generally has the smallest features.
+  - Virginica species tends to have largest features.
+
+- Data Distribution:
+  - Petal width data doesn’t overlap with other features across all species. This observation suggests that a machine learning model could identify this attribute while retaining all other attributes in the model.
+  - Petal length data range is the largest, especially for the virginica species. 
+  - Although the skew model indicated that petal width data as a whole had a skew value nearest to zero, it can be observed in the boxplot that the distribution appears negatively skewed for the Versicolour species on its own. This observation was made as the median is closer to the first quartile while the lower whisker is shorter than that of the top whisker. This can also be observed on the histogram in Fig X. 
+- Outliers:
+  - The setosa species has three outliers, one for petal length and two for Petal width features. 
+  - The Virginica species also has three outliers, one for sepal length and two for sepal width.
+  - Having compared the outliers from the boxplot to the histograms it became apparent that one can deduce outlier information from a histogram. If a large number of bins are set in the histogram the outlier will be obvious, however in this case where a medium value of bins were selected one can see potential outliers where there is a large difference between bin height and the probability densitry curve (see fig X petal length).
+
+<br/>
 
 <p align="center">
   <img src="Images/scatter_plots.png" width="1100" />

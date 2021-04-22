@@ -55,10 +55,77 @@ def write_summary_variables(summary_tuple):
 write_summary_variables(summary_tuple)
 
 
-
 # !delete this if you cant pass plot to function sucessfully!
 #def write_plot(plot,file_name):
     #fig.savefig('Images/' + file_name + '.png')
+
+
+#Reference: https://seaborn.pydata.org/generated/seaborn.histplot.html
+#Reference: https://www.python-graph-gallery.com/25-histogram-with-several-variables-seaborn
+#Reference: https://stackoverflow.com/questions/42404154/increase-tick-label-font-size-in-seaborn
+
+def plot_histograms(filename, plot_name, chart_title, x_series_one, x_series_two):  
+
+    bin_number = 15
+
+    fig, axes = plt.subplots(2, 2, figsize=(14, 14))
+    fig.suptitle('{}: Histogram of {} variables (cm)'.format(plot_name,chart_title),fontsize = 25)
+
+    sns.histplot(ax=axes[0, 0], data=iris_df, x = x_series_one, bins = bin_number, legend = False, kde = True,element = "step")
+    sns.histplot(ax=axes[0, 1], data=iris_df, x = x_series_two, bins = bin_number, legend = False, kde = True,element ="step")
+    sns.histplot(ax=axes[1, 0], data=iris_df, x = x_series_one, bins = bin_number, legend = False, hue = 'species',kde = True, element ="step") 
+    hist_with_legend = sns.histplot(ax=axes[1, 1], data=iris_df, x = x_series_two, bins = bin_number, hue = 'species', kde = True, element = "step") 
+    
+    plt.setp(hist_with_legend.get_legend().get_texts(), fontsize='20') # for legend text
+    plt.setp(hist_with_legend.get_legend().get_title(), fontsize='22') # for legend title
+    
+    for ax in plt.gcf().axes:
+        x = ax.get_xlabel()
+        y = ax.get_ylabel()
+        ax.set_xlabel(x, fontsize=20)
+        ax.set_ylabel(y, fontsize=0)
+
+        plt.setp(ax.get_xticklabels(), fontsize=15)  
+        plt.setp(ax.get_yticklabels(), fontsize=15)  
+      
+    fig.tight_layout() 
+    plt.savefig('Images/' + filename +'.png')
+ 
+plot_histograms('histograms_petals','Plot 1','Petals','petal_length','petal_width')
+plot_histograms('histograms_sepals','Plot 2','Sepals','sepal_length','sepal_width')
+
+
+# Referecnces 
+#C, J, 2020, Create a single legend for multiple plot in matplotlib, seaborn, stack overflow, viewed 21 April 2021, https://stackoverflow.com/questions/62252493/create-a-single-legend-for-multiple-plot-in-matplotlib-seaborn.
+# Reference: https://seaborn.pydata.org/generated/seaborn.boxplot.html
+def plot_boxplot():
+    from matplotlib import patches as mpatches
+
+    fig, axes = plt.subplots(1,4, figsize=(18, 18))
+    fig.suptitle('Fig X : Boxplot of Iris dependant variables (cm)', fontsize = 12)
+
+    sns.boxplot(ax=axes[0], x = iris_df["species"], y = iris_df["petal_length"], data = iris_df, width=0.2)
+    sns.boxplot(ax=axes[1], x=iris_df["species"], y=iris_df["petal_width"], data = iris_df, width=0.2)
+    sns.boxplot(ax=axes[2], x=iris_df["species"], y=iris_df["sepal_length"], data = iris_df, width=0.2)
+    sns.boxplot(ax=axes[3], x=iris_df["species"], y=iris_df["sepal_width"], data  =iris_df, width=0.2)
+    
+    legend_labels = ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
+    setosa = mpatches.Patch(color='steelblue')
+    versi = mpatches.Patch(color='darkorange')
+    virgi = mpatches.Patch(color='green')
+
+    plt.legend(title = False, labels=legend_labels,
+              handles=[setosa, versi, virgi], bbox_to_anchor=(-0.5, 1.1),
+              fancybox=False, shadow=False, ncol=3, loc='upper right')
+
+    for ax in plt.gcf().axes:
+        ax.set_xticks([])
+        ax.set_ylim([0, 8])
+        ax.set_ylim([0, 8])
+
+    plt.savefig('Images/' + 'box_plots' +'.png')
+
+plot_boxplot()
 
 
 def scatter_plot(): 
@@ -94,65 +161,7 @@ scatter_plot()
 
 
 
-#Reference: https://seaborn.pydata.org/generated/seaborn.histplot.html
-#Reference: https://www.python-graph-gallery.com/25-histogram-with-several-variables-seaborn
-#Reference: https://stackoverflow.com/questions/42404154/increase-tick-label-font-size-in-seaborn
 
-def plot_histograms(filename, plot_name, chart_title, x_series_one, x_series_two):  
-    bin_number = 15
-    fig, axes = plt.subplots(2, 2, figsize=(14, 14))
-    fig.suptitle('{}: Histogram of {} variables (cm)'.format(plot_name,chart_title),fontsize = 25)
-
-    sns.histplot(ax=axes[0, 0], data=iris_df, x = x_series_one, bins = bin_number, legend = False, kde = True,element = "step")
-    sns.histplot(ax=axes[0, 1], data=iris_df, x = x_series_two, bins = bin_number, legend = False, kde = True,element ="step")
-    sns.histplot(ax=axes[1, 0], data=iris_df, x = x_series_one, bins = bin_number, legend = False, hue = 'species',kde = True, element ="step") 
-    hist_with_legend = sns.histplot(ax=axes[1, 1], data=iris_df, x = x_series_two, bins = bin_number, hue = 'species', kde = True, element = "step") 
-    
-    plt.setp(hist_with_legend.get_legend().get_texts(), fontsize='20') # for legend text
-    plt.setp(hist_with_legend.get_legend().get_title(), fontsize='22') # for legend title
-    
-    for ax in plt.gcf().axes:
-        x = ax.get_xlabel()
-        y = ax.get_ylabel()
-        ax.set_xlabel(x, fontsize=20)
-        ax.set_ylabel(y, fontsize=0)
-
-        plt.setp(ax.get_xticklabels(), fontsize=15)  
-        plt.setp(ax.get_yticklabels(), fontsize=15)  
-      
-    fig.tight_layout() 
-    plt.savefig('Images/' + filename +'.png')
- 
-plot_histograms('histograms_petals','Plot 1','Petals','petal_length','petal_width')
-plot_histograms('histograms_sepals','Plot 2','Sepals','sepal_length','sepal_width')
-
-
-'''
-def plot_box_plot():
-    plt.clf()
-    # reference: https://stackoverflow.com/questions/54132989/is-there-a-way-to-change-the-color-and-shape-indicating-the-mean-in-a-seaborn-bo
-     
-    box_plot_data = iris_df.loc[:, ['sepal_length', 'sepal_width', 'petal_length', 'petal_width']]
-    ax = sns.boxplot(data = box_plot_data,showmeans=True, meanprops={"markerfacecolor":"black","markeredgecolor":"white"})
-    
-    plt.suptitle('Plot X: Boxplot of all variables',fontsize = 16) 
-    ax.set_ylabel('length of variable (cm)', fontsize=12)  
-    sns.set(style="darkgrid")
-    
-    plt.savefig('Images/' + 'box_plot' +'.png')
-    plt.show()
-
-plot_box_plot()
-'''
-
-
-def plot_box_plot():
-    #plt.show()
-    plt.close()
-    sns.boxplot( x = iris_df["species"], y = iris_df["sepal_length"] )
-    plt.savefig('Images/' + 'box_plot' +'.png')
-
-plot_box_plot()
 
 
 #if __name__ == __main__:
