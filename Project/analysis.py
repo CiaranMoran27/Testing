@@ -157,7 +157,7 @@ def scatter_plot():
         y = ax.get_ylabel()
         ax.set_xlabel(x, fontsize=20)
         ax.set_ylabel(y, fontsize=20)
-        ax.set_xlim((0,8))
+        #ax.set_xlim((0,8))
 
         plt.setp(ax.get_xticklabels(), fontsize=15)  
         plt.setp(ax.get_yticklabels(), fontsize=15)  
