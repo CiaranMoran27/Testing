@@ -101,32 +101,37 @@ def plot_boxplot():
     sns.boxplot(ax=axes[1], x=iris_df["species"], y=iris_df["petal_width"], data = iris_df, width=0.75)
     sns.boxplot(ax=axes[2], x=iris_df["species"], y=iris_df["sepal_length"], data = iris_df, width=0.75)
     sns.boxplot(ax=axes[3], x=iris_df["species"], y=iris_df["sepal_width"], data  =iris_df, width=0.75)
-    
+
     legend_labels = ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
     setosa = mpatches.Patch(color='steelblue')
     versi = mpatches.Patch(color='darkorange')
     virgi = mpatches.Patch(color='green')
 
     plt.legend(title = False, labels=legend_labels,
-              handles=[setosa, versi, virgi], bbox_to_anchor=(-0.3, 1.1),
+              handles=[setosa, versi, virgi], bbox_to_anchor=(-0.05, 1.09),
               fancybox=False, shadow=False, ncol=3, loc='upper right', fontsize = 25)
 
-    for ax in plt.gcf().axes:
-        ax.set_xticks([])
+    for ax in plt.gcf().axes:  
         x = ax.get_xlabel()
         y = ax.get_ylabel()
-        ax.set_xlabel(x, fontsize=25)
-        ax.set_ylabel(y, fontsize=25)
-
-        plt.setp(ax.get_xticklabels(), fontsize=25)  
-        plt.setp(ax.get_yticklabels(), fontsize=25)  
-
+        ax.set_xlabel(x, fontsize=17.5)
+        ax.set_ylabel(y, fontsize=17.5)
         ax.set_ylim([0, 8])
-        ax.set_ylim([0, 8])
-    plt.subplots_adjust(wspace=0.5)
+
+        ax.set_xticks([])
+        plt.setp(ax.get_xticklabels(), fontsize=15)  
+        plt.setp(ax.get_yticklabels(), fontsize=15) 
+
     plt.savefig('Images/' + 'box_plots' +'.png')
 
 plot_boxplot()
+    
+
+    #plt.subplots_adjust(wspace=0.25, hspace = 0.25, top = 0.9)     
+
+
+
+
 
 
 def scatter_plot(): 
@@ -157,21 +162,21 @@ def scatter_plot():
         y = ax.get_ylabel()
         ax.set_xlabel(x, fontsize=20)
         ax.set_ylabel(y, fontsize=20)
-        #ax.set_xlim((0,8))
 
         plt.setp(ax.get_xticklabels(), fontsize=15)  
         plt.setp(ax.get_yticklabels(), fontsize=15)  
-
+    
     fig.tight_layout()
     plt.subplots_adjust(wspace=0.25, hspace = 0.25, top = 0.9)     
     plt.savefig('Images/' + 'scatter_plots' +'.png')
     
 scatter_plot()
 
-
-
-
+# Reference: https://seaborn.pydata.org/generated/seaborn.lmplot.html
+def lmplot(): 
+    sns.lmplot(data=iris_df, x='petal_length', y='petal_width', hue = 'species')
+    plt.savefig('Images/' + 'lmplot' +'.png')
+    plt.show()
+lmplot()
 #if __name__ == __main__:
     #pass
-
-

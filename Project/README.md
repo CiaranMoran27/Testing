@@ -294,12 +294,36 @@ To better understand any potential relationships between the variables in the da
 <br/>
 
 The following was observations were made from the scatter plots:
-- Petal length Vs. petal width features have a high degree of linear correlation across all speices.
+- Petal length Vs. petal width features appear to have the highest degree of linear correlation.
 - Petal length Vs. sepal length featues have a high degree of linear correlation with the Versicolor and Virginica species. 
 - Petal width Vs. sepal length features a medium degree of linear correlation across all species.
 - All other feaures have a non-linear relationship.
 
 <br/>
+
+
+<p align="center">
+  <img src="Images/Implot.png" width="1100" />
+</p> 
+
+<br/>
+Taking a step back, in Section 2.2 it was established that Fisher's Linear discriminant classification model assumed that all species data shared the same covariance matrix. 
+
+As described by Saha 2018, covariance indicates the direction of linear relationship between variables, whearas correlation measures both the strength and direction of the linear relationship between variables. In other words covariance is a 
+
+Saha 2018,
+“Covariance” indicates the direction of the linear relationship between variables. “Correlation” on the other hand measures both the strength and direction of the linear relationship between two variables. Correlation is a function of the covariance. What sets them apart is the fact that correlation values are standardized whereas, covariance values are not. 
+
+
+
+
+
+
+
+
+
+
+
 
 It is possible to quantify the pairwise correlation between variables using the Pearsons method....
 
@@ -307,6 +331,8 @@ I
 
 https://medium.com/swlh/all-about-the-pearson-correlation-coefficient-in-data-science-84d7cb771db0
 
+
+Srishti Saha
 
 
 
@@ -339,3 +365,4 @@ https://medium.com/swlh/all-about-the-pearson-correlation-coefficient-in-data-sc
 [X] Dan, A, 2022, Kurtosis() & Skew() Function In Pandas, medium.com, viewed 19 April 2021, **<https://medium.com/@atanudan/kurtosis-skew-function-in-pandas-aa63d72e20de>**.<br/>
 [X] Ye, A, 2020, viewed 22 April 2021, All the distributions you need to know, towards data science, viewed 22 April 2021,<br/> **<https://towardsdatascience.com/all-the-distributions-you-need-to-know-ad570514987b>**.<br/>
 [X] Brownlee, J, 2018, How to Calculate Correlation Between Variables in Python, viewed 23 April 2021,<br/> **<https://machinelearningmastery.com/how-to-use-correlation-to-understand-the-relationship-between-variables/>**.
+[X] Saha, S, 2018, Baffled by Covariance and Correlation??? Get the Math and the Application in Analytics for both the terms, towards data science, viewed 23 April 2021, **<https://towardsdatascience.com/let-us-understand-the-correlation-matrix-and-covariance-matrix-d42e6b643c22>.**
