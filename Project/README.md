@@ -302,9 +302,9 @@ The following was observations were made from the scatter plots:
 <br/>
 
 
-<p align="center">
-  <img src="Images/testing.png" width="900" />
-</p> 
+
+  <img src="Images/testing.png" width="500" />
+
 
 <br/>
 Taking a step back, in Section 2.2 it was established that Fisher's Linear discriminant classification model assumed that all species data shared the same covariance matrix. 
