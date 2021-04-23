@@ -175,7 +175,7 @@ scatter_plot()
 # Reference: https://seaborn.pydata.org/generated/seaborn.lmplot.html
 def lmplot(): 
     sns.lmplot(data=iris_df, x='petal_length', y='petal_width', hue = 'species')
-    plt.suptitle('Plot X: Scatter Plot of all petal length Vs. petal width (units = cm)',fontsize = 10)
+    plt.suptitle('Plot X: Scatter Plot of all petal length Vs. petal width (units = cm)',fontsize = 9)
     plt.tight_layout()
     plt.savefig('Images/' + 'testing' +'.png')
     
