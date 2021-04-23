@@ -295,8 +295,8 @@ To better understand any potential relationships between the variables in the da
 
 The following was observations were made from the scatter plots:
 - Petal length Vs. petal width features appear to have the highest degree of linear correlation.
-- Petal length Vs. sepal length featues have a high degree of linear correlation with the Versicolor and Virginica species. 
-- Petal width Vs. sepal length features a medium degree of linear correlation across all species.
+- Petal length Vs. sepal length featues have a degree of linear correlation with the Versicolor and Virginica species. 
+- Petal width Vs. sepal length features a degree of linear correlation across all species.
 - All other feaures have a non-linear relationship.
 
 <br/>
