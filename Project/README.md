@@ -303,7 +303,7 @@ The following was observations were made from the scatter plots:
 
 
 <p align="center">
-  <img src="Images/lmplot.png" width="1100" />
+  <img src="Images/testing.png" width="1100" />
 </p> 
 
 <br/>
