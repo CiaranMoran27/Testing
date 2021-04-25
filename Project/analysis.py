@@ -132,13 +132,13 @@ def plot_boxplot():
     for ax in plt.gcf().axes:  
         x = ax.get_xlabel()
         y = ax.get_ylabel()
-        ax.set_xlabel(x, fontsize=17.5)
-        ax.set_ylabel(y, fontsize=17.5)
+        ax.set_xlabel(x, fontsize=22)
+        ax.set_ylabel(y, fontsize=22)
         ax.set_ylim([0, 8])
 
         ax.set_xticks([])
-        plt.setp(ax.get_xticklabels(), fontsize=15)  
-        plt.setp(ax.get_yticklabels(), fontsize=15) 
+        plt.setp(ax.get_xticklabels(), fontsize=20)  
+        plt.setp(ax.get_yticklabels(), fontsize=20) 
 
     plt.savefig('Images/' + 'box_plots' +'.png')
 
