@@ -138,7 +138,7 @@ def plot_boxplot():
 
         ax.set_xticks([])
         plt.setp(ax.get_xticklabels(), fontsize=20)  
-        plt.setp(ax.get_yticklabels(), fontsize=20) 
+        plt.setp(ax.get_yticklabels(), fontsize=15) 
 
     plt.savefig('Images/' + 'box_plots' +'.png')
 
@@ -176,7 +176,7 @@ def scatter_plot():
 def implot(): 
 # Reference:
 # Waskom, M, 2021, seaborn.implot, viewed 24 April 2021, https://seaborn.pydata.org/generated/seaborn.lmplot.html.
-    sns.lmplot(data=iris_df, x='petal_length', y='petal_width', hue = 'species')
+    sns.lmplot(data=iris_df, x='petal_width', y='petal_length', hue = 'species')
     plt.suptitle('Plot X: Scatter Plot of all petal length Vs. petal width',fontsize = 11)
     plt.tight_layout()
     plt.savefig('Images/' + 'implot' +'.png')
