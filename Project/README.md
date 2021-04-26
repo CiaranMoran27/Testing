@@ -307,28 +307,29 @@ The pandas library has a useful method called *.corr* which can be used to compu
 Figure X pairwise correlation data re-affirmed the correlation observations made from the scatter plots with petal length and petal width showing the highest positive linear correlation with a value of 0.96. 
 
 
-Calomme, V, 2017, In supervised learning, why is it bad to have correlated features?, 
-https://datascience.stackexchange.com/questions/24452/in-supervised-learning-why-is-it-bad-to-have-correlated-features#:~:text=The%20stronger%20the%20correlation%2C%20the,tend%20to%20change%20in%20unison.
-
-
 __3.3 Machine Learning__ <br>
 
-___3.3.1 Feature Selection__
+__3.3.1 Feature Selection__
 Feature selection is an important process that is used in machine learning to choose the features of the dataset that best describe the target and if needed drop variables that dont describe the target output. Asaithambi 2018 describes how models with higher levels of dimensionality can struggle as training time increases exponentially with number of features and the model has a higher risk of overfitting. As the Fisher Iris dataset has a low number of variables one could presume that dimensionality reduction of the dataset would be less important when feeding the data to a machind learning model, however this avenue will be explored in more detail. 
 
-___3.3.2 Choosing a Model__
+__3.3.2 Choosing a Model__
 
 In an attempt to better understand how feature selection can impact a models performance the Exhaustive Feature Selector wrapper method will be used to evaluate the model performance across all possible combinations of features of the dataset. Despite slowing down a model performance (Malik 2021) it was considered necessary to use this wrapper method for investigation purposes. The KNeighborsClassifier was the supervised learning model of chosen for initial trial:
 
 
 
 
-| <img src="Images/knn_average_score.png"  width="225"/>|
+| <img src="Images/knn_average_score.png"  width="1000"/>|
 |----------|
 | Fig X.|
 
 
 <br/>
+
+
+Calomme, V, 2017, In supervised learning, why is it bad to have correlated features?, 
+https://datascience.stackexchange.com/questions/24452/in-supervised-learning-why-is-it-bad-to-have-correlated-features#:~:text=The%20stronger%20the%20correlation%2C%20the,tend%20to%20change%20in%20unison.
+
 
 ### 5. Reference:
 [1]. Cui, Y 2020, The Iris dataset – a little bit of history and biology, towards data science, viewed 26 Match 2021,**<https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5>.**<br/>
