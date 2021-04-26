@@ -16,15 +16,6 @@ def read_iris_dataset():
  
 iris_df = read_iris_dataset()                                                                    # store dataframe in iris_df variable
 
-setosa_df = iris_df[(iris_df['species'] == "Iris-setosa")]
-versicolor_df = iris_df[(iris_df['species'] == "Iris-versicolor")]
-virginica_df = iris_df[(iris_df['species'] == "Iris-virginica")]
-
-print(setosa_df.corr())
-print(versicolor_df.corr())
-print(virginica_df.corr())
-
-
 
 
 
