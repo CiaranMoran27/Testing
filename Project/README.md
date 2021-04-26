@@ -293,15 +293,25 @@ To better understand any potential relationships between the variables in the da
 
 <br/>
 
-The following was observations were made from the scatter plots:
-- Petal length Vs. petal width features appear to have the highest degree of linear correlation.
-- Petal length Vs. sepal length featues have a degree of linear correlation with the Versicolor and Virginica species. 
-- Petal width Vs. sepal length features a degree of linear correlation across all species.
-- All other feaures have a non-linear relationship.
+On analysis of the scatter plots it was established that petal length and petal width features appeared to have a high degree of positive linear correlation. This was established as the data points as a whole appear tighter to the linear regression line and they are increasing with eachother. The pandas library has a useful method called *.corr* which can be used to compute pairwise correlation of variables. This method was used on iris dataset, which by default uses the Pearson method when the type is not declared in the function,  see Fig X.
 
 <br/>
 
+| <img src="Images/correlation_statistics.png"  width="525"/>|
+|----------|
+| Fig X.|
 
+<br/>
+
+Figure X re-affirmed the petal length and petal width pairwise correlation with a value of + 0.96. It was also observed that the sepal featues have poor correlation with a value of -0.11. One 
+
+
+Calomme, V, 2017, In supervised learning, why is it bad to have correlated features?, 
+https://datascience.stackexchange.com/questions/24452/in-supervised-learning-why-is-it-bad-to-have-correlated-features#:~:text=The%20stronger%20the%20correlation%2C%20the,tend%20to%20change%20in%20unison.
+
+
+
+<br/>
 
   <img src="Images/implot.png" width="625" />
 
@@ -332,18 +342,8 @@ I
 https://medium.com/swlh/all-about-the-pearson-correlation-coefficient-in-data-science-84d7cb771db0
 
 
-Srishti Saha
 
 
-
-
-<br/>
-
-| <img src="Images/correlation_statistics.png"  width="525"/>|
-|----------|
-| Fig X.|
-
-<br/>
 <br/>
 
 ### 5. Reference:

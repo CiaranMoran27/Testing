@@ -16,6 +16,16 @@ def read_iris_dataset():
  
 iris_df = read_iris_dataset()                                                                    # store dataframe in iris_df variable
 
+setosa_df = iris_df[(iris_df['species'] == "Iris-setosa")]
+versicolor_df = iris_df[(iris_df['species'] == "Iris-versicolor")]
+virginica_df = iris_df[(iris_df['species'] == "Iris-virginica")]
+
+print(setosa_df.corr())
+print(versicolor_df.corr())
+print(virginica_df.corr())
+
+
+
 
 
 class summary_creator:  
@@ -163,6 +173,8 @@ def scatter_plot():
         y = ax.get_ylabel()
         ax.set_xlabel(x, fontsize=20)
         ax.set_ylabel(y, fontsize=20)
+        ax.set_xlim([0, 8])
+        ax.set_ylim([0, 8])
 
         plt.setp(ax.get_xticklabels(), fontsize=15)  
         plt.setp(ax.get_yticklabels(), fontsize=15)  
