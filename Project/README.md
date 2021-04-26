@@ -319,9 +319,7 @@ In an attempt to better understand how feature selection can impact a models per
 
 
 
-| <img src="Images/knn_average_score.png"  width="1000"/>|
-|----------|
-| Fig X.|
+ <img src="Images/knn_average_score.png"  width="1000"/>|
 
 
 <br/>

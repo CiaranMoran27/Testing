@@ -44,6 +44,7 @@ def knearest_neighbour(cross_validation):
     df = pd.DataFrame.from_dict(efs1.get_metric_dict()).T                                 # uses get_metric_dict method on efs1 variable, efs1 is then converted from dict to dataframe
     df.sort_values('avg_score', inplace=True, ascending=False)                            # sort column in ascending order, inplace True means no copy is made
   
+  
     # Create bar chart on mean performance of each subset of features
     fig, ax = plt.subplots(figsize=(12,9))                                                # create figure & axes
     y_pos = np.arange(len(df))                                                            # stores evenly spaced values that total the length of the df 
@@ -51,6 +52,8 @@ def knearest_neighbour(cross_validation):
     ax.barh(y_pos, df['avg_score'], xerr=df['std_dev'])                                   # sets chart parameters
     ax.set_yticks(y_pos)                                                                  # sets y positions 
     ax.set_yticklabels(df['feature_names'])                                               # sets y labels
+    ax.yaxis.tick_right()                                                                 # y axis ticks right
+    ax.yaxis.set_label_position("right")                                                  # y axis labels right 
     ax.set_xlabel('Accuracy')                                                             # sets x axis labels
 
     plt.title('Plox X: KNeighborsClassifier Model % Accuracy')                            # add title
