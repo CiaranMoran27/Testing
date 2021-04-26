@@ -316,11 +316,9 @@ __3.3.2 Choosing a Model__
 
 In an attempt to better understand how feature selection can impact a models performance the Exhaustive Feature Selector wrapper method will be used to evaluate the model performance across all possible combinations of features of the dataset. Despite slowing down a model performance (Malik 2021) it was considered necessary to use this wrapper method for investigation purposes. The KNeighborsClassifier was the supervised learning model of chosen for initial trial:
 
+<br/>
 
-
-
- <img src="Images/knn_average_score.png"  width="1000"/>|
-
+ <img src="Images/knn_average_score.png"  width="900"/>|
 
 <br/>
 
