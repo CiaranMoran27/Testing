@@ -314,9 +314,7 @@ Feature selection is an important process that is used in machine learning to ch
 
 __3.3.2 Choosing a Model__
 
-One aim of this project was gain a basic understanding of Machine Learning. With this in mind it was decided to explore one of the simpler models and run it on the Iris Dataset in an attempt to classify the target species. The k-nearest neighbors (KNN) algorithm is a simple, supervised machine learning algorithm that can be used to solve both classification and regression problems [X]. As described by Harrison 2018 the model works by finding the distances between a query and all the examples in the data, selecting the specified number examples (K) closest to the query. When used for classification purposes the algorithm then votes for the most frequent label when applied . <br/>
-
-In an attempt to better understand how feature selection can impact the KNN model performance the Exhaustive Feature Selector wrapper method was used to evaluate the model performance across all possible combinations of features of the dataset. Despite slowing down model performance (Malik 2021) it was considered necessary to use this wrapper method for investigation purposes. To add to this, the model performed best when the  variable with the highest degree of correlation was dropped (petal width).
+One aim of this project was gain a basic understanding of Machine Learning. With this in mind it was decided to explore one of the simpler models and run it on the Iris Dataset in an attempt to classify the target species. The k-nearest neighbors (KNN) algorithm is a simple, supervised machine learning algorithm that can be used to solve both classification and regression problems [X]. As described by Harrison 2018 the model works by finding the distances between a query and all the examples in the data, selecting the specified number examples (K) closest to the query. When used for classification purposes the algorithm then votes for the most frequent label when applied .In an attempt to better understand how feature selection can impact the KNN model performance the Exhaustive Feature Selector wrapper method was used to evaluate the model performance across all possible combinations of features of the dataset. Despite slowing down model performance (Malik 2021) it was considered necessary to use this wrapper method for investigation purposes.).
 
 <br/>
 
@@ -324,13 +322,9 @@ In an attempt to better understand how feature selection can impact the KNN mode
 
 <br/>
 
-The results from plot X are very interesting. Overall The petal features overall performed worse at prediciting the Iris species, while the sepal dimensions performed better. There appears to be a link between variables that have high correlation with other variables and a reduced ability to solely make the most accurate model predictions. This would make sence as the more correlated variables are, the harder it would be to alter their dimension without altering another variable in a similar way.
+The results from plot X are very interesting. Overall The petal features overall performed worse at prediciting the Iris species, while the sepal dimensions performed better. There appears to be a link between variables that have high correlation with other variables and a reduced ability to solely make the most accurate model predictions. This would make sence as the more correlated variables are, the harder it would be to alter their dimension without altering another variable in a similar way. To add to this, the model performed best when the  variable with the highest degree of correlation was dropped (petal width).
 
 
-
-
-Calomme, V, 2017, In supervised learning, why is it bad to have correlated features?, 
-https://datascience.stackexchange.com/questions/24452/in-supervised-learning-why-is-it-bad-to-have-correlated-features#:~:text=The%20stronger%20the%20correlation%2C%20the,tend%20to%20change%20in%20unison.
 
 
 ### 5. Reference:
