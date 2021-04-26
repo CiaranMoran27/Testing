@@ -314,13 +314,19 @@ Feature selection is an important process that is used in machine learning to ch
 
 __3.3.2 Choosing a Model__
 
-In an attempt to better understand how feature selection can impact a models performance the Exhaustive Feature Selector wrapper method will be used to evaluate the model performance across all possible combinations of features of the dataset. Despite slowing down a model performance (Malik 2021) it was considered necessary to use this wrapper method for investigation purposes. The KNeighborsClassifier was the supervised learning model of chosen for initial trial:
+One aim of this project was gain a basic understanding of Machine Learning. With this in mind it was decided to explore one of the simpler models and run it on the Iris Dataset in an attempt to classify the target species. The k-nearest neighbors (KNN) algorithm is a simple, supervised machine learning algorithm that can be used to solve both classification and regression problems [X]. As described by Harrison 2018 the model works by finding the distances between a query and all the examples in the data, selecting the specified number examples (K) closest to the query. When used for classification purposes the algorithm then votes for the most frequent label when applied . <br/>
+
+In an attempt to better understand how feature selection can impact the KNN model performance the Exhaustive Feature Selector wrapper method was used to evaluate the model performance across all possible combinations of features of the dataset. Despite slowing down model performance (Malik 2021) it was considered necessary to use this wrapper method for investigation purposes. To add to this, the model performed best when the  variable with the highest degree of correlation was dropped (petal width).
 
 <br/>
 
  <img src="Images/knn_average_score.png"  width="900"/>|
 
 <br/>
+
+The results from plot X are very interesting. Overall The petal features overall performed worse at prediciting the Iris species, while the sepal dimensions performed better. There appears to be a link between variables that have high correlation with other variables and a reduced ability to solely make the most accurate model predictions. This would make sence as the more correlated variables are, the harder it would be to alter their dimension without altering another variable in a similar way.
+
+
 
 
 Calomme, V, 2017, In supervised learning, why is it bad to have correlated features?, 
@@ -347,5 +353,6 @@ https://datascience.stackexchange.com/questions/24452/in-supervised-learning-why
 [X] Ye, A, 2020, viewed 22 April 2021, All the distributions you need to know, towards data science, viewed 22 April 2021,<br/> **<https://towardsdatascience.com/all-the-distributions-you-need-to-know-ad570514987b>**.<br/>
 [X] Brownlee, J, 2018, How to Calculate Correlation Between Variables in Python, viewed 23 April 2021,<br/> **<https://machinelearningmastery.com/how-to-use-correlation-to-understand-the-relationship-between-variables/>**.
 [X] Saha, S, 2018, Baffled by Covariance and Correlation??? Get the Math and the Application in Analytics for both the terms, towards data science, viewed 23 April 2021, **<https://towardsdatascience.com/let-us-understand-the-correlation-matrix-and-covariance-matrix-d42e6b643c22>.**
-[X] Malik, U, 2021, Applying Wrapper Methods in Python for Feature Selection, Stack Abuse, https://stackabuse.com/applying-wrapper-methods-in-python-for-feature-selection/.
-[X]  Asaithambi, S, 2018, Why, How and When to apply Feature Selection, viewed 26 April 2021,https://towardsdatascience.com/why-how-and-when-to-apply-feature-selection-e9c69adfabf2
+[X] Malik, U, 2021, Applying Wrapper Methods in Python for Feature Selection, Stack Abuse, **<https://stackabuse.com/applying-wrapper-methods-in-python-for-feature-selection/>.**.
+[X]  Asaithambi, S, 2018, Why, How and When to apply Feature Selection, viewed 26 April 2021, **<https://towardsdatascience.com/why-how-and-when-to-apply-feature-selection-e9c69adfabf2>.**
+[X] Harrison, O, 2018, Machine Learning Basics with the K-Nearest Neighbors Algorithm, towards data science, viewed 26 april 2021, **<https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761>.**
