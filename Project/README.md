@@ -27,16 +27,15 @@
 &emsp; &emsp; 3.2.1 Reading in the Dataset<br/>
 &emsp; &emsp; 3.2.2 Analysing the Dataframe<br/>
 &emsp; &emsp; 3.2.3 Descriptive Statistical Analysis<br/>
-&emsp; 3.3 Correlation Analysis <br>
+&emsp; &emsp; 3.2.4 Correlation Analysis <br>
+&emsp; 3.3 Machine Learning <br>
+&emsp; &emsp; 3.3.1 Feature Selection <br>
 
 ### 4. Discussion 
 ### 5. Summary 
 ### 6. References 
 
-__Reading in the Dataset:__ [F1*] <br/>
-This was achieved using the pandas.read_csv()  method of the pandas library.  This method also works on text files as one can declare the delimiter value that separates each data field, which in this case is a comma. 
-
-<br/>
+__1 Introduction:__ [F1*] <br/>
 
 This Repository contains all the files relevant to my 2021 Project as part of my Programming and Scripting module. The project investigates the famous Fisher Iris Data set and applies a python-based methodology to explore the data. This README file contains of Summary of my findings.
 The projects main aims are to achieve the following through incremental progress:
@@ -123,6 +122,7 @@ This Section details the downloads, modules, tools, libraries and dependencies f
     - pandas 1.1.3 <br/>
     - matplotlib 3.3.2 <br/>
     - seaborn 0.11.0 <br/>
+    - mlxtend 0.18.0 <br/>
 
 - Fisher Iris Dataset:
   - Downloaded here (**<http://archive.ics.uci.edu/ml/datasets/Iris>**). <br/>
@@ -143,12 +143,12 @@ Note: any use of abbreviation *df* refers to a dataframe.
 
 <br/>
 
-__Reading in the Dataset:__ [F1*] <br/>
+__3.2.1 Reading in the Dataset:__ [F1*] <br/>
 This was achieved using the *read_csv()* method of the pandas library. This method also works on text files as one can declare the delimiter value that separates each data field, which in this case is a comma. 
 
 <br/>
 
-__Analysing the Dataframe__ [F2*] <br/>
+__3.2.2 Analysing the Dataframe__ [F2*] <br/>
 The first 5 rows of the Dataframe were observed by passing 5 into the *df.head(n)* method of the pandas library. This method is useful as it allows the user to look at a subset of the data to deduce what columns are relevant and to perform quick checks to see if data transformations are performing as expected. It was noticed that the column headers were indexed from 0-3 by pandas as the Dataset that was downloaded did not include column names. Based on these findings the correct column names were passed as a list to the *df.columns* method, see figure 3.
 
 <br/>
@@ -188,7 +188,7 @@ If one was dealing with larger datasets it would be unlikely that a null count o
 
 <br/>
 
-__Descriptive Statistical Analysis__<br/>
+__3.2.3 Descriptive Statistical Analysis__<br/>
 
 __Histogram Analysis__<br/>
 Histograms are considered simple plots but can give very useful visualisations on the distribution of the data. To gain more insight into the Iris data a histogram of each feature (i.e dependant variable) was plotted. Each dependent variable has two plots, one consists of the variables with no grouping (blue plots) and the second consists of the variables grouped by species (multi-coloured plots), see figure X below for petal variable plots.
@@ -281,7 +281,7 @@ The following observations were drawn from Fig X:
 
 <br/>
 
-__Correlation Analysis__<br/>
+__3.2.4 Correlation Analysis__<br/>
 
 To better understand any potential relationships between the variables in the dataset a scatter plot was generated comparing all iris fearures agaisnt eachother (see plot 3 below). As detailed by Brownlee 2018, it is important to discover and quantify the degree to which variabeles are depenadnt on eachother. He then goes on to explain how a better understanding of variable correlation can help you perpare your data for use in machine learning algorithms.
 
@@ -293,7 +293,8 @@ To better understand any potential relationships between the variables in the da
 
 <br/>
 
-On analysis of the scatter plots it was established that petal length and petal width features appeared to have a high degree of positive linear correlation. This was established as the data points as a whole appear tighter to the linear regression line and they are increasing with eachother. The pandas library has a useful method called *.corr* which can be used to compute pairwise correlation of variables. This method was used on iris dataset, which by default uses the Pearson method when the type is not declared in the function,  see Fig X.
+On analysis of the scatter plots it was established that petal length and petal width features appeared to have a high degree of positive linear correlation, that is to say that as petal length increases petal width also increases at a similar rate. Sepal length vs petal length  and sepal length vs petal width regression lines also show a positive degree of linear correlation.
+The pandas library has a useful method called *.corr* which can be used to compute pairwise correlation of variables. This method was used on iris dataset, which by default uses the Pearson method when the type is not declared in the function,  see Fig X.
 
 <br/>
 
@@ -303,45 +304,28 @@ On analysis of the scatter plots it was established that petal length and petal 
 
 <br/>
 
-Figure X re-affirmed the petal length and petal width pairwise correlation with a value of + 0.96. It was also observed that the sepal featues have poor correlation with a value of -0.11. One 
+Figure X pairwise correlation data re-affirmed the correlation observations made from the scatter plots with petal length and petal width showing the highest positive linear correlation with a value of 0.96. 
 
 
 Calomme, V, 2017, In supervised learning, why is it bad to have correlated features?, 
 https://datascience.stackexchange.com/questions/24452/in-supervised-learning-why-is-it-bad-to-have-correlated-features#:~:text=The%20stronger%20the%20correlation%2C%20the,tend%20to%20change%20in%20unison.
 
 
+__3.3 Machine Learning__ <br>
 
-<br/>
+___3.3.1 Feature Selection__
+Feature selection is an important process that is used in machine learning to choose the features of the dataset that best describe the target and if needed drop variables that dont describe the target output. Asaithambi 2018 describes how models with higher levels of dimensionality can struggle as training time increases exponentially with number of features and the model has a higher risk of overfitting. As the Fisher Iris dataset has a low number of variables one could presume that dimensionality reduction of the dataset would be less important when feeding the data to a machind learning model, however this avenue will be explored in more detail. 
 
-  <img src="Images/implot.png" width="625" />
+___3.3.2 Choosing a Model__
 
-
-<br/>
-Taking a step back, in Section 2.2 it was established that Fisher's Linear discriminant classification model assumed that all species data shared the same covariance matrix. 
-
-As described by Saha 2018, covariance indicates the direction of linear relationship between variables, whearas correlation measures both the strength and direction of the linear relationship between variables. In other words covariance is a 
-
-Saha 2018,
-“Covariance” indicates the direction of the linear relationship between variables. “Correlation” on the other hand measures both the strength and direction of the linear relationship between two variables. Correlation is a function of the covariance. What sets them apart is the fact that correlation values are standardized whereas, covariance values are not. 
+In an attempt to better understand how feature selection can impact a models performance the Exhaustive Feature Selector wrapper method will be used to evaluate the model performance across all possible combinations of features of the dataset. Despite slowing down a model performance (Malik 2021) it was considered necessary to use this wrapper method for investigation purposes. The KNeighborsClassifier was the supervised learning model of chosen for initial trial:
 
 
 
 
-
-
-
-
-
-
-
-
-It is possible to quantify the pairwise correlation between variables using the Pearsons method....
-
-I
-
-https://medium.com/swlh/all-about-the-pearson-correlation-coefficient-in-data-science-84d7cb771db0
-
-
+| <img src="Images/knn_average_score.png"  width="525"/>|
+|----------|
+| Fig X.|
 
 
 <br/>
@@ -366,3 +350,5 @@ https://medium.com/swlh/all-about-the-pearson-correlation-coefficient-in-data-sc
 [X] Ye, A, 2020, viewed 22 April 2021, All the distributions you need to know, towards data science, viewed 22 April 2021,<br/> **<https://towardsdatascience.com/all-the-distributions-you-need-to-know-ad570514987b>**.<br/>
 [X] Brownlee, J, 2018, How to Calculate Correlation Between Variables in Python, viewed 23 April 2021,<br/> **<https://machinelearningmastery.com/how-to-use-correlation-to-understand-the-relationship-between-variables/>**.
 [X] Saha, S, 2018, Baffled by Covariance and Correlation??? Get the Math and the Application in Analytics for both the terms, towards data science, viewed 23 April 2021, **<https://towardsdatascience.com/let-us-understand-the-correlation-matrix-and-covariance-matrix-d42e6b643c22>.**
+[X] Malik, U, 2021, Applying Wrapper Methods in Python for Feature Selection, Stack Abuse, https://stackabuse.com/applying-wrapper-methods-in-python-for-feature-selection/.
+[X]  Asaithambi, S, 2018, Why, How and When to apply Feature Selection, viewed 26 April 2021,https://towardsdatascience.com/why-how-and-when-to-apply-feature-selection-e9c69adfabf2
