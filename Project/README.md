@@ -30,10 +30,8 @@
 &emsp; &emsp; 3.2.4 Correlation Analysis <br>
 &emsp; 3.3 Machine Learning <br>
 &emsp; &emsp; 3.3.1 Feature Selection <br>
-
 ### 4. Discussion 
-### 5. Summary 
-### 6. References 
+### 5. References 
 
 __1 Introduction:__ [F1*] <br/>
 
@@ -329,15 +327,20 @@ The results from plot X are very interesting. The petal features overall perform
 
 <br/>
 
-For the last part of this project the KNN model was expored in more detail in a similar fashion to Sanjay, M 2018. Interestingly he explored different k parameters being fed into the KNN algorigthm (via a for loop). This method was undertaken and the dataset was split into two parts (20:80) for model testing and training respevtively. This functionality is possible using the *train_split_test* method of the *sklearn* library and allows one to estimate the performance of a model when it makes predictions on datasets that are not used to train the model.
+For the last part of this project the KNN model was expored in more detail in a similar fashion to Sanjay, M 2018. Interestingly he explored different k parameters being fed into the KNN algorigthm (via a for loop). This method was undertaken and the whole  iris dataset, which was split into two parts (20:80) for model testing and training respevtively. This functionality is possible using the *train_split_test* method of the *sklearn* library and allows one to estimate the performance of a model when it makes predictions on datasets that are not used to train the model. See plot X for output.
 
 <br/>
 
- <img src="Images/knn_model_k_multiple.png.png"  width="1100"/>|
+ <img src="Images/knn_model_k_multiple.png"  width="1100"/>|
 
  <br/>
 
- 
+ Based on the results from figure X the KNN loop yielded the highest accuracy at k = 4 and K = 6 to 25. This ability to predict species to 100% accuracy is impressive even for a small dataset such as the Fisher Iris Dataset. Considering KNN does not have any underlying data assumptions like that of Linear Discrimant Analysis or indeed many other algorithms, it clearly can have good applications in machine learning.
+
+<br/>
+
+### 4. Discussion
+
 
 ### 5. Reference:
 [1]. Cui, Y 2020, The Iris dataset – a little bit of history and biology, towards data science, viewed 26 Match 2021,**<https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5>.**<br/>
@@ -357,9 +360,9 @@ For the last part of this project the KNN model was expored in more detail in a 
 [X] Solomon, B, 2021, Pandas GroupBy: Your Guide to Grouping Data in Python, RealPython, viewed 16 April 2021,**<https://realpython.com/pandas-groupby/#pandas-groupby-putting-it-all-together>**.<br/>
 [X] Dan, A, 2022, Kurtosis() & Skew() Function In Pandas, medium.com, viewed 19 April 2021, **<https://medium.com/@atanudan/kurtosis-skew-function-in-pandas-aa63d72e20de>**.<br/>
 [X] Ye, A, 2020, viewed 22 April 2021, All the distributions you need to know, towards data science, viewed 22 April 2021,<br/> **<https://towardsdatascience.com/all-the-distributions-you-need-to-know-ad570514987b>**.<br/>
-[X] Brownlee, J, 2018, A Gentle Introduction to k-fold Cross-Validation, viewed 27 April 2021,<br/> **<https://machinelearningmastery.com/k-fold-cross-validation/.>**.
+[X] Brownlee, J, 2018, A Gentle Introduction to k-fold Cross-Validation, viewed 27 April 2021,**<https://machinelearningmastery.com/k-fold-cross-validation/.>**.<br/>
 [X] Brownlee, J, 2018, How to Calculate Correlation Between Variables in Python, viewed 23 April 2021,<br/> **<https://machinelearningmastery.com/how-to-use-correlation-to-understand-the-relationship-between-variables/>**.
-[X] Saha, S, 2018, Baffled by Covariance and Correlation??? Get the Math and the Application in Analytics for both the terms, towards data science, viewed 23 April 2021, **<https://towardsdatascience.com/let-us-understand-the-correlation-matrix-and-covariance-matrix-d42e6b643c22>.**
-[X] Malik, U, 2021, Applying Wrapper Methods in Python for Feature Selection, Stack Abuse, **<https://stackabuse.com/applying-wrapper-methods-in-python-for-feature-selection/>.**.
-[X] Asaithambi, S, 2018, Why, How and When to apply Feature Selection, viewed 26 April 2021, **<https://towardsdatascience.com/why-how-and-when-to-apply-feature-selection-e9c69adfabf2>.**
-[X] Harrison, O, 2018, Machine Learning Basics with the K-Nearest Neighbors Algorithm, towards data science, viewed 26 april 2021, **<https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761>.**
+[X] Saha, S, 2018, Baffled by Covariance and Correlation??? Get the Math and the Application in Analytics for both the terms, towards data science, viewed 23 April 2021, **<https://towardsdatascience.com/let-us-understand-the-correlation-matrix-and-covariance-matrix-d42e6b643c22>.**<br/>
+[X] Malik, U, 2021, Applying Wrapper Methods in Python for Feature Selection, Stack Abuse, **<https://stackabuse.com/applying-wrapper-methods-in-python-for-feature-selection/>.**.<br/>
+[X] Asaithambi, S, 2018, Why, How and When to apply Feature Selection, viewed 26 April 2021, **<https://towardsdatascience.com/why-how-and-when-to-apply-feature-selection-e9c69adfabf2>.**<br/>
+[X] Harrison, O, 2018, Machine Learning Basics with the K-Nearest Neighbors Algorithm, towards data science, viewed 26 april 2021, **<https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761>.**<br/>
