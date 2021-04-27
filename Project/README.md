@@ -123,6 +123,7 @@ This Section details the downloads, modules, tools, libraries and dependencies f
     - matplotlib 3.3.2 <br/>
     - seaborn 0.11.0 <br/>
     - mlxtend 0.18.0 <br/>
+    - scikit-learn 0.24.1 <br/>
 
 - Fisher Iris Dataset:
   - Downloaded here (**<http://archive.ics.uci.edu/ml/datasets/Iris>**). <br/>
@@ -314,18 +315,29 @@ Feature selection is an important process that is used in machine learning to ch
 
 __3.3.2 Choosing a Model__
 
-One aim of this project was gain a basic understanding of Machine Learning. With this in mind it was decided to explore one of the simpler models and run it on the Iris Dataset in an attempt to classify the target species. The k-nearest neighbors (KNN) algorithm is a simple, supervised machine learning algorithm that can be used to solve both classification and regression problems [X]. As described by Harrison 2018 the model works by finding the distances between a query and all the examples in the data, selecting the specified number examples (K) closest to the query. When used for classification purposes the algorithm then votes for the most frequent label when applied .In an attempt to better understand how feature selection can impact the KNN model performance the Exhaustive Feature Selector wrapper method was used to evaluate the model performance across all possible combinations of features of the dataset. Despite slowing down model performance (Malik 2021) it was considered necessary to use this wrapper method for investigation purposes.).
+One aim of this project was gain a basic understanding of Machine Learning. With this in mind it was decided import the *sklearn* library to explore one of the simpler models and run it on the Iris Dataset in an attempt to classify the target species. The k-nearest neighbors (KNN) algorithm is a simple, supervised machine learning algorithm that can be used to solve both classification and regression problems [Harrison 2018]. As described by Harrison 2018 the model works by finding the distances between a query and all the examples in the data, selecting the specified number examples (K) closest to the query. When used for classification purposes the algorithm then votes for the most frequent label when applied.
+
+In an attempt to better understand how feature selection can impact the KNN model performance the Exhaustive Feature Selector (EFS) wrapper method was used to evaluate the model performance across all possible combinations of features in the dataset. An initial value of K = 3 was selected, with the aim to test more k values thereafter. A k fold cross validation vallue of 10 was selected as this value has been found through experimentation to generally result in low bias (i.e the datset will be divded into 5 parts for testing / training purposes) [FX*]. Note: Altough EFS slows model performance (Malik 2021), it was still used for investigation purposes).
 
 <br/>
 
- <img src="Images/knn_average_score.png"  width="900"/>|
+ <img src="Images/knn_model_k_single.png"  width="1100"/>|
 
 <br/>
 
-The results from plot X are very interesting. Overall The petal features overall performed worse at prediciting the Iris species, while the sepal dimensions performed better. There appears to be a link between variables that have high correlation with other variables and a reduced ability to solely make the most accurate model predictions. This would make sence as the more correlated variables are, the harder it would be to alter their dimension without altering another variable in a similar way. To add to this, the model performed best when the  variable with the highest degree of correlation was dropped (petal width).
+The results from plot X are very interesting. The petal features overall performed worse at prediciting the Iris species, while the sepal dimensions performed better. There appears to be a link with variables having high correlation and a reduced ability to make accurate model predictions. This would make sense as the more correlated variables are, the harder it would be to alter their dimension without altering another variable in a similar way. To add to this, the model performed best when the variable with the highest degree of correlation was dropped (petal width).
 
+<br/>
 
+For the last part of this project the KNN model was expored in more detail in a similar fashion to Sanjay, M 2018. Interestingly he explored different k parameters being fed into the KNN algorigthm (via a for loop). This method was undertaken and the dataset was split into two parts (20:80) for model testing and training respevtively. This functionality is possible using the *train_split_test* method of the *sklearn* library and allows one to estimate the performance of a model when it makes predictions on datasets that are not used to train the model.
 
+<br/>
+
+ <img src="Images/knn_model_k_multiple.png.png"  width="1100"/>|
+
+ <br/>
+
+ 
 
 ### 5. Reference:
 [1]. Cui, Y 2020, The Iris dataset – a little bit of history and biology, towards data science, viewed 26 Match 2021,**<https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5>.**<br/>
@@ -345,8 +357,9 @@ The results from plot X are very interesting. Overall The petal features overall
 [X] Solomon, B, 2021, Pandas GroupBy: Your Guide to Grouping Data in Python, RealPython, viewed 16 April 2021,**<https://realpython.com/pandas-groupby/#pandas-groupby-putting-it-all-together>**.<br/>
 [X] Dan, A, 2022, Kurtosis() & Skew() Function In Pandas, medium.com, viewed 19 April 2021, **<https://medium.com/@atanudan/kurtosis-skew-function-in-pandas-aa63d72e20de>**.<br/>
 [X] Ye, A, 2020, viewed 22 April 2021, All the distributions you need to know, towards data science, viewed 22 April 2021,<br/> **<https://towardsdatascience.com/all-the-distributions-you-need-to-know-ad570514987b>**.<br/>
+[X] Brownlee, J, 2018, A Gentle Introduction to k-fold Cross-Validation, viewed 27 April 2021,<br/> **<https://machinelearningmastery.com/k-fold-cross-validation/.>**.
 [X] Brownlee, J, 2018, How to Calculate Correlation Between Variables in Python, viewed 23 April 2021,<br/> **<https://machinelearningmastery.com/how-to-use-correlation-to-understand-the-relationship-between-variables/>**.
 [X] Saha, S, 2018, Baffled by Covariance and Correlation??? Get the Math and the Application in Analytics for both the terms, towards data science, viewed 23 April 2021, **<https://towardsdatascience.com/let-us-understand-the-correlation-matrix-and-covariance-matrix-d42e6b643c22>.**
 [X] Malik, U, 2021, Applying Wrapper Methods in Python for Feature Selection, Stack Abuse, **<https://stackabuse.com/applying-wrapper-methods-in-python-for-feature-selection/>.**.
-[X]  Asaithambi, S, 2018, Why, How and When to apply Feature Selection, viewed 26 April 2021, **<https://towardsdatascience.com/why-how-and-when-to-apply-feature-selection-e9c69adfabf2>.**
+[X] Asaithambi, S, 2018, Why, How and When to apply Feature Selection, viewed 26 April 2021, **<https://towardsdatascience.com/why-how-and-when-to-apply-feature-selection-e9c69adfabf2>.**
 [X] Harrison, O, 2018, Machine Learning Basics with the K-Nearest Neighbors Algorithm, towards data science, viewed 26 april 2021, **<https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761>.**
